@@ -85,12 +85,50 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	padding: 35px 100px 0;
-	animation: 1s fadein 0.5s forwards;
-	opacity: 0;
 	color: #fff;
 }
 
-@keyframes fadein {
+.reveal {
+	position: relative;
+}
+
+.reveal span {
+	opacity: 0;
+	animation: reveal 0.0001s linear forwards;
+	animation-delay: 1.4s
+}
+
+.reveal:after {
+	content: "";
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: 0%;
+	height: 100%;
+	background: #242424;
+	animation: revealing 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+	animation-delay: 1s;
+}
+
+@keyframes revealing {
+0% {
+	left: 0;
+	width: 0%;
+}
+50% {
+	left: 0;
+	width: 100%
+}
+100% {
+	left: 100%;
+	width: 0%;
+}
+}
+
+@keyframes reveal {
+	0% {
+		opacity: 0;
+	}
 	100% {
 		opacity: 1;
 	}
@@ -145,16 +183,7 @@ header nav li {
 }
 
 .hero-content-area {
-	opacity: 0;
 	margin-top: 100px;
-	animation: 1s slidefade 1s forwards;
-}
-
-@keyframes slidefade {
-	100% {
-		opacity: 1;
-		margin: 0;
-	}
 }
 
 /*Destinations Section*/
