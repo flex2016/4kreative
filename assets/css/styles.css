@@ -134,6 +134,20 @@ header {
 	}
 }
 
+#revTwo {
+	top: 51%;
+	left: 42%;
+}
+
+#revTwo span {
+	animation-delay: 2s;
+}
+
+#revTwo.reveal:after {
+	background: white;
+	animation-delay: 1.4s;
+}
+
 header h2 {
 	font-family: "Quicksand", sans-serif;
 }
