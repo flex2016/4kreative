@@ -144,7 +144,7 @@ header {
 }
 
 #revTwo.reveal:after {
-	background: white;
+	background: rgb(238, 238, 238);
 	animation-delay: 1.4s;
 }
 
