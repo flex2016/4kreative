@@ -135,8 +135,8 @@ header {
 }
 
 #revTwo {
-	top: 51%;
-	left: 42%;
+	left: 13%;
+	width: 8em;
 }
 
 #revTwo span {
@@ -185,6 +185,8 @@ header nav li {
 .hero h1 {
 	font: bold 60px "Open Sans", sans-serif;
 	margin-bottom: 15px;
+	width: 5.5em;
+	margin: 20px auto;
 }
 
 .hero h3 {
@@ -198,6 +200,7 @@ header nav li {
 
 .hero-content-area {
 	margin-top: 100px;
+	width: 100%;
 }
 
 /*Destinations Section*/
