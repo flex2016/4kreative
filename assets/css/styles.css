@@ -67,9 +67,9 @@ section h3.title {
 
 .header-home {
 	position: absolute;
-    width: 100%;
-    display: inline-block;
-    padding: 40px;
+	width: 100%;
+	display: inline-block;
+	padding: 40px;
 }
 
 .header-logo {
@@ -99,38 +99,39 @@ section h3.title {
 	height: 1.5rem;
 	display: inline-block;
 	cursor: pointer;
-  }
-  
-  .header__item {
+}
+
+.header__item {
 	display: block;
 	margin-top: 24px;
 	float: right;
-  }
-  
-  .menu-icon__line {
+}
+
+.menu-icon__line {
 	width: 1.6rem;
 	height: .16rem;
 	background: black;
 	display: block;
 	padding-left: 10px
-  }
-  
-  .menu-icon__line:before, .menu-icon__line:after {
+}
+
+.menu-icon__line:before,
+.menu-icon__line:after {
 	content: '';
 	width: 1.6rem;
 	height: .17rem;
 	background: black;
 	display: block;
 	position: relative;
-  }
-  
-  .menu-icon__line:before {
+}
+
+.menu-icon__line:before {
 	top: .7rem;
-  }
-  
-  .menu-icon__line:after {
+}
+
+.menu-icon__line:after {
 	top: -.8rem;
-  }
+}
 
 .reveal span {
 	opacity: 0;
@@ -151,24 +152,27 @@ section h3.title {
 }
 
 @keyframes revealing {
-0% {
-	left: 0;
-	width: 0%;
-}
-50% {
-	left: 0;
-	width: 100%
-}
-100% {
-	left: 100%;
-	width: 0%;
-}
+	0% {
+		left: 0;
+		width: 0%;
+	}
+
+	50% {
+		left: 0;
+		width: 100%
+	}
+
+	100% {
+		left: 100%;
+		width: 0%;
+	}
 }
 
 @keyframes reveal {
 	0% {
 		opacity: 0;
 	}
+
 	100% {
 		opacity: 1;
 	}
@@ -199,22 +203,18 @@ header nav li {
 
 /*Hero Styles*/
 
-.welcome {
-	font-size: 14px;
-display: block;
-float: left;
-position: absolute;
-top: 50%;
-color: #9ea0a6;
-letter-spacing: .2rem;
-left: -60px;
-margin: 0;
-transform: rotate(-90deg) translateY(50%);
-}
-
-.welcome:before, .welcome:after { 
-	content:"\2014";
-	margin: 0 20px;
+.side__bar {
+	transform: rotate(90deg);
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-size: 0.8em;
+	margin: 0 auto;
+	position: absolute;
+	left: -20px;
+	top: 50%;
+	width: 140px;
+	color: #9ea0a6;
+	opacity: 0.6;
 }
 
 .hero {
@@ -250,8 +250,8 @@ transform: rotate(-90deg) translateY(50%);
 }
 
 .typer:before {
-		content: "\2014 ";
-		padding: 10px;
+	content: "\2014 ";
+	padding: 10px;
 }
 
 .typing {
@@ -261,9 +261,14 @@ transform: rotate(-90deg) translateY(50%);
 }
 
 @keyframes appear {
-	0%   { opacity: 0; }
-	100% { opacity: .9; }
-  }
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: .9;
+	}
+}
 
 /*Destinations Section*/
 
@@ -358,10 +363,12 @@ footer p {
 }
 
 @media (max-width: 1100px) {
+
 	.destinations .grid li.small,
 	.destinations .grid li.large {
 		flex-basis: 50%;
 	}
+
 	footer {
 		flex-direction: column;
 	}
@@ -383,26 +390,32 @@ footer p {
 	}
 }
 
-@media (max-width: 800px){
-	section{
-		padding:50px 20px;
+@media (max-width: 800px) {
+	section {
+		padding: 50px 20px;
 	}
-	header{
+
+	header {
 		padding: 20px 50px;
 		flex-direction: column;
 	}
-	header h2{
+
+	header h2 {
 		margin-bottom: 15px;
 	}
-	.hero{
-		min-height:600px;
+
+	.hero {
+		min-height: 600px;
 	}
-	.hero h1{
+
+	.hero h1 {
 		font-size: 48px;
 	}
-	.hero h3{
+
+	.hero h3 {
 		font-size: 24px;
 	}
+
 	.destinations .grid li.small,
 	.destinations .grid li.large {
 		flex-basis: 100%;
@@ -412,6 +425,7 @@ footer p {
 		flex-basis: 100%;
 		padding: 20px;
 	}
+
 	.testimonials .quote {
 		font-size: 18px;
 		margin: 15px 0;
