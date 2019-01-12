@@ -67,12 +67,9 @@ section h3.title {
 
 .header-home {
 	position: absolute;
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 40px;
-	color: #333;
+    width: 100%;
+    display: inline-block;
+    padding: 40px;
 }
 
 .header-logo {
@@ -106,9 +103,8 @@ section h3.title {
   
   .header__item {
 	display: block;
-	margin-top: 2rem;
+	margin-top: 24px;
 	float: right;
-	padding-left: 8px;
   }
   
   .menu-icon__line {
