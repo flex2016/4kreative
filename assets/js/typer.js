@@ -18,7 +18,7 @@ var Typer = function (element) {
   };
   this.typing = true;
 
-  var colors = element.dataset.colors || "#333";
+  var colors = element.dataset.colors || "rgb(51, 51, 51)";
   this.colors = colors.split(",");
   this.element.style.color = this.colors[0];
   this.colorIndex = 0;
