@@ -18,7 +18,7 @@ var Typer = function (element) {
   };
   this.typing = true;
 
-  var colors = element.dataset.colors || "black";
+  var colors = element.dataset.colors || "#333";
   this.colors = colors.split(",");
   this.element.style.color = this.colors[0];
   this.colorIndex = 0;
@@ -43,7 +43,7 @@ Typer.prototype.doTyping = function () {
   var currentDisplay = [...this.words[w]].slice(0, c).join("");
   p.atWordEnd = false;
   if (this.cursor) {
-    this.cursor.element.style.opacity = "1";
+    this.cursor.element.style.opacity = "0.9";
     this.cursor.on = true;
     clearInterval(this.cursor.interval);
     var itself = this.cursor;
@@ -102,7 +102,7 @@ Cursor.prototype.updateBlinkState = function () {
     this.element.style.opacity = "0";
     this.on = false;
   } else {
-    this.element.style.opacity = "1";
+    this.element.style.opacity = "0.9";
     this.on = true;
   }
 }
