@@ -36,46 +36,27 @@ $(document).ready( function() {
         }, stepTime);
     }
 
+// 	setTimeout(function(){
+//         // $('.preloader').fadeOut();
 
+//         $('.cd-transition-layer').addClass('closing').delay(1000).queue(function(){
+//             $(this).removeClass("visible closing opening").dequeue();
+//         });
 
-	setTimeout(function(){
-        $('.preloader').fadeOut();
+// 	}, time);
 
-        $('.cd-transition-layer').addClass('closing').delay(1000).queue(function(){
-            $(this).removeClass("visible closing opening").dequeue();
-        });
-
-	}, time);
-
-
-
-
-   // FADE OUT EFFECT WHEN CLICK A LINK
-    $(document).on("click", "a:not(.lightbox)", function () {
-        var newUrl = $(this).attr("href");
-        if (!newUrl || newUrl[0] === "#") {
-            location.hash = newUrl;
-            return;
-        }
-        $("html").fadeOut(function () {
-            location = newUrl;
-        });
-        return false;
-    });
-
-
-    var paget = $(".page-title .title").text();
-
-    $( ".page-title").append("<span></span>");
-    $( ".page-title span").append(paget);
-
-
-
-    //posts page hover
-    $('.blog-post .blog-link').hover(function(){
-        $(this).parent('.content-outter').parent('.blog-post').toggleClass('mousef');
-        $(this).parent('.blog-post').toggleClass('mousef');
-    });
+//    // FADE OUT EFFECT WHEN CLICK A LINK
+//     $(document).on("click", "a:not(.lightbox)", function () {
+//         var newUrl = $(this).attr("href");
+//         if (!newUrl || newUrl[0] === "#") {
+//             location.hash = newUrl;
+//             return;
+//         }
+//         $("html").fadeOut(function () {
+//             location = newUrl;
+//         });
+//         return false;
+//     });
 
 });
 
@@ -154,22 +135,14 @@ smokeeffect()
 /*--------------------------------------------------
  Hero Section Height
 ---------------------------------------------------*/
-     function homeh() {
-        var hometext = $('.main')
-
-        hometext.css({
-            "height": $(window).height() + "px"
-        });
-    }
-    homeh();
-    $(window).resize(homeh);
 
 
-    $( ".page-menu li:not(.social) a, .portfolio_filter ul li a").append( "<span></span>" );
 
-    $('.nav-icon').on("click", function(){
-            $(this).toggleClass('modal-close');
-    });
+    // $( ".page-menu li:not(.social) a, .portfolio_filter ul li a").append( "<span></span>" );
+
+    // $('.nav-icon').on("click", function(){
+    //         $(this).toggleClass('modal-close');
+    // });
 
 
 
