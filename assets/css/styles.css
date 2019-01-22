@@ -70,7 +70,7 @@ section h3.title {
 .screen-wipe-top{
 	width: 100%;
 	height: 100vh;
-	background:#666;
+	background:rgb(0, 0, 0);
 	position: fixed;
 	z-index: 1000;
 	top: -100%;
@@ -78,7 +78,7 @@ section h3.title {
 .screen-wipe-bottom{
 	width: 100%;
 	height: 100vh;
-	background:#666;
+	background:rgb(0, 0, 0);
 	position: fixed;
 	z-index: 1000;
 	bottom: -100%;
