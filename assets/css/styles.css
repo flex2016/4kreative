@@ -118,7 +118,7 @@ section h3.title {
 	transition: .5s ease-in-out;
 	cursor: pointer;
 	margin-top: 7px;
-	z-index: 5;
+	z-index: 15000;
 }
 
 .nav-icon span {

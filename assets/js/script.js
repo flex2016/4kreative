@@ -36,16 +36,16 @@ $(document).ready( function() {
         }, stepTime);
     }
 
-// 	setTimeout(function(){
-//         // $('.preloader').fadeOut();
+	// setTimeout(function(){
+    //     // $('.preloader').fadeOut();
 
-//         $('.cd-transition-layer').addClass('closing').delay(1000).queue(function(){
-//             $(this).removeClass("visible closing opening").dequeue();
-//         });
+    //     $('.cd-transition-layer').addClass('closing').delay(1000).queue(function(){
+    //         $(this).removeClass("visible closing opening").dequeue();
+    //     });
 
-// 	}, time);
+	// }, time);
 
-   // FADE OUT EFFECT WHEN CLICK A LINK
+//    FADE OUT EFFECT WHEN CLICK A LINK
     // $(document).on("click", "a:not(.lightbox)", function () {
     //     var newUrl = $(this).attr("href");
     //     if (!newUrl || newUrl[0] === "#") {
