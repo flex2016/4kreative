@@ -52,7 +52,7 @@ $(document).ready( function() {
             location.hash = newUrl;
             return;
         }
-        $("html").fadeOut(function () {
+        $("html").fadeOut("slow", function () {
             location = newUrl;
         });
         return false;
