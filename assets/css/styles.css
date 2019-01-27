@@ -83,6 +83,7 @@ section h3.title {
 	z-index: 1000;
 	bottom: -110%;
 }
+
 /*Header Styles*/
 
 .header-home {
@@ -487,6 +488,60 @@ header nav li {
 	100% {
 		opacity: .9;
 	}
+}
+
+
+/*--------------------------About Section--------------------*/
+#about{
+	width: 62rem;
+	left: -30%;
+	top: 6%;
+	margin-top: 55px;
+	margin-left: 50%;
+	position: absolute;
+
+}
+#showcase{
+	width: 100%;
+	height: 25rem;
+}
+
+#showcase img{
+	cursor: pointer;
+	opacity: 0.6;
+	border-radius: 50%;
+	z-index: 1;
+	height: 15rem;
+	-webkit-filter: grayscale(1);
+            filter: grayscale(1);
+}
+#showcase-title{
+	color: #000;
+	font-size: 30px;
+	letter-spacing: 0.13em;
+	text-align: center;
+	margin-top: -20px;
+	margin-bottom: 32px;
+	font-family: monospace;
+}
+
+.nav{
+	text-align: center;
+}
+
+.nav > button{
+	width: 60px;
+	height: 60px;
+	color: #000;
+	text-align: center;
+	background: #fff;
+	border: none;
+	cursor: pointer;
+}
+
+.nav > button:focus{
+	border: none;
+	outline: none;
 }
 
 /*Destinations Section*/

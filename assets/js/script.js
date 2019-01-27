@@ -90,6 +90,10 @@ function smokeeffect () {
         event.preventDefault();
         transitionLayer.addClass('visible opening');
         var delay = ( $('.no-cssanimations').length > 0 ) ? 0 : 600;
+        var showcase = $("#showcase");
+            showcase.css('visibility', 'hidden')
+            showcase.css(' display', 'none')
+            showcase.fadeIn( "slow" )
         setTimeout(function(){
             modalWindow.addClass('visible');
         }, delay);
@@ -103,6 +107,10 @@ function smokeeffect () {
         transitionBackground.one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(){
             transitionLayer.removeClass('closing opening visible');
             transitionBackground.off('webkitAnimationEnd oanimationend msAnimationEnd animationend');
+        var showcase = $("#showcase");
+        showcase.css('visibility', 'visible')
+        showcase.css(' display', 'none')
+        showcase.fadeIn( "slow")
         });
     });
 
@@ -148,7 +156,49 @@ smokeeffect()
 
 }); // document load end
 
-// var tl = new TimelineMax();
-  // tl
-  //   .to(".screen-wipe-top", 0.5,{y: "50%", repeat: 1, yoyo:true})
-  //   .to(".screen-wipe-bottom", 0.5,{y: "-50%", repeat: 1, yoyo:true}, "-=1");
+$(function(){
+    var showcase = $("#showcase");
+
+    showcase.Cloud9Carousel({
+        yPos: 42,
+        yRadius: 48,
+        mirrorOptions: {
+            gap: 12,
+            height: 0.2
+        },
+        buttonLeft: $(".nav > .left"),
+        buttonRight: $(".nav > .right"),
+        autoPlay: true,
+        bringToFront: true,
+
+        onRendered: showcaseUpdated,
+        onLoaded: function(){
+            showcase.css('visibility', 'visible')
+            showcase.css(' display', 'none')
+            showcase.fadeIn( 1500 )
+        }
+    })
+    function showcaseUpdated( showcase ){
+        var title = $("#item-title").html(
+            $(showcase.nearestItem()).attr(' alt')
+        )
+        var c = Math.cos((showcase.floatIndex() % 1) * 2 * Math.PI)
+        title.css('opacity', 0.5 + (0.5 * c))
+
+    }
+    $('.nav > button').click( function( e ){
+        var b = $(e.target).addClass( 'down' )
+        setTimeout( function(){ b.removeClass( 'down' )}, 80)
+    })
+
+    $(document).keydown( function( e ){
+        switch( e.keyCode ){
+            case 37:
+            $('.nav > .left').click()
+            break
+
+            case 39:
+            $('.nav > .right').click()
+        }
+    })
+})
