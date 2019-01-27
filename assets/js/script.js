@@ -37,7 +37,7 @@ $(document).ready( function() {
     }
 
 	// setTimeout(function(){
-    //     // $('.preloader').fadeOut();
+    //     $('.preloader').fadeOut();
 
     //     $('.cd-transition-layer').addClass('closing').delay(1000).queue(function(){
     //         $(this).removeClass("visible closing opening").dequeue();
@@ -46,17 +46,17 @@ $(document).ready( function() {
 	// }, time);
 
 //    FADE OUT EFFECT WHEN CLICK A LINK
-    // $(document).on("click", "a:not(.lightbox)", function () {
-    //     var newUrl = $(this).attr("href");
-    //     if (!newUrl || newUrl[0] === "#") {
-    //         location.hash = newUrl;
-    //         return;
-    //     }
-    //     $("html").fadeOut(function () {
-    //         location = newUrl;
-    //     });
-    //     return false;
-    // });
+    $(document).on("click", "a:not(.lightbox)", function () {
+        var newUrl = $(this).attr("href");
+        if (!newUrl || newUrl[0] === "#") {
+            location.hash = newUrl;
+            return;
+        }
+        $("html").fadeOut(function () {
+            location = newUrl;
+        });
+        return false;
+    });
 
 });
 
