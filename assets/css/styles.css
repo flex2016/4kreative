@@ -11,6 +11,10 @@ html {
 	color: #fff;
 }
 
+body {
+	overflow: hidden;
+}
+
 ul,
 nav {
 	list-style: none;
@@ -67,18 +71,19 @@ section h3.title {
 
 /* -------------------Screen Wipe-------------------------- */
 
-.screen-wipe-top{
+.screen-wipe-top {
 	width: 100%;
 	height: 100vh;
-	background:rgb(0, 0, 0);
+	background: rgb(0, 0, 0);
 	position: fixed;
 	z-index: 1000;
 	top: -110%;
 }
-.screen-wipe-bottom{
+
+.screen-wipe-bottom {
 	width: 100%;
 	height: 100vh;
-	background:rgb(0, 0, 0);
+	background: rgb(0, 0, 0);
 	position: fixed;
 	z-index: 1000;
 	bottom: -110%;
@@ -353,6 +358,52 @@ section h3.title {
 
 /* -------------HERO--------------------- */
 
+.kreative {
+	position: relative;
+	margin: -120px auto 100px auto;
+	text-transform: uppercase;
+	letter-spacing: 3rem;
+	font-size: 7rem;
+	font-weight: bold;
+	opacity: .1;
+}
+
+.social__main_list {
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-size: 0.8em;
+	margin: 0 auto;
+	position: absolute;
+	right: -20px;
+	top: 46%;
+	width: 140px;
+	color: #9ea0a6;
+	opacity: 0.6;
+}
+
+.social__main li {
+	list-style: none;
+}
+
+.social__main li a {
+	color: black;
+	font-size: 26px;
+	position: relative;
+	font-weight: 500;
+}
+
+.social__main img {
+	width: 15px;
+}
+
+.social__main {
+	margin-top: 30px;
+}
+
+.social_main a {
+	margin-right: 20px;
+}
+
 .reveal span {
 	opacity: 0;
 	animation: reveal 0.0001s linear forwards;
@@ -492,7 +543,7 @@ header nav li {
 
 
 /*--------------------------About Section--------------------*/
-#about{
+#about {
 	width: 62rem;
 	left: -30%;
 	top: 6%;
@@ -501,21 +552,23 @@ header nav li {
 	position: absolute;
 
 }
-#showcase{
+
+#showcase {
 	width: 100%;
 	height: 25rem;
 }
 
-#showcase img{
+#showcase img {
 	cursor: pointer;
 	opacity: 0.6;
 	border-radius: 50%;
 	z-index: 1;
 	height: 15rem;
 	-webkit-filter: grayscale(1);
-            filter: grayscale(1);
+	filter: grayscale(1);
 }
-#showcase-title{
+
+#showcase-title {
 	color: #000;
 	font-size: 30px;
 	letter-spacing: 0.13em;
@@ -525,11 +578,11 @@ header nav li {
 	font-family: monospace;
 }
 
-.nav{
+.nav {
 	text-align: center;
 }
 
-.nav > button{
+.nav>button {
 	width: 60px;
 	height: 60px;
 	color: #000;
@@ -539,7 +592,7 @@ header nav li {
 	cursor: pointer;
 }
 
-.nav > button:focus{
+.nav>button:focus {
 	border: none;
 	outline: none;
 }
