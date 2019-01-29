@@ -360,7 +360,7 @@ section h3.title {
 
 .kreative {
 	position: relative;
-	margin: -120px auto 100px auto;
+	margin: -1em auto 1em auto;
 	text-transform: uppercase;
 	letter-spacing: 3rem;
 	font-size: 7rem;
@@ -378,30 +378,17 @@ section h3.title {
 	top: 46%;
 	width: 140px;
 	color: #9ea0a6;
-	opacity: 0.6;
+	opacity: 0.4;
 }
 
-.social__main li {
+.social__main_list li {
 	list-style: none;
+	margin-bottom: 10px;
 }
 
-.social__main li a {
-	color: black;
-	font-size: 26px;
-	position: relative;
-	font-weight: 500;
-}
-
-.social__main img {
-	width: 15px;
-}
-
-.social__main {
-	margin-top: 30px;
-}
-
-.social_main a {
-	margin-right: 20px;
+.social__main_list li:hover {
+	opacity: 0.8;
+	transition: all 0.4s linear;
 }
 
 .reveal span {
