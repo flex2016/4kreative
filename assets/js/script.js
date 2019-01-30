@@ -90,10 +90,6 @@ function smokeeffect () {
         event.preventDefault();
         transitionLayer.addClass('visible opening');
         var delay = ( $('.no-cssanimations').length > 0 ) ? 0 : 600;
-        var showcase = $("#showcase");
-            showcase.css('visibility', 'hidden')
-            showcase.css(' display', 'none')
-            showcase.fadeIn( "slow" )
         setTimeout(function(){
             modalWindow.addClass('visible');
         }, delay);
@@ -107,10 +103,6 @@ function smokeeffect () {
         transitionBackground.one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(){
             transitionLayer.removeClass('closing opening visible');
             transitionBackground.off('webkitAnimationEnd oanimationend msAnimationEnd animationend');
-        var showcase = $("#showcase");
-        showcase.css('visibility', 'visible')
-        showcase.css(' display', 'none')
-        showcase.fadeIn( "slow")
         });
     });
 
