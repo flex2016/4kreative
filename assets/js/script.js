@@ -42,14 +42,14 @@ $(document).ready( function() {
 
 	// }, time);
 
-//    FADE OUT EFFECT WHEN CLICK A LINK
+// FADE OUT EFFECT WHEN CLICK A LINK
     $(document).on("click", "a:not(.lightbox)", function () {
         var newUrl = $(this).attr("href");
         if (!newUrl || newUrl[0] === "#") {
             location.hash = newUrl;
             return;
         }
-        $("html").fadeOut("slow", function () {
+        $(".nav-icon").fadeOut(1000, function () {
             location = newUrl;
         });
         return false;
