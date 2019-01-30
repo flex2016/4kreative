@@ -1,9 +1,6 @@
 'use strict';
 
 $(document).ready( function() {
-
-
-
     var width = 100,
         perfData = window.performance.timing,
         EstimatedTime = -(perfData.loadEventEnd - perfData.navigationStart),
@@ -100,10 +97,10 @@ function smokeeffect () {
         event.preventDefault();
         transitionLayer.addClass('closing');
         modalWindow.removeClass('visible');
-        // transitionBackground.one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(){
-        //     transitionLayer.removeClass('closing opening visible');
-        //     transitionBackground.off('webkitAnimationEnd oanimationend msAnimationEnd animationend');
-        // });
+        transitionBackground.one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(){
+            transitionLayer.removeClass('closing opening visible');
+            transitionBackground.off('webkitAnimationEnd oanimationend msAnimationEnd animationend');
+        });
     });
 
     function setLayerDimensions() {
@@ -129,13 +126,6 @@ function smokeeffect () {
 
 }
 smokeeffect()
-
-
-
-/*--------------------------------------------------
- Hero Section Height
----------------------------------------------------*/
-
 
 
 }); // document load end
