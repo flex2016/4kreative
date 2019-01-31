@@ -9,11 +9,11 @@ var FadeTransition = Barba.BaseTransition.extend({
 
     // As soon the loading is finished and the old page is faded out, let's fade the new page
     Promise
-      .all([this.newContainerLoading, this.fadeOut()])
+      .all([this.newContainerLoading, this.fadeOuts()])
       .then(this.fadeIn.bind(this));
   },
 
-  fadeOut: function () {
+  fadeOuts: function () {
     /**
      * this.oldContainer is the HTMLElement of the old Container
      */

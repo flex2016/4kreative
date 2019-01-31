@@ -11,6 +11,10 @@ html {
 	color: #fff;
 }
 
+body {
+	overflow: hidden;
+}
+
 ul,
 nav {
 	list-style: none;
