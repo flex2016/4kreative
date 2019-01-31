@@ -63,12 +63,12 @@ Barba.Pjax.getTransition = function () {
   var tl = new TimelineMax();
   tl
     .to(".screen-wipe-top", 0.5, {
-      y: "60%",
+      y: "50%",
       repeat: 1,
       yoyo: true
     })
     .to(".screen-wipe-bottom", 0.5, {
-      y: "-60%",
+      y: "-50%",
       repeat: 1,
       yoyo: true
     }, "-=1");

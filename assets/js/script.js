@@ -49,7 +49,7 @@ $(document).ready( function() {
             location.hash = newUrl;
             return;
         }
-        $(".nav-icon").fadeOut(1000, function () {
+        $("header").fadeOut(1000, function () {
             location = newUrl;
         });
         return false;
