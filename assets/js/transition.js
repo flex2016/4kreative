@@ -1,3 +1,5 @@
+Barba.Pjax.start();
+
 var FadeTransition = Barba.BaseTransition.extend({
   start: function () {
 
@@ -9,11 +11,11 @@ var FadeTransition = Barba.BaseTransition.extend({
 
     // As soon the loading is finished and the old page is faded out, let's fade the new page
     Promise
-      .all([this.newContainerLoading, this.fadeOuts()])
+      .all([this.newContainerLoading, this.startTransition()])
       .then(this.fadeIn.bind(this));
   },
 
-  fadeOuts: function () {
+  startTransition: function () {
     /**
      * this.oldContainer is the HTMLElement of the old Container
      */
@@ -80,5 +82,3 @@ Barba.Pjax.getTransition = function () {
 
   return FadeTransition;
 };
-
-Barba.Pjax.start();
