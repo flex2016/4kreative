@@ -531,9 +531,9 @@ header nav li {
 
 
 
-/*Destinations Section*/
+/*works Section*/
 
-.destinations .grid li {
+.works .grid li {
 	height: 350px;
 	padding: 20px;
 	background-clip: content-box;
@@ -541,11 +541,7 @@ header nav li {
 	background-position: center;
 }
 
-.destinations .grid li.small {
-	flex-basis: 30%;
-}
-
-.destinations .grid li.large {
+.works .grid li.large {
 	flex-basis: 70%;
 }
 
@@ -625,8 +621,8 @@ footer p {
 
 @media (max-width: 1100px) {
 
-	.destinations .grid li.small,
-	.destinations .grid li.large {
+	.works .grid li.small,
+	.works .grid li.large {
 		flex-basis: 50%;
 	}
 
@@ -677,8 +673,8 @@ footer p {
 		font-size: 24px;
 	}
 
-	.destinations .grid li.small,
-	.destinations .grid li.large {
+	.works .grid li.small,
+	.works .grid li.large {
 		flex-basis: 100%;
 	}
 
