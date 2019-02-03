@@ -519,6 +519,85 @@ header nav li {
 }
 
 
+/* Buttons */
+
+.main_button {
+	align-items: center;
+	background-color: none;
+	display: flex;
+	height: 200px;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+	transition: background-color 4s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.button {
+	border: 1px solid #333333b5;
+	cursor: pointer;
+	letter-spacing: 0.13rem;
+	overflow: hidden;
+	padding: 16px 20px 16px 20px;
+	position: relative;
+	text-align: center;
+	text-transform: uppercase;
+	transition:
+		background 5s cubic-bezier(0.19, 1, 0.22, 1),
+		border 1s cubic-bezier(0.19, 1, 0.22, 1),
+		color 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+	user-select: none;
+}
+
+.button a {
+	color: #333;
+	font-family: "Varela Round";
+	text-decoration: none;
+}
+
+.button .mask {
+	background-color: #333;
+	background-color: #333;
+	height: 100px;
+	position: absolute;
+	transform: translate3d(-110%, -50px, 0) rotate3d(0, 0, 0, 0deg);
+	transition: all 3s cubic-bezier(0.19, 1, 0.22, 1);
+	width: 200px;
+}
+
+.button .shift {
+	display: inline-block;
+	transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+	vertical-align: text-bottom;
+}
+
+.button:hover {
+	background-color: rgba(219, 219, 219, 0.212);
+	border-color: #fff;
+	box-shadow: 0 0 5px rgba(255, 245, 245, 0.8);
+	transition: background 0s;
+}
+
+.button:hover a {
+	color: #333;
+}
+
+.button:hover .mask {
+	background-color: #fff;
+	transform: translate3d(105%, -50px, 0) rotate3d(0, 0, 0, 0deg);
+}
+
+.button:hover .shift {
+	transform: translateX(6px);
+}
+
+.button:active {
+	background-color: #fff;
+}
+
+.button:active a {
+	color: #333;
+}
+
 /*works Section*/
 
 .blcremation,
