@@ -53,19 +53,12 @@ section:not(.hero):nth-child(even) {
 	color: #333;
 }
 
-hr {
-	width: 250px;
-	height: 3px;
-	background-color: #3f51b5;
-	border: 0;
-	margin-bottom: 50px;
-}
-
-section h3.title {
+section h2.title {
 	text-transform: capitalize;
-	font: bold 32px "Open Sans", sans-serif;
+	font: bold 60px "Open Sans", sans-serif;
 	margin-bottom: 30px;
 	text-align: center;
+	color: #333;
 }
 
 
@@ -287,9 +280,6 @@ section h3.title {
 	}
 }
 
-
-
-
 @keyframes cd-sequence-reverse {
 	0% {
 
@@ -360,7 +350,7 @@ section h3.title {
 
 .kreative {
 	position: relative;
-	margin: -1em auto 1em auto;
+	margin: -1em 0 1em 0;
 	text-transform: uppercase;
 	letter-spacing: 3rem;
 	font-size: 7rem;
@@ -529,20 +519,28 @@ header nav li {
 }
 
 
-
-
 /*works Section*/
 
-.works .grid li {
-	height: 350px;
-	padding: 20px;
-	background-clip: content-box;
-	background-size: cover;
-	background-position: center;
+.blcremation,
+.lightwalk,
+.design {
+	height: 100Vh;
+	float: left;
+	width: 50%;
 }
 
-.works .grid li.large {
-	flex-basis: 70%;
+.bltext,
+.lwtext,
+.designtext {
+	color: #333;
+	float: right;
+	margin: 2rem 2rem;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
 }
 
 /*Packages Section*/
