@@ -600,17 +600,13 @@ header nav li {
 
 /*works Section*/
 
-.blcremation,
-.lightwalk,
-.design {
+.work_img{
 	height: 100Vh;
 	float: left;
 	width: 50%;
 }
 
-.bltext,
-.lwtext,
-.designtext {
+.work_text {
 	color: #333;
 	float: right;
 	margin: 2rem 2rem;
