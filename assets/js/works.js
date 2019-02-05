@@ -1,15 +1,14 @@
 // immediate invoked function expression
 
 (function(){
-  //select buttons
   console.clear();
 
   const elPrevButton = document.querySelector('#prev');
   const elNextButton = document.querySelector('#next');
   const flipping = new Flipping();
 
-  const elImages = Array.from(document.querySelectorAll('.ui-big-image'));
-  const elThumbnails = Array.from(document.querySelectorAll('.ui-thumbnail'));
+  const elImages = Array.from(document.querySelectorAll('.work-big-image'));
+  const elThumbnails = Array.from(document.querySelectorAll('.work-thumbnail'));
 
   let state = {
     photo: 0
