@@ -49,7 +49,7 @@ $(document).ready( function() {
             location.hash = newUrl;
             return;
         }
-        $("header").fadeOut(900, function () {
+        $("header").fadeOut(1000, function () {
             location = newUrl;
         });
         return false;

@@ -795,6 +795,7 @@ img {
 	z-index: 1;
 }
 
+
 .work-article[data-active]~.work-article {
 	transform: translateX(100%);
 }
