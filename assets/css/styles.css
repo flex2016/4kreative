@@ -700,7 +700,7 @@ img {
 }
 
 .work-articles {
-	background: #493e56;
+	background: #05124d;
 	color: white;
 	display: flex;
 	align-items: stretch;
@@ -730,7 +730,7 @@ img {
 }
 
 .work-nav button {
-	background: #493e56;
+	background: #0f1635;
 	border: none;
 	appearance: none;
 	padding: 0.5em;
