@@ -987,7 +987,8 @@ form input[type="submit"] {
   background: #d4a12d;
   color: white;
   -webkit-appearance: none;
-  border: none;
+	border: none;
+	cursor: pointer;
   text-transform: uppercase;
 	position: relative;
   padding: 13px 50px;
