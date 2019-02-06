@@ -6,6 +6,22 @@
 	box-sizing: border-box;
 }
 
+@font-face {
+	font-family: ambient-bold;
+	src: url(ambient_bold.ttf);
+}
+
+@font-face {
+	font-family: black-out;
+	src: url(bl_m.ttf);
+}
+
+
+@font-face {
+	font-family: sk;
+	src: url(sk.otf);
+}
+
 html {
 	font: normal 16px sans-serif;
 	color: #fff;
@@ -101,11 +117,6 @@ section h2.title {
 	width: 100%;
 }
 
-.reveal {
-	position: relative;
-	width: 7em;
-	margin: 0 auto;
-}
 
 /* ------------------Menu --------------*/
 
@@ -382,6 +393,12 @@ section h2.title {
 	transition: all 0.4s linear;
 }
 
+.reveal {
+	position: relative;
+	width: 7em;
+	margin: 0 auto;
+}
+
 .reveal span {
 	opacity: 0;
 	animation: reveal 0.0001s linear forwards;
@@ -394,8 +411,8 @@ section h2.title {
 	left: 0;
 	position: absolute;
 	width: 0%;
-	height: 100%;
-	background: #333;
+	height: 102%;
+	background: #000;
 	animation: revealing 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
 	animation-delay: 1s;
 }
@@ -437,7 +454,7 @@ section h2.title {
 }
 
 #revTwo.reveal:after {
-	background: #333;
+	background: #000;
 	animation-delay: 1.4s;
 }
 
@@ -486,7 +503,8 @@ header nav li {
 }
 
 .hero h1 {
-	font: bold 60px "Open Sans", sans-serif;
+	font: bold 5rem sk, sans-serif;
+	color: #000;
 }
 
 .hero h3 {
@@ -504,9 +522,11 @@ header nav li {
 }
 
 .typing {
+	font-family: ambient-bold, sans-serif;
+	font-size: 1.4rem;
 	opacity: 0;
 	animation: appear 0.8s ease-in forwards;
-	animation-delay: 2.6s;
+	animation-delay: 2.9s;
 }
 
 @keyframes appear {
@@ -534,8 +554,9 @@ header nav li {
 }
 
 .button {
-	padding: 2px 12px 2px 12px;
+	padding: 16px;
 	margin: 5%;
+	font-weight: 600;
 	position: relative;
 	text-align: center;
 	text-transform: uppercase;
@@ -547,11 +568,13 @@ header nav li {
 	letter-spacing: 0.13rem;
 	overflow: hidden;
 	user-select: none;
+	border: 2px solid black;
 }
 
 .button:hover {
 	color: #000 !important;
 	background-color: transparent;
+	transition: background 0s;
 }
 
 .button:hover:before {
@@ -574,28 +597,22 @@ header nav li {
 }
 
 .button a {
-	color: #333;
+	color: black;
 	font-size: 1.3rem;
-	font-family: "Varela Round";
+	font-family: sk, sans-serif;
 	text-decoration: none;
 }
 
-.button .shift {
-	display: inline-block;
-	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
-	vertical-align: text-bottom;
-}
-
-.button:hover {
-	transition: background 0s;
-}
-
 .button:hover a {
-	color: #333;
+	color: #000;
 }
 
-.button:hover .shift {
-	transform: translateX(6px);
+#contact_btn {
+	background-color: #000;
+}
+
+#contact_btn a {
+	color: #fff;
 }
 
 /*Work Section*/
