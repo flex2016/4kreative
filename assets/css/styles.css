@@ -352,24 +352,21 @@ section h2.title {
 	margin-right: 0px;
 }
 
-.fa {
-	border-bottom: 1px solid #3ee7d6;
+.fa:hover {
+	color: #3ee7d6;
 }
-
 
 /* -------------HERO--------------------- */
 
 .kreative {
 	position: relative;
-	font-family: 'spartan_regular', sans-serif;
-	margin: -0.5em 0 1em 0;
+	margin: -0.5em 0 1em .5em;
 	text-transform: uppercase;
-	letter-spacing: 3rem;
+	letter-spacing: 4rem;
 	font-size: 7rem;
 	font-weight: bold;
-	opacity: .5;
-	color: #e8e8e8;
-	text-shadow: 8px 4px 0px #3ee7d6;
+	opacity: .1;
+	text-shadow: 6px 5px 0 #3ee7d6;
 }
 
 .social__main_list {
@@ -379,7 +376,7 @@ section h2.title {
 	margin: 0 auto;
 	position: absolute;
 	right: -20px;
-	top: 46%;
+	top: 42%;
 	width: 140px;
 	color: #9ea0a6;
 	opacity: 0.4;
@@ -479,7 +476,7 @@ header nav li {
 	margin: 0 auto;
 	position: absolute;
 	left: -20px;
-	top: 50%;
+	top: 44%;
 	width: 140px;
 	color: #9ea0a6;
 	opacity: 0.6;
@@ -551,13 +548,12 @@ header nav li {
 }
 
 .button span {
-	color: #3ee7d6;
+	color: rgba(51, 51, 51, 0.363);
 }
 
 .button {
 	padding: 2px 14px 2px 14px;
 	margin: 5%;
-	font-weight: 600;
 	position: relative;
 	text-align: center;
 	text-transform: uppercase;
@@ -597,7 +593,7 @@ header nav li {
 }
 
 .button a {
-	color: #333;
+	color: #222;
 	font-size: 1.2rem;
 	font-family: spartan_regular, sans-serif;
 	text-decoration: none;
@@ -605,6 +601,24 @@ header nav li {
 
 .button:hover a {
 	color: #222;
+}
+
+#contact_btn:before {
+	background: #3ee7d6;
+}
+
+#cnt {
+	box-shadow: 0px 5px 0 #3ee7d6;
+	color: #222;
+}
+
+#srv {
+	box-shadow: 0px 5px 0 #ebebeb;
+	color: #222;
+}
+
+#next {
+	vertical-align: 2px;
 }
 
 /*Work Section*/
