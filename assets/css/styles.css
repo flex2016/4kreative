@@ -7,15 +7,9 @@
 }
 
 @font-face {
-	font-family: ambient-bold;
-	src: url(ambient_bold.ttf);
+	font-family: spartan_regular;
+	src: url(spartan_regular.otf);
 }
-
-@font-face {
-	font-family: black-out;
-	src: url(bl_m.ttf);
-}
-
 
 @font-face {
 	font-family: sk;
@@ -23,7 +17,7 @@
 }
 
 html {
-	font: normal 16px sans-serif;
+	font: normal 16px spartan_regular, sans-serif;
 	color: #fff;
 }
 
@@ -413,7 +407,7 @@ section h2.title {
 	position: absolute;
 	width: 0%;
 	height: 102%;
-	background: #000;
+	background: #222;
 	animation: revealing 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
 	animation-delay: 1s;
 }
@@ -455,7 +449,7 @@ section h2.title {
 }
 
 #revTwo.reveal:after {
-	background: #000;
+	background: #222;
 	animation-delay: 1.4s;
 }
 
@@ -504,12 +498,12 @@ header nav li {
 }
 
 .hero h1 {
-	font: bold 5rem sk, sans-serif;
-	color: #000;
+	font: bold 5rem 'sk', sans-serif;
+	color: #222;
 }
 
 .hero h3 {
-	font: normal 28px "Open Sans", sans-serif;
+	font: normal 28px "spartan_regular", sans-serif;
 	margin-bottom: 40px;
 }
 
@@ -517,13 +511,8 @@ header nav li {
 	width: 100%;
 }
 
-.typer:before {
-	content: "\2014 ";
-	padding: 10px;
-}
-
 .typing {
-	font-family: ambient-bold, sans-serif;
+	font-family: 'spartan_regular', sans-serif;
 	font-size: 1.4rem;
 	opacity: 0;
 	animation: appear 0.8s ease-in forwards;
@@ -554,8 +543,14 @@ header nav li {
 	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
 }
 
+.button span {
+	vertical-align: 1px;
+	color: #c5c6ca;
+	font-size: 26px;
+}
+
 .button {
-	padding: 16px;
+	padding: 1px 14px 8px 14px;
 	margin: 5%;
 	font-weight: 600;
 	position: relative;
@@ -569,7 +564,6 @@ header nav li {
 	letter-spacing: 0.13rem;
 	overflow: hidden;
 	user-select: none;
-	border: 2px solid black;
 }
 
 .button:hover {
@@ -598,22 +592,14 @@ header nav li {
 }
 
 .button a {
-	color: black;
-	font-size: 1.3rem;
-	font-family: sk, sans-serif;
+	color: #333;
+	font-size: 1.2rem;
+	font-family: spartan_regular, sans-serif;
 	text-decoration: none;
 }
 
 .button:hover a {
-	color: #000;
-}
-
-#contact_btn {
-	background-color: #000;
-}
-
-#contact_btn a {
-	color: #fff;
+	color: #222;
 }
 
 /*Work Section*/
@@ -737,7 +723,7 @@ img {
 	padding: 0.5em;
 	width: 2em;
 	color: #fff;
-	font-family: monospace;
+	font-family: spartan_regular, sans-serif;
 	transition: inherit;
 	transition-duration: 300ms;
 }
@@ -878,31 +864,31 @@ img {
 
 #contact h1 {
 	color: #05124d;
-  margin: 2.5rem;
+	margin: 2.5rem;
 	font-size: 3.5rem;
 	text-align: center;
-  text-transform: uppercase;
-  font-family: 'Lato', sans-serif;
-  font-weight: 500;
+	text-transform: uppercase;
+	font-family: 'spartan_regular', sans-serif;
+	font-weight: 500;
 }
 
 #contact {
 	font-size: 62.5%;
-  margin: 0 auto;
+	margin: 0 auto;
 	text-align: center;
 	width: 80%;
 	max-width: 1100px;
 }
 
 form {
-  width: 58.33333%;
-  margin: 1.2rem auto;
+	width: 58.33333%;
+	margin: 1.2rem auto;
 }
 
 form .field {
-  width: 100%;
-  position: relative;
-  margin-bottom: 15px;
+	width: 100%;
+	position: relative;
+	margin-bottom: 15px;
 }
 
 form .field label {
@@ -917,12 +903,13 @@ form .field label {
 	font-size: 1.45em;
 	letter-spacing: 0.075em;
 	-webkit-transition: all 333ms ease-in-out;
-  -moz-transition: all 333ms ease-in-out;
-  -o-transition: all 333ms ease-in-out;
-  -ms-transition: all 333ms ease-in-out;
-  transition: all 333ms ease-in-out;
+	-moz-transition: all 333ms ease-in-out;
+	-o-transition: all 333ms ease-in-out;
+	-ms-transition: all 333ms ease-in-out;
+	transition: all 333ms ease-in-out;
 }
-form .field label + span {
+
+form .field label+span {
 	opacity: 0;
 	color: white;
 	display: block;
@@ -932,81 +919,97 @@ form .field label + span {
 	font-size: 2.5em;
 	text-shadow: 1px 2px 0 #d4a12d;
 	-webkit-transition: all 333ms ease-in-out;
-  -moz-transition: all 333ms ease-in-out;
-  -o-transition: all 333ms ease-in-out;
-  -ms-transition: all 333ms ease-in-out;
-  transition: all 333ms ease-in-out;
+	-moz-transition: all 333ms ease-in-out;
+	-o-transition: all 333ms ease-in-out;
+	-ms-transition: all 333ms ease-in-out;
+	transition: all 333ms ease-in-out;
 }
-form .field input[type="text"], form .field textarea {
+
+form .field input[type="text"],
+form .field textarea {
 	border: none;
 	background: #e8e9ea;
 	width: 100%;
 	margin: 0;
 	padding: 18px 0;
-  padding-left: 19.5%;
-  color: #313a3d;
-  font-size: 1.4em;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-}
-form .field input[type="text"]#msg, form .field textarea#msg {
-  height: 52px;
-  resize: none;
-  -webkit-transition: all 333ms ease-in-out;
-  -moz-transition: all 333ms ease-in-out;
-  -o-transition: all 333ms ease-in-out;
-  -ms-transition: all 333ms ease-in-out;
-  transition: all 333ms ease-in-out;
-}
-form .field input[type="text"]:focus,form .field textarea:focus,
-form .field input[type="text"].focused,form .field textarea.focused {
-  outline: none;
+	padding-left: 19.5%;
+	color: #313a3d;
+	font-size: 1.4em;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
 }
 
-form .field input[type="text"]:focus#msg, form .field textarea:focus#msg,
-form .field input[type="text"].focused#msg, form .field textarea.focused#msg {
-  padding-bottom: 200px;
+form .field input[type="text"]#msg,
+form .field textarea#msg {
+	height: 52px;
+	resize: none;
+	-webkit-transition: all 333ms ease-in-out;
+	-moz-transition: all 333ms ease-in-out;
+	-o-transition: all 333ms ease-in-out;
+	-ms-transition: all 333ms ease-in-out;
+	transition: all 333ms ease-in-out;
 }
-form .field input[type="text"]:focus + label, form .field textarea:focus + label,
-form .field input[type="text"].focused + label, form .field textarea.focused + label {
-  width: 18%;
-  background: #d4a12d;
-  color: #05124d;
+
+form .field input[type="text"]:focus,
+form .field textarea:focus,
+form .field input[type="text"].focused,
+form .field textarea.focused {
+	outline: none;
 }
-form .field input[type="text"].focused + label,
-form .field textarea.focused + label {
-  color: #d4a12d;
+
+form .field input[type="text"]:focus#msg,
+form .field textarea:focus#msg,
+form .field input[type="text"].focused#msg,
+form .field textarea.focused#msg {
+	padding-bottom: 200px;
+}
+
+form .field input[type="text"]:focus+label,
+form .field textarea:focus+label,
+form .field input[type="text"].focused+label,
+form .field textarea.focused+label {
+	width: 18%;
+	background: #d4a12d;
+	color: #05124d;
+}
+
+form .field input[type="text"].focused+label,
+form .field textarea.focused+label {
+	color: #d4a12d;
 }
 
 form .field:hover label {
-  width: 18%;
-  background: #05124d;
-  color: white;
+	width: 18%;
+	background: #05124d;
+	color: white;
 }
+
 form input[type="submit"] {
-  background: #d4a12d;
-  color: white;
-  -webkit-appearance: none;
+	background: #d4a12d;
+	color: white;
+	-webkit-appearance: none;
 	border: none;
 	cursor: pointer;
-  text-transform: uppercase;
+	text-transform: uppercase;
 	position: relative;
-  padding: 13px 50px;
-  font-size: 1.4em;
-  letter-spacing: 0.1em;
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
-  -webkit-transition: all 333ms ease-in-out;
-  -moz-transition: all 333ms ease-in-out;
-  -o-transition: all 333ms ease-in-out;
-  -ms-transition: all 333ms ease-in-out;
-  transition: all 333ms ease-in-out;
+	padding: 13px 50px;
+	font-size: 1.4em;
+	letter-spacing: 0.1em;
+	font-family: 'spartan_regular', sans-serif;
+	font-weight: 300;
+	-webkit-transition: all 333ms ease-in-out;
+	-moz-transition: all 333ms ease-in-out;
+	-o-transition: all 333ms ease-in-out;
+	-ms-transition: all 333ms ease-in-out;
+	transition: all 333ms ease-in-out;
 }
+
 form input[type="submit"]:hover {
-  background: #05124d;
-  color: #d4a12d;
+	background: #05124d;
+	color: #d4a12d;
 }
+
 form input[type="submit"]:focus {
-  outline: none;
-  background: #d4a12d;
+	outline: none;
+	background: #d4a12d;
 }
