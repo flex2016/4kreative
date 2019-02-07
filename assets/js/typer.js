@@ -91,7 +91,7 @@ var Cursor = function (element) {
   this.cursorDisplay = element.dataset.cursordisplay || "_";
   element.innerHTML = this.cursorDisplay;
   this.on = true;
-  element.style.transition = "all 0.1s";
+  element.style.transition = "all 0s";
   var myself = this;
   this.interval = setInterval(function () {
     myself.updateBlinkState();
@@ -102,7 +102,7 @@ Cursor.prototype.updateBlinkState = function () {
     this.element.style.opacity = "0";
     this.on = false;
   } else {
-    this.element.style.opacity = "0.9";
+    this.element.style.opacity = "1";
     this.on = true;
   }
 }
