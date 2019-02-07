@@ -352,17 +352,24 @@ section h2.title {
 	margin-right: 0px;
 }
 
+.fa {
+	border-bottom: 1px solid #3ee7d6;
+}
+
 
 /* -------------HERO--------------------- */
 
 .kreative {
 	position: relative;
+	font-family: 'spartan_regular', sans-serif;
 	margin: -0.5em 0 1em 0;
 	text-transform: uppercase;
 	letter-spacing: 3rem;
 	font-size: 7rem;
 	font-weight: bold;
-	opacity: .1;
+	opacity: .5;
+	color: #e8e8e8;
+	text-shadow: 8px 4px 0px #3ee7d6;
 }
 
 .social__main_list {
@@ -544,13 +551,11 @@ header nav li {
 }
 
 .button span {
-	vertical-align: 1px;
-	color: #c5c6ca;
-	font-size: 26px;
+	color: #3ee7d6;
 }
 
 .button {
-	padding: 1px 14px 8px 14px;
+	padding: 2px 14px 2px 14px;
 	margin: 5%;
 	font-weight: 600;
 	position: relative;
