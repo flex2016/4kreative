@@ -544,7 +544,9 @@ header nav li {
 	width: 100%;
 	justify-content: center;
 	padding: 0;
+	opacity: 0;
 	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+	animation: fade 1s forwards 4s ease-in;
 }
 
 .button span {
@@ -619,6 +621,21 @@ header nav li {
 
 #next {
 	vertical-align: 2px;
+}
+
+
+@keyframes fade {
+	0% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 0.5;
+	}
+
+	100% {
+		opacity: 1;
+	}
 }
 
 /*Work Section*/
