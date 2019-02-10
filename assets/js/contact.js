@@ -1,42 +1,31 @@
-// Input Lock
-$('textarea').blur(function () {
-  $('#contact textarea').each(function () {
-      $this = $(this);
-      if ( this.value != '' ) {
-        $this.addClass('focused');
-        $('textarea + label + span').css({'opacity': 1});
+$(document).ready(function() {
+  $("#slider-range-min").slider({
+    range: "min",
+    step: 100,
+    value: 1200,
+    min: 0,
+    max: 15000,
+    slide: function(event, ui) {
+      $("#amount").val("$" + ui.value);
+    },
+    change: function(event, ui) {
+      if (ui.value === 0) {
+        $("#amount").val("To be determined");
+      } else if (ui.value === 15000) {
+        $("#amount").val("$" + "15000 or more");
+      } else {
+        $("#amount").val("$" + $("#slider-range-min").slider("value"));
       }
-      else {
-        $this.removeClass('focused');
-        $('textarea + label + span').css({'opacity': 0});
-      }
+    }
   });
+  $("#amount").val("$" + $("#slider-range-min").slider("value"));
+
 });
 
-$('#contact .field:first-child input').blur(function () {
-  $('#contact .field:first-child input').each(function () {
-      $this = $(this);
-      if ( this.value != '' ) {
-        $this.addClass('focused');
-        $('.field:first-child input + label + span').css({'opacity': 1});
-      }
-      else {
-        $this.removeClass('focused');
-        $('.field:first-child input + label + span').css({'opacity': 0});
-      }
-  });
-});
+$(document).ready(function() {
 
-$('#contact .field:nth-child(2) input').blur(function () {
-  $('#contact .field:nth-child(2) input').each(function () {
-      $this = $(this);
-      if ( this.value != '' ) {
-        $this.addClass('focused');
-        $('.field:nth-child(2) input + label + span').css({'opacity': 1});
-      }
-      else {
-        $this.removeClass('focused');
-        $('.field:nth-child(2) input + label + span').css({'opacity': 0});
-      }
-  });
+  // -- autosize init --
+
+  autosize($('textarea'));
+
 });

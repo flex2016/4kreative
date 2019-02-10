@@ -6,7 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>4Kreative</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
   <link rel="stylesheet" href="assets/css/styles.css">
+
 </head>
 <body>
   <div class="screen-wipe-top"></div>
@@ -51,38 +53,43 @@
       <div class="bg-layer"></div>
     </div><!-- Ink Transition -->
     <section id="contact">
-        <h1>Contact Me</h1>
+      <h1>Contact Me</h1>
+      <form>
+        <ul class="contact-form">
+          <li class= "contact-input">
+              <input name="name" placeholder="Your Name" required="required" size="8" type="text">
+              <input name="email" placeholder="Email" required="required" size="8" type="email">
+          </li>
+          <li class= "contact-input">
+              <input name="phone" placeholder="Phonenumber" required="required" size="8" type="text">
+              <input name="company" placeholder="Company/Agency" required="required" size="8" type="text">
+          </li>
+          <li class= "contact-details">
+              <label>Budget Estimate </label>
+              <div id="slider-range-min"></div>
+              <input type="text" id="amount" readonly>
+          </li>
+          <li class= "contact-details">
+              <textarea class="span12" name="details" placeholder="Project Details" required="required"></textarea>
+          </li>
 
-        <form>
-            <div class="field name-box">
-                <input type="text" id="name" placeholder="Who Are You?"/>
-                <label for="name">Name</label>
-                <span class="ss-icon"><i class="fa fa-check" aria-hidden="true"></i></span>
-            </div>
-
-            <div class="field email-box">
-                <input type="text" id="email" placeholder="name@email.com"/>
-                <label for="email">Email</label>
-                <span class="ss-icon"><i class="fa fa-check" aria-hidden="true"></i></span>
-            </div>
-
-            <div class="field msg-box">
-                <textarea id="msg" rows="8" placeholder="Your message goes here..."/></textarea>
-                <label for="msg">Msg</label>
-                <span class="ss-icon"><i class="fa fa-check" aria-hidden="true"></i></span>
-            </div>
-
-            <input class="submit" type="submit" value="Send" />
+          <li>
+              <button type="submit">Submit <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></button>
+          </li>
+        </ul>
       </form>
     </section>
     </div>
   </div>
 
   <script src="assets/js/vendor/jquery-2.1.4.min.js"></script>
+
+  <script src="https://ajax.aspnetcdn.com/ajax/jquery.ui/1.11.2/jquery-ui.min.js"></script>
   <script src="assets/js/vendor/barba.min.js" type="text/javascript"></script>
   <script src="assets/js/transition.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
   <script src="assets/js/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/autosize.js/4.0.2/autosize.min.js"></script>
   <script src="assets/js/contact.js"></script>
 
 </body>
