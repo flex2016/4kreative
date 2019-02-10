@@ -96,7 +96,7 @@ function smokeeffect () {
     //close modal window
     modalWindow.on('click', '.modal-close', function(event){
         event.preventDefault();
-        $(".ui-slider-handle").show(1500);
+        $(".ui-slider-handle").show(1000);
         transitionLayer.addClass('closing');
         modalWindow.removeClass('visible');
         transitionBackground.one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(){
