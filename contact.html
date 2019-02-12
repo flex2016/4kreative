@@ -54,11 +54,11 @@
     </div><!-- Ink Transition -->
     <section id="contact">
       <h1>Contact Me</h1>
-      <form>
+      <form action = "https://formspree.io/mail.4kreative@gmail.com" method="POST">
         <ul class="contact-form">
           <li class= "contact-input">
               <input name="name" placeholder="Your Name" required="required" size="8" type="text">
-              <input name="email" placeholder="Email" required="required" size="8" type="email">
+              <input name="email" name = "_replyto" placeholder="Email" required="required" size="8" type="email">
           </li>
           <li class= "contact-input">
               <input name="phone" placeholder="Phonenumber" required="required" size="8" type="text">
@@ -67,10 +67,10 @@
           <li class= "contact-details">
               <label>Budget Estimate </label>
               <div id="slider-range-min"></div>
-              <input type="text" id="amount" readonly>
+              <input name = "amount" type="text" id="amount" readonly>
           </li>
           <li class= "contact-details">
-              <textarea class="span12" name="details" placeholder="Project Details" required="required"></textarea>
+              <textarea class="span12" name="message" placeholder="Project Details" required="required"></textarea>
           </li>
 
           <li>
@@ -83,14 +83,14 @@
   </div>
 
   <script src="assets/js/vendor/jquery-2.1.4.min.js"></script>
-
   <script src="https://ajax.aspnetcdn.com/ajax/jquery.ui/1.11.2/jquery-ui.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/autosize.js/4.0.2/autosize.min.js"></script>
+  <script src="assets/js/contact.js"></script>
   <script src="assets/js/vendor/barba.min.js" type="text/javascript"></script>
   <script src="assets/js/transition.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
   <script src="assets/js/script.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/autosize.js/4.0.2/autosize.min.js"></script>
-  <script src="assets/js/contact.js"></script>
+
 
 </body>
 
