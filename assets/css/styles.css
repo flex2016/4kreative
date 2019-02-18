@@ -64,14 +64,21 @@ section:not(.hero):nth-child(even) {
 	color: #333;
 }
 
-section h2.title {
+section h2.title_about {
 	text-transform: capitalize;
-	font: bold 60px "Open Sans", sans-serif;
+	font: bold 5rem 'sk', sans-serif;
 	margin-bottom: 30px;
 	text-align: center;
 	color: #333;
 }
 
+section h2.title_about::after {
+	content: '\00a0';
+	display: block;
+	height: 8px;
+	margin-top: 1rem;
+	background: #333;
+}
 
 /* -------------------Screen Wipe-------------------------- */
 
