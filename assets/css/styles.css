@@ -1037,14 +1037,15 @@ img {
 }
 
 .contact-form button {
+	margin-top: 2rem;
 	color: lightgrey;
 	background: rgba(34, 34, 34, 0.0);
-	border: 3px solid #db4d57;
+	border: 3px solid #3ee7d6;
 	height: 74px;
 	width: 200px;
 	float: right;
 	font-weight: 700;
-	font-size: 12px;
+	font-size: 1rem;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	transition: ease-in-out 0.25s;
@@ -1055,11 +1056,14 @@ img {
 }
 
 .contact-form button:hover {
-	background: #db4d57;
-	color: lightgrey;
+	background: #3ee7d6;
+	color: white;
+	transform: scale(1.2);
+	transition-duration: 100ms;
 }
 
 .contact-form button:hover span {
 	padding-left: 10px;
 	color: white;
+
 }
