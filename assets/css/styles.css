@@ -886,18 +886,22 @@ img {
 
 
 /*Packages Section*/
-
-.packages .grid li {
+.services h3 {
+	color: #000;
+	font-size: 3.5rem;
+	letter-spacing: .2rem;
+}
+.services .grid li {
 	padding: 50px;
 	flex-basis: 50%;
 	text-align: center;
 }
 
-.packages .grid li i {
+.services .grid li i {
 	color: #8c9eff;
 }
 
-.packages .grid li h4 {
+.services .grid li h4 {
 	font-size: 30px;
 	margin: 25px 0;
 }
