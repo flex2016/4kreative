@@ -1090,4 +1090,12 @@ img {
 		font: normal .8rem spartan_regular, sans-serif;
 
 	}
+	.work-thumbnails {
+	display: none;
+	}
+	.work-content{
+		width: 80%;
+		right: 10%;
+		margin-bottom: 2rem;
+	}
 }
