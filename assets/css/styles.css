@@ -17,7 +17,7 @@
 }
 
 html {
-	font: normal 16px spartan_regular, sans-serif;
+	font: normal 1rem spartan_regular, sans-serif;
 	color: #fff;
 }
 
@@ -885,7 +885,7 @@ img {
 
 
 
-/*Packages Section*/
+/*Services Section*/
 .services h3 {
 	color: #000;
 	font-size: 3.5rem;
@@ -1066,4 +1066,28 @@ img {
 	padding-left: 10px;
 	color: white;
 
+}
+
+@media (max-width: 1100px) {
+	body {
+		overflow: visible;
+
+	}
+	section{
+		padding: 100px 20px;
+	}
+	.services .grid li {
+		flex-basis: 100%;
+	}
+}
+
+@media (max-width: 1000px) {
+
+}
+
+@media (max-width: 800px){
+	html {
+		font: normal .8rem spartan_regular, sans-serif;
+
+	}
 }
