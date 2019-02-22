@@ -17,9 +17,22 @@
 }
 
 html {
-	font: normal 1rem spartan_regular, sans-serif;
-	color: #fff;
-}
+	color: #ffffff;
+	/* This defines what 1rem is */
+	font-size: normal 62.5% spartan_regular, sans-serif;; }
+	/* 1rem = 10px; 10px/16px =62.5% */
+  @media only screen and (max-width: 75em) {
+    html {
+			/* 1 rem = 9px, 9/16 = 50% */
+			font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+			/* 1 rem = 8px, 8/16 = 50% */
+			font-size: 50%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+			/* 1rem = 12, 12/16 */
+      font-size: 75%; } }
 
 body {
 	overflow: hidden;
@@ -911,7 +924,7 @@ img {
 
 #contact h1 {
 	color: #05124d;
-	margin: 2.5rem;
+	margin: .25rem 1.5rem;
 	font-size: 3.5rem;
 	text-align: center;
 	text-transform: uppercase;
@@ -925,52 +938,39 @@ img {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	padding: 2rem 12rem;
 }
 
-.contact-form input {
-	padding: 2rem;
+.contact-input{
+	flex-basis: 50%;
+	padding: 0 2rem;
 }
 
-.contact-input {
-
-	padding: 3.5rem;
-}
-
-.contact-budget {
-	flex-basis: 60%;
+.contact-budget{
+	flex-basis: 100%;
 	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
+	padding: 1rem 3.5rem;
 }
 
 .contact-budget div {
-	flex-basis: 50%;
+	flex-basis: 80%;
 }
 
 .contact-budget label,
 .contact-budget input {
 	flex-basis: 20%;
 }
-.contact-details {
-	flex-basis: 60%;
-	display: flex;
-	justify-content: center;
-}
 
-.contact-details div {
-	flex-basis: 50%;
-}
-
-.contact-details label,
-.contact-details input {
-	flex-basis: 20%;
+.contact-details{
+	flex-basis: 100%;
+	padding: 0 1rem;
 }
 
 .contact-form input,
 .contact-form textarea,
 .contact-form select {
 	width: 100%;
-	margin: 0;
+	margin: 1.2rem;
 	padding-bottom: .4em;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -982,7 +982,7 @@ img {
 	font-family: 'Roboto', sans-serif;
 	color: lightgrey;
 	font-weight: 700;
-	font-size: 18px;
+	font-size: 1.8rem;
 	transition: ease-in-out 0.25s;
 }
 
@@ -996,14 +996,14 @@ img {
 }
 
 .contact-form ::-webkit-input-placeholder {
-	font-size: 12px;
+	font-size: 1rem;
 	color: slategrey;
 	text-transform: uppercase;
 	font-weight: 400;
 }
 
 .contact-form label {
-	font-size: 12px;
+	font-size: 1rem;
 	color: slategrey;
 	text-transform: uppercase;
 	font-weight: 400;
@@ -1047,8 +1047,8 @@ img {
 	border: 0;
 	color: lightgrey;
 	font-weight: 400;
-	font-size: 28px;
-	padding-top: 1.1em;
+	font-size: 1.8rem;
+
 	letter-spacing: 3px;
 }
 
@@ -1102,10 +1102,7 @@ img {
 }
 
 @media (max-width: 800px){
-	html {
-		font: normal .8rem spartan_regular, sans-serif;
 
-	}
 	.work-thumbnails {
 	display: none;
 	}
