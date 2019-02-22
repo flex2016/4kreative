@@ -949,7 +949,7 @@ img {
 .contact-budget{
 	flex-basis: 100%;
 	display: flex;
-	padding: 1rem 3.5rem;
+	padding: 1rem 3.1rem;
 }
 
 .contact-budget div {
@@ -963,15 +963,14 @@ img {
 
 .contact-details{
 	flex-basis: 100%;
-	padding: 0 1rem;
+	padding: 0 2rem;
 }
 
 .contact-form input,
 .contact-form textarea,
 .contact-form select {
 	width: 100%;
-	margin: 1.2rem;
-	padding-bottom: .4em;
+	margin: 1rem;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
@@ -982,12 +981,12 @@ img {
 	font-family: 'Roboto', sans-serif;
 	color: lightgrey;
 	font-weight: 700;
-	font-size: 1.8rem;
+	font-size: 1.2rem;
 	transition: ease-in-out 0.25s;
 }
 
 .contact-form textarea {
-	min-height: 50px;
+	min-height: 3rem;
 	max-height: 500px;
 	white-space: pre-wrap;
 	word-wrap: break-word;
