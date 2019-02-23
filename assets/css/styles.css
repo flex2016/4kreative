@@ -752,17 +752,22 @@ img {
 }
 
 .work-article {
-	padding: 1.5rem;
+	padding: 2.5rem;
 	width: 100%;
 	margin-right: -100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 }
+.work-article a{
+	padding: .5rem;
+	width: 100%;
+	margin-right: -100%;
+}
 
 .work-paragraph {
 	margin: 0;
-	font-size: 0.7rem;
+	font-size: 1.2rem;
 	line-height: 1.7;
 }
 
@@ -800,7 +805,7 @@ img {
 .work-heading {
 	margin: 0;
 	margin-bottom: 0.5rem;
-	font-size: 1rem;
+	font-size: 2rem;
 	font-weight: normal;
 }
 
