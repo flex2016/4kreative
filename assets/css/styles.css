@@ -18,8 +18,9 @@
 
 html {
 	color: #ffffff;
+	font-family: spartan_regular, sans-serif;
 	/* This defines what 1rem is */
-	font-size: normal 62.5% spartan_regular, sans-serif;; }
+	font-size: 62.5%; }
 	/* 1rem = 10px; 10px/16px =62.5% */
   @media only screen and (max-width: 75em) {
     html {
@@ -921,7 +922,9 @@ img {
 
 
 /*Contact Section*/
-
+#contact{
+	padding: 8rem;
+}
 #contact h1 {
 	color: #05124d;
 	margin: .25rem 1.5rem;
@@ -938,7 +941,6 @@ img {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	padding: 2rem 12rem;
 }
 
 .contact-input{
@@ -1092,6 +1094,12 @@ img {
 		padding: 100px 20px;
 	}
 	.services .grid li {
+		flex-basis: 100%;
+	}
+	#contact-form{
+		padding:  2rem 20rem;
+	}
+	.contact-form li{
 		flex-basis: 100%;
 	}
 }
