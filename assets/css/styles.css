@@ -137,7 +137,7 @@ section h2.title_about::after {
 /* ------------------Menu --------------*/
 
 .nav-icon {
-	width: 2rem;
+	width: 3rem;
 	height: 1.2rem;
 	top: 2.5rem;
 	right: 2rem;
@@ -167,7 +167,7 @@ section h2.title_about::after {
 }
 
 .nav-icon span:nth-child(3) {
-	top: 1rem;
+	top: 1.1rem;
 	width: 60%;
 	right: 0;
 }
@@ -927,8 +927,8 @@ img {
 }
 #contact h1 {
 	color: #05124d;
-	margin: .25rem 1.5rem;
-	font-size: 3.5rem;
+	margin: 5rem 1.5rem;
+	font-size: 4.5rem;
 	text-align: center;
 	text-transform: uppercase;
 	font-family: 'spartan_regular', sans-serif;
@@ -941,17 +941,23 @@ img {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	padding: 0 28rem;
 }
 
 .contact-input{
 	flex-basis: 50%;
 	padding: 0 2rem;
+	margin-bottom: 2rem;
+}
+.contact-input input{
+	padding: 1rem 0;
 }
 
 .contact-budget{
 	flex-basis: 100%;
 	display: flex;
 	padding: 1rem 3.1rem;
+	margin-bottom: 2rem;
 }
 
 .contact-budget div {
@@ -981,9 +987,9 @@ img {
 	border-left: 0px;
 	border-bottom: 3px solid slategrey;
 	font-family: 'Roboto', sans-serif;
-	color: lightgrey;
+	color: rgb(0, 0, 0);
 	font-weight: 700;
-	font-size: 1.2rem;
+	font-size: 1.8rem;
 	transition: ease-in-out 0.25s;
 }
 
@@ -997,14 +1003,14 @@ img {
 }
 
 .contact-form ::-webkit-input-placeholder {
-	font-size: 1rem;
+	font-size: 1.3rem;
 	color: slategrey;
 	text-transform: uppercase;
 	font-weight: 400;
 }
 
 .contact-form label {
-	font-size: 1rem;
+	font-size: 1.3rem;
 	color: slategrey;
 	text-transform: uppercase;
 	font-weight: 400;
@@ -1058,11 +1064,11 @@ img {
 	color: lightgrey;
 	background: rgba(34, 34, 34, 0.0);
 	border: 3px solid #3ee7d6;
-	height: 74px;
-	width: 200px;
+	height: 7.4rem;
+	width: 20rem;
 	float: right;
 	font-weight: 700;
-	font-size: 1rem;
+	font-size: 1.5rem;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	transition: ease-in-out 0.25s;
@@ -1084,7 +1090,11 @@ img {
 	color: white;
 
 }
-
+@media (max-width: 1500px) {
+	.contact-form{
+		padding:  2rem 10rem;
+	}
+}
 @media (max-width: 1100px) {
 	body {
 		overflow: visible;
@@ -1094,12 +1104,6 @@ img {
 		padding: 100px 20px;
 	}
 	.services .grid li {
-		flex-basis: 100%;
-	}
-	#contact-form{
-		padding:  2rem 20rem;
-	}
-	.contact-form li{
 		flex-basis: 100%;
 	}
 }
@@ -1117,5 +1121,21 @@ img {
 		width: 80%;
 		right: 10%;
 		margin-bottom: 2rem;
+	}
+
+	.contact-form{
+		padding:  2rem 5rem;
+	}
+	.contact-form li{
+		flex-basis: 100%;
+	}
+}
+
+@media (max-width: 600px) {
+	#contact{
+		padding: 8rem 4.5rem;
+	}
+	.contact-form{
+		padding:  2rem 0;
 	}
 }
