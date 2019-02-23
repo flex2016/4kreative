@@ -139,8 +139,8 @@ section h2.title_about::after {
 .nav-icon {
 	width: 3rem;
 	height: 1.2rem;
-	top: 2.5rem;
-	right: 2rem;
+	top: 3.5rem;
+	right: 4rem;
 	position: absolute;
 	transition: .5s ease-in-out;
 	cursor: pointer;
