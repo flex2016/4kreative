@@ -902,7 +902,7 @@ img {
 /*Services Section*/
 .services h3 {
 	color: #000;
-	font-size: 3.5rem;
+	font-size: 6rem;
 	letter-spacing: .2rem;
 }
 .services .grid li {
@@ -916,10 +916,13 @@ img {
 }
 
 .services .grid li h4 {
-	font-size: 30px;
-	margin: 25px 0;
+	font-size: 3rem;
+	margin: 2.5rem 0;
 }
+.services .grid li p {
+	font-size: 1.5rem;
 
+}
 
 /*Contact Section*/
 #contact{
@@ -1040,7 +1043,7 @@ img {
 
 .contact-form #slider-range-min .ui-slider-handle {
 	outline: 0;
-	top: 1.1em;
+	top: 1rem;
 	margin-left: -0.6em;
 	width: 20px;
 	height: 20px;
@@ -1109,7 +1112,9 @@ img {
 }
 
 @media (max-width: 1000px) {
-
+	.contact-form #slider-range-min .ui-slider-handle {
+		top: .8rem;
+	}
 }
 
 @media (max-width: 800px){
