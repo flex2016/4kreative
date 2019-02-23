@@ -1135,7 +1135,20 @@ img {
 	#contact{
 		padding: 8rem 4.5rem;
 	}
+	#contact h1{
+		margin:8rem 0 3rem 0;
+	}
+	.contact-budget div {
+    flex-basis: 58%;
+	}
 	.contact-form{
 		padding:  2rem 0;
+	}
+	.contact-budget{
+		padding: 0 1rem 2rem 3.1rem;
+	}
+	.contact-form #amount{
+		letter-spacing: 0;
+		margin: 0;
 	}
 }
