@@ -383,8 +383,8 @@ section h2.title_about::after {
 	position: relative;
 	margin: -0.5em 0 1em .5em;
 	text-transform: uppercase;
-	letter-spacing: 4rem;
-	font-size: 7rem;
+	letter-spacing: 6rem;
+	font-size: 9rem;
 	font-weight: bold;
 	opacity: .1;
 	text-shadow: 6px 5px 0 #3ee7d6;
@@ -393,7 +393,7 @@ section h2.title_about::after {
 .social__main_list {
 	text-transform: uppercase;
 	letter-spacing: 3px;
-	font-size: 0.8em;
+	font-size: 1.2rem;
 	margin: 0 auto;
 	position: absolute;
 	right: -20px;
@@ -493,7 +493,7 @@ header nav li {
 	transform: rotate(90deg);
 	text-transform: uppercase;
 	letter-spacing: 3px;
-	font-size: 0.8em;
+	font-size: 1rem;
 	margin: 0 auto;
 	position: absolute;
 	left: -20px;
@@ -523,7 +523,7 @@ header nav li {
 }
 
 .hero h1 {
-	font: bold 5rem 'sk', sans-serif;
+	font: bold 7rem 'sk', sans-serif;
 	color: #222;
 }
 
@@ -538,7 +538,7 @@ header nav li {
 
 .typing {
 	font-family: 'spartan_regular', sans-serif;
-	font-size: 1.4rem;
+	font-size: 1.8rem;
 	opacity: 0;
 	animation: appear 0.8s ease-in forwards;
 	animation-delay: 2.9s;
@@ -617,7 +617,7 @@ header nav li {
 
 .button a {
 	color: #222;
-	font-size: 1.2rem;
+	font-size: 2rem;
 	font-family: spartan_regular, sans-serif;
 	text-decoration: none;
 }
