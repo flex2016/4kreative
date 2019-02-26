@@ -20,20 +20,30 @@ html {
 	color: #ffffff;
 	font-family: spartan_regular, sans-serif;
 	/* This defines what 1rem is */
-	font-size: 62.5%; }
-	/* 1rem = 10px; 10px/16px =62.5% */
-  @media only screen and (max-width: 75em) {
-    html {
-			/* 1 rem = 9px, 9/16 = 50% */
-			font-size: 56.25%; } }
-  @media only screen and (max-width: 56.25em) {
-    html {
-			/* 1 rem = 8px, 8/16 = 50% */
-			font-size: 50%; } }
-  @media only screen and (min-width: 112.5em) {
-    html {
-			/* 1rem = 12, 12/16 */
-      font-size: 75%; } }
+	font-size: 62.5%;
+}
+
+/* 1rem = 10px; 10px/16px =62.5% */
+@media only screen and (max-width: 75em) {
+	html {
+		/* 1 rem = 9px, 9/16 = 50% */
+		font-size: 56.25%;
+	}
+}
+
+@media only screen and (max-width: 56.25em) {
+	html {
+		/* 1 rem = 8px, 8/16 = 50% */
+		font-size: 50%;
+	}
+}
+
+@media only screen and (min-width: 112.5em) {
+	html {
+		/* 1rem = 12, 12/16 */
+		font-size: 75%;
+	}
+}
 
 body {
 	overflow: hidden;
@@ -759,7 +769,8 @@ img {
 	flex-direction: column;
 	justify-content: center;
 }
-.work-article a{
+
+.work-article a {
 	padding: .5rem;
 	width: 100%;
 	margin-right: -100%;
@@ -910,6 +921,7 @@ img {
 	font-size: 6rem;
 	letter-spacing: .2rem;
 }
+
 .services .grid li {
 	padding: 50px;
 	flex-basis: 50%;
@@ -924,15 +936,17 @@ img {
 	font-size: 3rem;
 	margin: 2.5rem 0;
 }
+
 .services .grid li p {
 	font-size: 1.5rem;
 
 }
 
 /*Contact Section*/
-#contact{
+#contact {
 	padding: 8rem;
 }
+
 #contact h1 {
 	color: #05124d;
 	margin: 5rem 1.5rem;
@@ -952,16 +966,17 @@ img {
 	padding: 0 28rem;
 }
 
-.contact-input{
+.contact-input {
 	flex-basis: 50%;
 	padding: 0 2rem;
 	margin-bottom: 2rem;
 }
-.contact-input input{
+
+.contact-input input {
 	padding: 1rem 0;
 }
 
-.contact-budget{
+.contact-budget {
 	flex-basis: 100%;
 	display: flex;
 	padding: 1rem 3.1rem;
@@ -977,7 +992,7 @@ img {
 	flex-basis: 20%;
 }
 
-.contact-details{
+.contact-details {
 	flex-basis: 100%;
 	padding: 0 2rem;
 }
@@ -1098,19 +1113,23 @@ img {
 	color: white;
 
 }
+
 @media (max-width: 1500px) {
-	.contact-form{
-		padding:  2rem 10rem;
+	.contact-form {
+		padding: 2rem 10rem;
 	}
 }
+
 @media (max-width: 1100px) {
 	body {
 		overflow: visible;
 
 	}
-	section{
+
+	section {
 		padding: 100px 20px;
 	}
+
 	.services .grid li {
 		flex-basis: 100%;
 	}
@@ -1122,42 +1141,49 @@ img {
 	}
 }
 
-@media (max-width: 800px){
+@media (max-width: 800px) {
 
 	.work-thumbnails {
-	display: none;
+		display: none;
 	}
-	.work-content{
+
+	.work-content {
 		width: 80%;
 		right: 10%;
 		margin-bottom: 2rem;
 	}
 
-	.contact-form{
-		padding:  2rem 5rem;
+	.contact-form {
+		padding: 2rem 5rem;
 	}
-	.contact-form li{
+
+	.contact-form li {
 		flex-basis: 100%;
 	}
 }
 
 @media (max-width: 600px) {
-	#contact{
+	#contact {
 		padding: 8rem 4.5rem;
 	}
-	#contact h1{
-		margin:8rem 0 3rem 0;
+
+	#contact h1 {
+		margin: 8rem 0 3rem 0;
 	}
+
 	.contact-budget div {
-    flex-basis: 58%;
+		flex-basis: 58%;
 	}
-	.contact-form{
-		padding:  2rem 0;
+
+	.contact-form {
+		padding: 2rem 0;
 	}
-	.contact-budget{
+
+	.contact-budget {
 		padding: 0 1rem 2rem 3.1rem;
 	}
-	.contact-form #amount{
+
+	.contact-form #amount {
 		letter-spacing: 0;
 		margin: 0;
 	}
