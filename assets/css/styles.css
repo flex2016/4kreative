@@ -80,30 +80,6 @@ section:not(.hero):nth-child(even) {
 	background-color: #fff;
 }
 
-.grid {
-	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	color: #333;
-}
-
-section h2.title_about {
-	text-transform: capitalize;
-	font: bold 5rem 'sk', sans-serif;
-	margin-bottom: 30px;
-	text-align: center;
-	color: #333;
-}
-
-section h2.title_about::after {
-	content: '\00a0';
-	display: block;
-	height: 8px;
-	margin-top: 1rem;
-	background: #333;
-}
-
 /* -------------------Screen Wipe-------------------------- */
 
 .screen-wipe-top {
@@ -667,6 +643,46 @@ header nav li {
 	100% {
 		opacity: 1;
 	}
+}
+
+/* About Section */
+
+section h2.title_about {
+	text-transform: capitalize;
+	font: bold 6rem 'sk', sans-serif;
+	margin-bottom: 30px;
+	text-align: center;
+	color: #333;
+}
+
+section h2.title_about::after {
+	content: '\00a0';
+	display: block;
+	height: 6px;
+	margin-top: 1rem;
+	background: #333;
+}
+
+.grid {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	color: #333;
+}
+
+li>h3 {
+	font: 4rem 'spartan_regular', sans-serif;
+}
+
+li>p {
+	font: 1.5rem 'spartan_regular', sans-serif;
+}
+
+.who_we_are,
+.our_process {
+	text-align: center;
+	margin: 2rem;
 }
 
 /*Work Section*/
