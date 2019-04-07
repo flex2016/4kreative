@@ -668,6 +668,20 @@ header nav li {
 
 /* About Section */
 
+h4 {
+  text-align: left;
+  font: 2rem "spartan_regular", sans-serif;
+  width: 400px;
+}
+
+.highlight {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, #3ee7d6ad 50%);
+}
+
+.first_step {
+  margin-top: 60px;
+}
+
 section h2.title_about {
   text-transform: capitalize;
   font: bold 6rem "sk", sans-serif;
@@ -692,18 +706,22 @@ section h2.title_about::after {
   color: var(--mainBlack);
 }
 
-li > h3 {
+li>h3 {
   font: 4rem "spartan_regular", sans-serif;
 }
 
-li > p {
+li>p {
   font: 1.5rem "spartan_regular", sans-serif;
 }
 
 .who_we_are,
 .our_process {
-  text-align: center;
-  margin: 2rem;
+  text-align: left;
+  margin: 50px;
+}
+
+.who_we_are img {
+  margin-top: 40px;
 }
 
 /*Work Section*/
@@ -777,7 +795,7 @@ img {
   width: 100%;
 }
 
-.work-thumbnail > img {
+.work-thumbnail>img {
   width: auto;
 }
 
@@ -871,7 +889,7 @@ img {
   transition-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
 }
 
-.work-big-image[data-active] ~ .work-big-image {
+.work-big-image[data-active]~.work-big-image {
   transform: translateX(100%);
 }
 
@@ -905,7 +923,7 @@ img {
   z-index: 1;
 }
 
-.work-article[data-active] ~ .work-article {
+.work-article[data-active]~.work-article {
   transform: translateX(100%);
 }
 
@@ -918,12 +936,12 @@ img {
 }
 
 /* ---------------------------------- */
-.work-thumbnail > img {
+.work-thumbnail>img {
   filter: grayscale(100%);
   transition-duration: 0.35s;
 }
 
-.work-thumbnail:active > img {
+.work-thumbnail:active>img {
   transform: scale(0.9);
   transition-duration: 100ms;
 }
@@ -936,8 +954,8 @@ img {
   display: none;
 }
 
-.work-thumbnail[data-active] > img,
-.work-thumbnail:hover > img {
+.work-thumbnail[data-active]>img,
+.work-thumbnail:hover>img {
   filter: grayscale(0%);
 }
 
