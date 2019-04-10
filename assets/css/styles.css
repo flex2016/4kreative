@@ -671,11 +671,21 @@ header nav li {
 h4 {
   text-align: left;
   font: 2rem "spartan_regular", sans-serif;
-  width: 400px;
+  width: 36rem;
+  margin: 4rem;
+}
+
+.who_we_are h4:first-of-type {
+  margin-top: 2.4rem;
 }
 
 .highlight {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, #3ee7d6ad 50%);
+}
+
+.steps {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 70%, #3ee7d6ad 30%);
+  font-weight: bold;
 }
 
 .first_step {
@@ -716,8 +726,8 @@ li>p {
 
 .who_we_are,
 .our_process {
-  text-align: left;
-  margin: 50px;
+  text-align: center;
+  padding: 50px;
 }
 
 .who_we_are img {
