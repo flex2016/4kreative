@@ -668,19 +668,24 @@ header nav li {
 
 /* About Section */
 
-h4 {
+.our_process h4,
+.who_we_are h4 {
   text-align: left;
   font: 2rem "spartan_regular", sans-serif;
-  width: 36rem;
-  margin: 4rem;
+  width: 38rem;
+  margin: 2rem;
 }
 
 .who_we_are h4:first-of-type {
-  margin-top: 2.4rem;
+  margin-top: 4rem;
 }
 
 .highlight {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, #3ee7d6ad 50%);
+}
+
+.highlight2 {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 70%, #3ee7d6ad 30%);
 }
 
 .steps {
@@ -689,13 +694,13 @@ h4 {
 }
 
 .first_step {
-  margin-top: 60px;
+  margin-top: 40px !important;
 }
 
 section h2.title_about {
   text-transform: capitalize;
   font: bold 6rem "sk", sans-serif;
-  margin-bottom: 30px;
+  margin-bottom: 1rem;
   text-align: center;
   color: var(--mainBlack);
 }
@@ -727,11 +732,24 @@ li>p {
 .who_we_are,
 .our_process {
   text-align: center;
-  padding: 50px;
+  padding: 1rem;
+  margin: 2rem 5rem;
 }
 
 .who_we_are img {
-  margin-top: 40px;
+  margin-top: 10px;
+}
+
+.about_buttons {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.about_buttons>.button {
+  margin: 0 20rem;
 }
 
 /*Work Section*/
