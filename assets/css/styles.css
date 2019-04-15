@@ -992,25 +992,39 @@ img {
 }
 
 /*Services Section*/
-.services h3 {
+
+section h2.title_services {
+  text-transform: capitalize;
+  font: bold 6rem "sk", sans-serif;
+  margin-bottom: 1rem;
+  text-align: center;
   color: var(--mainBlack);
-  font-size: 6rem;
-  letter-spacing: 0.2rem;
+}
+
+section h2.title_services::after {
+  content: "\00a0";
+  display: block;
+  height: 6px;
+  margin-top: 1rem;
+  background: var(--mainBlack);
+}
+
+.services h3 {
+  padding: 1rem;
+}
+
+.services h4 {
+  font: 2rem "spartan_regular", sans-serif;
 }
 
 .services .grid li {
-  padding: 50px;
+  padding: 3rem 6rem;
   flex-basis: 50%;
   text-align: center;
 }
 
 .services .grid li i {
-  color: var(--primaryColor);
-}
-
-.services .grid li h4 {
-  font-size: 3rem;
-  margin: 2.5rem 0;
+  color: var(--mainBlack);
 }
 
 .services .grid li p {
