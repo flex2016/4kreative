@@ -766,9 +766,9 @@ img {
 
 .work-big-images {
   position: absolute;
-  height: 70%;
-  width: 50%;
-  left: 15%;
+  /* height: 100%; */
+  width: 46%;
+  left: 24%;
 
   display: flex;
 }
