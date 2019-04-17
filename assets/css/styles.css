@@ -768,7 +768,7 @@ img {
   position: absolute;
   /* height: 100%; */
   width: 46%;
-  left: 24%;
+  left: 22%;
 
   display: flex;
 }
@@ -1210,6 +1210,10 @@ section h2.title_services::after {
 }
 
 @media (max-width: 1500px) {
+  .work-big-images {
+    width: 57%;
+    top: 7%;
+  }
 }
 
 @media (max-width: 1100px) {
@@ -1224,6 +1228,11 @@ section h2.title_services::after {
   .services .grid li {
     flex-basis: 100%;
   }
+  .work-big-images {
+    width: 80%;
+    top: 16%;
+    left: 10%;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -1232,7 +1241,13 @@ section h2.title_services::after {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-height: 800px) {
+  .work-big-images {
+    width: 60%;
+    top: 5%;
+    left: 22%;
+  }
+
   .work-thumbnails {
     display: none;
   }
