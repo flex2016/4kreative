@@ -1247,7 +1247,9 @@ section h2.title_services::after {
     top: 5%;
     left: 22%;
   }
+}
 
+@media (max-width: 800px) {
   .work-thumbnails {
     display: none;
   }
@@ -1266,7 +1268,6 @@ section h2.title_services::after {
     flex-basis: 100%;
   }
 }
-
 @media (max-width: 600px) {
   #contact {
     padding: 8rem 4.5rem;
