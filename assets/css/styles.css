@@ -802,7 +802,7 @@ img {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  padding: 0 1rem;
+  padding: 0 4rem;
   padding-top: 0.5rem;
   padding-right: 45%;
   padding-right: calc(45% + 0.5rem);
