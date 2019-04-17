@@ -681,15 +681,15 @@ header nav li {
 }
 
 .highlight {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, #3ee7d6ad 50%);
+  background: linear-gradient(180deg, #ffffff00 70%, #3ee7d6ad 50%);
 }
 
 .highlight2 {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 70%, #3ee7d6ad 30%);
+  background: linear-gradient(180deg, #ffffff00 70%, #3ee7d6ad 30%);
 }
 
 .steps {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 70%, #3ee7d6ad 30%);
+  background: linear-gradient(180deg, #ffffff00 70%, #3ee7d6ad 30%);
   font-weight: bold;
 }
 
