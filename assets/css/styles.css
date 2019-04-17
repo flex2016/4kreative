@@ -829,9 +829,9 @@ img {
 
 .work-content {
   position: absolute;
-  width: 40%;
-  right: 5%;
-  bottom: 0;
+  width: 42%;
+  right: 4rem;
+  bottom: 4rem;
 }
 
 .work-articles {
