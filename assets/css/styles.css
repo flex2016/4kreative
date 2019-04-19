@@ -1,9 +1,10 @@
 :root {
   --primaryColor: #3ee7d6;
-  --secondaryColor: #d4a12d;
+  --secondaryColor: #c0f5ef;
   --mainWhite: #ffffff;
-  --mainBlack: #000000;
+  --mainBlack: #1d1d1d;
   --mainGrey: #9ea0a6;
+  --secondaryGrey: #e5e5e5;
   --mainRed: #db4d57;
 }
 
@@ -571,21 +572,21 @@ header nav li {
   align-items: center;
   align-content: center;
   flex-wrap: wrap;
-  width: 80rem;
+  width: 100%;
   margin: 10rem auto 0 auto;
 }
 
 .button_main {
-  flex: 1 1 auto;
-  margin: 1rem 8rem;
-  padding: 2rem;
-  border: 2px solid #f7f7f7;
+  flex: .2 .5 auto;
+  margin: 1rem 18rem;
+  padding: 1.8rem;
+  border: 1px solid var(--secondaryGrey);
   text-align: center;
   text-transform: uppercase;
   position: relative;
   overflow: hidden;
   transition: .8s;
-  font: 2rem "spartan_regular", sans-serif;
+  font: 1.8rem "sk", sans-serif;
 }
 
 .button_main:after {
@@ -596,7 +597,7 @@ header nav li {
   left: 50%;
   bottom: 0;
   height: 3px;
-  background: #f7f7f7;
+  background: var(--secondaryGrey);
 }
 
 .button_main:after {
@@ -611,6 +612,15 @@ header nav li {
 .button_main:hover:after {
   width: 100%;
   left: 0;
+}
+
+#contact_btn {
+  background-color: var(--primaryColor);
+}
+
+#contact_btn:after {
+  background-color: var(--primaryColor);
+    background: var(--secondaryGrey);
 }
 
 @keyframes fade {
@@ -642,15 +652,15 @@ header nav li {
 }
 
 .highlight {
-  background: linear-gradient(180deg, #ffffff00 70%, #3ee7d6ad 50%);
+  background: linear-gradient(180deg, #ffffff00 70%, #c0f5ef 50%);
 }
 
 .highlight2 {
-  background: linear-gradient(180deg, #ffffff00 70%, #3ee7d6ad 30%);
+  background: linear-gradient(180deg, #ffffff00 70%, #c0f5ef 30%);
 }
 
 .steps {
-  background: linear-gradient(180deg, #ffffff00 70%, #3ee7d6ad 30%);
+  background: linear-gradient(180deg, #ffffff00 70%, #c0f5ef 30%);
   font-weight: bold;
 }
 
