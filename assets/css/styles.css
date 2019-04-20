@@ -1191,6 +1191,12 @@ section h2.title_services::after {
   body {
     overflow: visible;
   }
+  .work-content {
+    position: absolute;
+    width: 42%;
+    right: 4rem;
+    bottom: 0%;
+  }
 
   section {
     padding: 100px 20px;
@@ -1210,6 +1216,9 @@ section h2.title_services::after {
   .contact-form #slider-range-min .ui-slider-handle {
     top: 0.8rem;
   }
+  .work-thumbnails {
+    display: none;
+  }
 }
 
 @media (max-height: 800px) {
@@ -1224,11 +1233,16 @@ section h2.title_services::after {
   .work-thumbnails {
     display: none;
   }
+  .work-big-images {
+    width: 90%;
+    top: 16%;
+    left: 5%;
+  }
 
   .work-content {
     width: 80%;
     right: 10%;
-    margin-bottom: 2rem;
+    margin-bottom: 9rem;
   }
 
   .contact-form {
