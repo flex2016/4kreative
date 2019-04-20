@@ -390,13 +390,14 @@ section:not(.hero):nth-child(even) {
 /* -------------HERO--------------------- */
 
 .kreative {
+  color: #d8f9f6;
   position: relative;
-  margin: -0.5em 0 1em 0.5em;
+  margin: 0 0 .5em 0;
   text-transform: uppercase;
   letter-spacing: 6rem;
   font-size: 9rem;
   font-weight: bold;
-  opacity: 0.1;
+  opacity: 0.2;
   text-shadow: 6px 5px 0 var(--primaryColor);
 }
 
@@ -407,7 +408,7 @@ section:not(.hero):nth-child(even) {
   margin: 0 auto;
   position: absolute;
   right: -20px;
-  top: 42%;
+  top: 47%;
   width: 140px;
   color: var(--mainGrey);
   opacity: 0.4;
@@ -507,7 +508,7 @@ header nav li {
   margin: 0 auto;
   position: absolute;
   left: -20px;
-  top: 44%;
+  top: 50%;
   width: 140px;
   color: var(--mainGrey);
   opacity: 0.6;
@@ -544,11 +545,12 @@ header nav li {
 
 .hero-content-area {
   width: 100%;
+  margin: auto;
 }
 
 .typing {
   font-family: "spartan_regular", sans-serif;
-  font-size: 1.8rem;
+  font-size: 2rem;
   opacity: 0;
   animation: appear 0.8s ease-in forwards;
   animation-delay: 2.9s;
@@ -577,16 +579,15 @@ header nav li {
 }
 
 .button_main {
-  flex: 0.2 0.5 auto;
   margin: 1rem 18rem;
   padding: 1.8rem;
   border: 1px solid var(--secondaryGrey);
   text-align: center;
-  text-transform: uppercase;
   position: relative;
   overflow: hidden;
   transition: 0.8s;
-  font: 1.8rem "sk", sans-serif;
+  font: 2rem "sk", sans-serif;
+  width: 200px;
 }
 
 .button_main:after {
@@ -616,11 +617,12 @@ header nav li {
 
 #contact_btn {
   background-color: var(--primaryColor);
+  border: 1px solid var(--mainWhite);
 }
 
 #contact_btn:after {
   background-color: var(--primaryColor);
-  background: var(--secondaryGrey);
+  background: var(--mainWhite);
 }
 
 @keyframes fade {
@@ -692,11 +694,11 @@ section h2.title_about::after {
   color: var(--mainBlack);
 }
 
-li > h3 {
+li>h3 {
   font: 4rem "spartan_regular", sans-serif;
 }
 
-li > p {
+li>p {
   font: 1.5rem "spartan_regular", sans-serif;
 }
 
@@ -719,7 +721,7 @@ li > p {
   justify-content: center;
 }
 
-.about_buttons > .button {
+.about_buttons>.button {
   margin: 0 20rem;
 }
 
@@ -794,7 +796,7 @@ img {
   width: 100%;
 }
 
-.work-thumbnail > img {
+.work-thumbnail>img {
   width: auto;
 }
 
@@ -888,7 +890,7 @@ img {
   transition-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
 }
 
-.work-big-image[data-active] ~ .work-big-image {
+.work-big-image[data-active]~.work-big-image {
   transform: translateX(100%);
 }
 
@@ -922,7 +924,7 @@ img {
   z-index: 1;
 }
 
-.work-article[data-active] ~ .work-article {
+.work-article[data-active]~.work-article {
   transform: translateX(100%);
 }
 
@@ -935,12 +937,12 @@ img {
 }
 
 /* ---------------------------------- */
-.work-thumbnail > img {
+.work-thumbnail>img {
   filter: grayscale(100%);
   transition-duration: 0.35s;
 }
 
-.work-thumbnail:active > img {
+.work-thumbnail:active>img {
   transform: scale(0.9);
   transition-duration: 100ms;
 }
@@ -953,8 +955,8 @@ img {
   display: none;
 }
 
-.work-thumbnail[data-active] > img,
-.work-thumbnail:hover > img {
+.work-thumbnail[data-active]>img,
+.work-thumbnail:hover>img {
   filter: grayscale(0%);
 }
 
@@ -1191,6 +1193,7 @@ section h2.title_services::after {
   body {
     overflow: visible;
   }
+
   .work-content {
     position: absolute;
     width: 42%;
@@ -1205,6 +1208,7 @@ section h2.title_services::after {
   .services .grid li {
     flex-basis: 100%;
   }
+
   .work-big-images {
     width: 80%;
     top: 16%;
@@ -1216,6 +1220,7 @@ section h2.title_services::after {
   .contact-form #slider-range-min .ui-slider-handle {
     top: 0.8rem;
   }
+
   .work-thumbnails {
     display: none;
   }
@@ -1233,6 +1238,7 @@ section h2.title_services::after {
   .work-thumbnails {
     display: none;
   }
+
   .work-big-images {
     width: 90%;
     top: 16%;
@@ -1253,6 +1259,7 @@ section h2.title_services::after {
     flex-basis: 100%;
   }
 }
+
 @media (max-width: 600px) {
   #contact {
     padding: 8rem 4.5rem;
