@@ -94,7 +94,7 @@ section:not(.hero):nth-child(even) {
 .screen-wipe-top {
   width: 100%;
   height: 100vh;
-  background: var(--mainBlack);
+  background: #000;
   position: fixed;
   z-index: 1000;
   top: -110%;
@@ -103,7 +103,7 @@ section:not(.hero):nth-child(even) {
 .screen-wipe-bottom {
   width: 100%;
   height: 100vh;
-  background: var(--mainBlack);
+  background: #000;
   position: fixed;
   z-index: 1000;
   bottom: -110%;
