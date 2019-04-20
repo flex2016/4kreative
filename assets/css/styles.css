@@ -1,9 +1,10 @@
 :root {
   --primaryColor: #3ee7d6;
-  --secondaryColor: #d4a12d;
+  --secondaryColor: #c0f5ef;
   --mainWhite: #ffffff;
-  --mainBlack: #000000;
+  --mainBlack: #1d1d1d;
   --mainGrey: #9ea0a6;
+  --secondaryGrey: #e5e5e5;
   --mainRed: #db4d57;
 }
 
@@ -81,7 +82,7 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 100px 80px;
+  padding: 5% 2%;
 }
 
 section:not(.hero):nth-child(even) {
@@ -565,91 +566,61 @@ header nav li {
 
 /* Buttons */
 
-.main_button {
-  align-items: center;
-  margin-top: 5%;
+.buttons {
   display: flex;
-  height: 200px;
-  width: 100%;
   justify-content: center;
-  padding: 0;
-  opacity: 0;
-  transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
-  animation: fade 1s forwards 4s ease-in;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 10rem auto 0 auto;
 }
 
-.button span {
-  color: rgba(51, 51, 51, 0.363);
-}
-
-.button {
-  padding: 2px 14px 2px 14px;
-  margin: 5%;
-  position: relative;
+.button_main {
+  flex: 0.2 0.5 auto;
+  margin: 1rem 18rem;
+  padding: 1.8rem;
+  border: 1px solid var(--secondaryGrey);
   text-align: center;
   text-transform: uppercase;
-  color: var(--mainWhite);
-  cursor: pointer;
-  display: block;
   position: relative;
-  transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
-  letter-spacing: 0.13rem;
   overflow: hidden;
-  user-select: none;
+  transition: 0.8s;
+  font: 1.8rem "sk", sans-serif;
 }
 
-.button:hover {
-  color: #000 !important;
-  background-color: transparent;
-  transition: background 0s;
-}
-
-.button:hover:before {
-  left: 0%;
-  right: auto;
-  width: 100%;
-}
-
-.button:before {
-  display: block;
+.button_main:after {
   position: absolute;
-  top: 0px;
-  right: 0px;
-  height: 100%;
-  width: 0px;
-  z-index: -1;
+  transition: 0.8s;
   content: "";
-  background: #ebebeb;
-  transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+  width: 0;
+  left: 50%;
+  bottom: 0;
+  height: 3px;
+  background: var(--secondaryGrey);
 }
 
-.button a {
-  color: var(--mainBlack);
-  font-size: 2rem;
-  font-family: spartan_regular, sans-serif;
-  text-decoration: none;
+.button_main:after {
+  right: 0;
+  left: auto;
 }
 
-.button:hover a {
-  color: var(--mainBlack);
+.button_main:hover {
+  cursor: pointer;
 }
 
-#contact_btn:before {
-  background: var(--primaryColor);
+.button_main:hover:after {
+  width: 100%;
+  left: 0;
 }
 
-#cnt {
-  border-bottom: 4px solid var(--primaryColor);
-  color: var(--mainBlack);
+#contact_btn {
+  background-color: var(--primaryColor);
 }
 
-#srv {
-  border-bottom: 4px solid #ebebeb;
-  color: var(--mainBlack);
-}
-
-#button_span {
-  vertical-align: 2px;
+#contact_btn:after {
+  background-color: var(--primaryColor);
+  background: var(--secondaryGrey);
 }
 
 @keyframes fade {
@@ -681,15 +652,15 @@ header nav li {
 }
 
 .highlight {
-  background: linear-gradient(180deg, #ffffff00 70%, #3ee7d6ad 50%);
+  background: linear-gradient(180deg, #ffffff00 70%, #c0f5ef 50%);
 }
 
 .highlight2 {
-  background: linear-gradient(180deg, #ffffff00 70%, #3ee7d6ad 30%);
+  background: linear-gradient(180deg, #ffffff00 70%, #c0f5ef 30%);
 }
 
 .steps {
-  background: linear-gradient(180deg, #ffffff00 70%, #3ee7d6ad 30%);
+  background: linear-gradient(180deg, #ffffff00 70%, #c0f5ef 30%);
   font-weight: bold;
 }
 
