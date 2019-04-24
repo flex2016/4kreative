@@ -13,5 +13,40 @@ body {
   font-family: "Nunito", sans-serif;
   color: #6d5d4b;
   font-weight: 300;
-  line-height: 1.6;
-  background-color: red; }
+  line-height: 1.6; }
+
+.container {
+  display: grid;
+  grid-template-rows: 100vh min-content 40vw repeat(3, min-content);
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
+  .container > * {
+    padding: 40px;
+    font-size: 3rem; }
+
+.header {
+  background-color: #c69963;
+  grid-column: full-start / full-end; }
+
+.work {
+  background-color: #101d2c;
+  grid-column: center-start / center-end; }
+
+.about__work {
+  background-color: pink;
+  grid-column: full-start / col-end 4; }
+
+.about__team {
+  background-color: aquamarine;
+  grid-column: col-start 5 / full-end; }
+
+.services {
+  background-color: yellow;
+  grid-column: center-start / center-end; }
+
+.contact {
+  background-color: red;
+  grid-column: center-start / center-end; }
+
+.footer {
+  background-color: grey;
+  grid-column: full-start / full-end; }
