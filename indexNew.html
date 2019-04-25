@@ -15,6 +15,13 @@
   </head>
   <body class="container">
     <header class="header">Header</header>
+    <div class="bg-video">
+      <video class="bg-video__content" autoplay muted loop>
+        <source src="img/MexicoCity.mp4" type="video/mp4" />
+        <source src="img/MexicoCity.webm" type="video/webm" />
+        Your browser is not supported!
+      </video>
+    </div>
     <section class="work">serviced Work</section>
     <div class="about__pictures">
       <img src="img/img1.jpg" alt="Code" class="about__img--1" />
@@ -96,7 +103,45 @@
         </p>
       </div>
     </section>
-    <section class="contact">Contact</section>
+    <section class="contact" id="contact">
+      <h3 class="heading-2 mb-sm">Contact Now!</h3>
+      <div class="form__group">
+        <input
+          type="text"
+          class="form__input"
+          placeholder="Full name"
+          id="name"
+          required
+        />
+        <label for="name" class="form__label">Full name</label>
+      </div>
+
+      <div class="form__group">
+        <input
+          type="email"
+          class="form__input"
+          placeholder="Email address"
+          id="email"
+          required
+        />
+        <label for="email" class="form__label">Email address</label>
+      </div>
+
+      <div class="form__group">
+        <textarea
+          rows="6"
+          class="form__input"
+          id="message"
+          name="message"
+          placeholder="Tell us about your project (Scope, timeline, budget, etc."
+          name="message"
+          required
+        ></textarea>
+        <label for="message" class="form__label"> Message</label>
+      </div>
+
+      <button class="btn form__btn">Send Request!</button>
+    </section>
     <footer class="footer">
       <ul class="nav">
         <li class="nav__item">
