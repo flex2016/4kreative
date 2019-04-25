@@ -9,9 +9,9 @@
 }
 
 .service {
-  float: left;
-  width: 50%;
-  margin-bottom: 6rem;
+  // float: left;
+  // width: 50%;
+  // margin-bottom: 6rem;
 
   display: grid;
   width: auto;
@@ -30,6 +30,6 @@
 
   &__text {
     font-size: 1.7rem;
-    grid-column: 2 / span 1;
+    // grid-column: 2 / span 1;
   }
 }

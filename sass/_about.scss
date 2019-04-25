@@ -1,10 +1,22 @@
 .about {
-  &__work {
-    background-color: pink;
+  &__img {
     grid-column: full-start / col-end 4;
   }
-  &__team {
-    background-color: aquamarine;
+  &__content {
+    background-color: $color-grey-light-1;
     grid-column: col-start 5 / full-end;
+    padding: 6rem 8vw;
+
+    display: grid;
+    align-content: center;
+    justify-items: start;
+  }
+  &__text {
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-bottom: 1rem;
+    &:last-of-type {
+      margin-bottom: 4rem;
+    }
   }
 }

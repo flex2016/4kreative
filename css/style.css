@@ -84,13 +84,23 @@ body {
   background-color: #101d2c;
   grid-column: center-start / center-end; }
 
-.about__work {
-  background-color: pink;
+.about__img {
   grid-column: full-start / col-end 4; }
 
-.about__team {
-  background-color: aquamarine;
-  grid-column: col-start 5 / full-end; }
+.about__content {
+  background-color: #f9f7f6;
+  grid-column: col-start 5 / full-end;
+  padding: 6rem 8vw;
+  display: grid;
+  align-content: center;
+  justify-items: start; }
+
+.about__text {
+  font-size: 1.5rem;
+  font-style: italic;
+  margin-bottom: 1rem; }
+  .about__text:last-of-type {
+    margin-bottom: 4rem; }
 
 .services {
   grid-column: col-start 2 / col-end 7;
@@ -101,9 +111,6 @@ body {
   align-items: start; }
 
 .service {
-  float: left;
-  width: 50%;
-  margin-bottom: 6rem;
   display: grid;
   width: auto;
   margin-bottom: 0;
@@ -117,8 +124,7 @@ body {
     grid-row: 1 / span 2;
     transform: translateY(-1rem); }
   .service__text {
-    font-size: 1.7rem;
-    grid-column: 2 / span 1; }
+    font-size: 1.7rem; }
 
 .contact {
   background-color: red;
