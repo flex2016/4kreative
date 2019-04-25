@@ -76,6 +76,11 @@ body {
 .mb-hg {
   margin-bottom: 8rem; }
 
+.bold {
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  font-weight: 700; }
+
 .header {
   background-color: #3ee7d6;
   grid-column: full-start / full-end; }
@@ -84,8 +89,28 @@ body {
   background-color: #101d2c;
   grid-column: center-start / center-end; }
 
-.about__img {
-  grid-column: full-start / col-end 4; }
+.about__pictures {
+  background-color: #3ee7d6;
+  grid-column: full-start / col-end 4;
+  background-image: linear-gradient(rgba(62, 231, 214, 0.5), rgba(249, 247, 246, 0.5)), url("../img/img2.jpg");
+  background-size: cover;
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: repeat(6, 1fr);
+  align-items: center; }
+
+.about__img--1 {
+  width: 100%;
+  grid-row: 2 / 6;
+  grid-column: 2 / 6;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.1); }
+
+.about__img--2 {
+  width: 115%;
+  grid-row: 4 / 6;
+  grid-column: 4 / 7;
+  z-index: 20;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2); }
 
 .about__content {
   background-color: #f9f7f6;
