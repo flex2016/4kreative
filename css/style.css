@@ -40,7 +40,7 @@ body {
 
 .heading-3 {
   font-size: 1.6rem;
-  color: #c69963;
+  color: #3ee7d6;
   text-transform: uppercase; }
 
 .heading-4 {
@@ -51,7 +51,7 @@ body {
     color: #54483a; }
 
 .btn {
-  background-color: #c69963;
+  background-color: #3ee7d6;
   color: #fff;
   border: none;
   border-radius: 0;
@@ -62,7 +62,7 @@ body {
   cursor: pointer;
   transition: all 0.2s; }
   .btn:hover {
-    background-color: #b28451; }
+    background-color: #1e726a; }
 
 .mb-sm {
   margin-bottom: 2rem; }
@@ -77,7 +77,7 @@ body {
   margin-bottom: 8rem; }
 
 .header {
-  background-color: #c69963;
+  background-color: #3ee7d6;
   grid-column: full-start / full-end; }
 
 .work {
@@ -111,13 +111,14 @@ body {
   grid-row-gap: 1.5rem;
   grid-column-gap: 2.5rem; }
   .service__icon {
-    fill: #c69963;
+    fill: #3ee7d6;
     width: 4.5rem;
     height: 4.5rem;
     grid-row: 1 / span 2;
     transform: translateY(-1rem); }
   .service__text {
-    font-size: 1.7rem; }
+    font-size: 1.7rem;
+    grid-column: 2 / span 1; }
 
 .contact {
   background-color: red;
