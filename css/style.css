@@ -101,6 +101,9 @@ a {
 .header {
   background-color: #f9f7f6;
   grid-column: full-start / full-end;
+  background-image: linear-gradient(rgba(62, 231, 214, 0.93), rgba(255, 255, 255, 0.93)), url(../img/img2.jpg);
+  background-size: cover;
+  background-position: center;
   display: grid;
   grid-template-rows: repeat(10, 1fr);
   grid-template-columns: repeat(10, 1fr); }
@@ -111,21 +114,20 @@ a {
     .header {
       padding: 5rem; } }
   .header__logo {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
     height: 4.5rem;
     align-self: center;
     justify-self: center; }
   .header__sidebar {
-    grid-row: 6 / 11;
+    grid-row: 6 /8;
+    grid-column: 1 / 2;
+    align-self: start;
     transform: rotate(90deg);
     text-transform: uppercase;
     letter-spacing: 3px;
     font-size: 1.3rem;
-    margin: 0 auto;
-    position: absolute;
-    left: -20px;
-    top: 50%;
-    width: 140px;
-    color: #aaa;
+    color: #000;
     opacity: 0.6; }
   .header__big {
     grid-row: 2 / 4;
@@ -142,7 +144,7 @@ a {
     text-shadow: 6px 5px 0 #3ee7d6; }
   .header__ideas {
     grid-row: 4 / 5;
-    grid-column: 1 / -1;
+    grid-column: 1/ -1;
     justify-self: center;
     align-self: center;
     font: bold 7rem "sk", sans-serif;
@@ -173,14 +175,11 @@ a {
     grid-row: 5 / 8;
     grid-column: 10 / 11;
     justify-self: center;
-    align-self: center; }
-    .header__social img {
-      width: 15px; }
-    .header__social a {
-      margin-right: 20px; }
-      .header__social a:hover img {
-        opacity: 0.6;
-        transition: all ease 0.3s; }
+    align-self: center;
+    margin-left: 6rem; }
+    .header__social a:hover img {
+      opacity: 0.6;
+      transition: all ease 0.3s; }
   .header__btn {
     grid-row: 8 / 10;
     grid-column: 3 / 6;
@@ -192,6 +191,51 @@ a {
     grid-column: 8 / 10;
     align-self: center;
     justify-self: start; }
+
+.reveal {
+  position: relative;
+  margin: 0 auto; }
+  .reveal span {
+    opacity: 0;
+    animation: reveal 0.0001s linear forwards;
+    animation-delay: 1.4s; }
+  .reveal::after {
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 0%;
+    height: 102%;
+    background: #000;
+    animation: revealing 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+    animation-delay: 1s; }
+
+@keyframes revealing {
+  0% {
+    left: 0;
+    width: 0%; }
+  50% {
+    left: 0;
+    width: 100%; }
+  100% {
+    left: 100%;
+    width: 0%; } }
+
+@keyframes reveal {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+#revTwo {
+  width: 7.5em;
+  margin-bottom: 5rem; }
+  #revTwo span {
+    animation-delay: 2s; }
+
+#revTwo.reveal:after {
+  background: #000;
+  animation-delay: 1.4s; }
 
 .bg-video {
   position: fixed;
