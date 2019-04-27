@@ -1,8 +1,8 @@
 .header {
-  background-color: $color-grey-light-1;
+  background-color: $color-white;
   grid-column: full-start / full-end;
   background-image: linear-gradient(
-      rgba($color-primary, 0.93),
+      rgba($color-white, 0.93),
       rgba($color-white, 0.93)
     ),
     url(../img/img2.jpg);

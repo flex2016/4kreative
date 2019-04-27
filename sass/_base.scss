@@ -13,8 +13,10 @@ $color-grey-dark-2: #6d5d4b;
 $color-white: #fff;
 $color-black: #000;
 // FONT VARIABLES
-$font-primary: "Nunito", sans-serif;
-$font-display: "Josefin Sans", sans-serif;
+$font-primary: "spartan_regular",
+sans-serif;
+$font-display: "sk",
+sans-serif;
 
 // RESPONSIVE BREAKPOINTS
 $bp-largest: 75em; // 1200px
@@ -28,6 +30,16 @@ $bp-small: 37.5em; // 600px;
   margin: 0;
   padding: 0;
   box-sizing: inherit;
+}
+
+@font-face {
+  font-family: spartan_regular;
+  src: url(spartan_regular.otf);
+}
+
+@font-face {
+  font-family: sk;
+  src: url(sk.otf);
 }
 
 html {
@@ -45,6 +57,7 @@ body {
   font-weight: 300;
   line-height: 1.6;
 }
+
 ul,
 nav {
   list-style: none;
@@ -59,9 +72,6 @@ a {
   display: grid;
   grid-template-rows: 100vh min-content 40vw repeat(3, min-content);
   grid-template-columns:
-    [full-start]minmax(6rem, 1fr) [center-start]repeat(
-      8,
-      [col-start] minmax(min-content, 14rem) [col-end]
-    )
-    [center-end]minmax(6rem, 1fr) [full-end];
+    [full-start]minmax(6rem, 1fr) [center-start]repeat(8,
+    [col-start] minmax(min-content, 14rem) [col-end]) [center-end]minmax(6rem, 1fr) [full-end];
 }

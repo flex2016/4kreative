@@ -5,6 +5,14 @@
   padding: 0;
   box-sizing: inherit; }
 
+@font-face {
+  font-family: spartan_regular;
+  src: url(spartan_regular.otf); }
+
+@font-face {
+  font-family: sk;
+  src: url(sk.otf); }
+
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
@@ -13,7 +21,7 @@ html {
       font-size: 50%; } }
 
 body {
-  font-family: "Nunito", sans-serif;
+  font-family: "spartan_regular", sans-serif;
   color: #6d5d4b;
   font-weight: 300;
   line-height: 1.6; }
@@ -32,7 +40,7 @@ a {
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
 
 .heading-1, .heading-2, .heading-3, .heading-4 {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "sk", sans-serif;
   font-weight: 400; }
 
 .heading-1 {
@@ -66,7 +74,7 @@ a {
   color: #fff;
   border: none;
   border-radius: 0;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "sk", sans-serif;
   font-size: 1.5rem;
   text-transform: uppercase;
   padding: 1.8rem 3rem;
@@ -99,9 +107,9 @@ a {
   font-weight: 700; }
 
 .header {
-  background-color: #f9f7f6;
+  background-color: #fff;
   grid-column: full-start / full-end;
-  background-image: linear-gradient(rgba(62, 231, 214, 0.93), rgba(255, 255, 255, 0.93)), url(../img/img2.jpg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.93), rgba(255, 255, 255, 0.93)), url(../img/img2.jpg);
   background-size: cover;
   background-position: center;
   display: grid;
@@ -395,7 +403,7 @@ a {
     font-size: 1.4rem;
     color: #fff;
     text-decoration: none;
-    font-family: "Josefin Sans", sans-serif;
+    font-family: "sk", sans-serif;
     text-transform: uppercase;
     text-align: center;
     padding: 1.5rem;
