@@ -278,7 +278,7 @@ a {
   .work__img {
     border-radius: 1%;
     display: block; }
-  .work__sold {
+  .work__details {
     text-transform: uppercase;
     color: #9299a0;
     margin-top: -3px; }
