@@ -109,7 +109,6 @@ a {
 .header {
   background-color: #fff;
   grid-column: full-start / full-end;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.93), rgba(255, 255, 255, 0.93)), url(../img/img2.jpg);
   background-size: cover;
   background-position: center;
   display: grid;
@@ -236,7 +235,6 @@ a {
     opacity: 1; } }
 
 #revTwo {
-  width: 7.5em;
   margin-bottom: 5rem; }
   #revTwo span {
     animation-delay: 2s; }
@@ -252,7 +250,7 @@ a {
   height: 100%;
   width: 100%;
   z-index: -1;
-  opacity: .15;
+  opacity: 1;
   overflow: hidden;
   object-fit: cover; }
   .bg-video__content {
