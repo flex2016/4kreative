@@ -127,7 +127,7 @@ a {
     align-self: center;
     justify-self: center; }
   .header__sidebar {
-    grid-row: 6 /8;
+    grid-row: 10/11;
     grid-column: 1 / 2;
     align-self: start;
     transform: rotate(90deg);
@@ -145,7 +145,7 @@ a {
     text-transform: uppercase;
     letter-spacing: 6rem;
     margin-right: -6rem;
-    font-size: 11rem;
+    font-size: 10.5rem;
     font-weight: bold;
     opacity: 0.2;
     text-shadow: 6px 5px 0 #37c893; }
