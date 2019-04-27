@@ -266,7 +266,7 @@ a {
   align-content: center;
   justify-content: center;
   justify-items: center;
-  grid-row-gap: 2rem; }
+  grid-row-gap: 5rem; }
   .work img {
     width: 100%; }
   .work__list {
