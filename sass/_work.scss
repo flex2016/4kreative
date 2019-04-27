@@ -7,17 +7,20 @@
   justify-content: center;
   justify-items: center;
   grid-row-gap: 2rem;
+  img {
+    width: 100%;
+  }
 
   &__list {
     display: grid;
-    grid-template-columns: min-content max-content;
+    grid-template-columns: 1fr 1fr;
     grid-column-gap: 2rem;
     grid-row-gap: 5vh;
     align-items: center;
   }
 
   &__img {
-    width: 17rem;
+    // width: 80rem;
     border-radius: 1%;
     display: block;
   }

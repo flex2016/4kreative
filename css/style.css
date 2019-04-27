@@ -267,14 +267,15 @@ a {
   justify-content: center;
   justify-items: center;
   grid-row-gap: 2rem; }
+  .work img {
+    width: 100%; }
   .work__list {
     display: grid;
-    grid-template-columns: min-content max-content;
+    grid-template-columns: 1fr 1fr;
     grid-column-gap: 2rem;
     grid-row-gap: 5vh;
     align-items: center; }
   .work__img {
-    width: 17rem;
     border-radius: 1%;
     display: block; }
   .work__sold {
@@ -321,12 +322,14 @@ a {
     margin-bottom: 4rem; }
 
 .services {
-  grid-column: col-start 2 / col-end 7;
+  grid-column: col-start 1 / col-end 8;
   margin: 15rem 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
   grid-gap: 6rem;
-  align-items: start; }
+  align-items: start;
+  background-color: #000;
+  padding: 5rem; }
 
 .service {
   display: grid;
