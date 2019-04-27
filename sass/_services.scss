@@ -6,7 +6,7 @@
   grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
   grid-gap: 6rem;
   align-items: start;
-  background-color: $color-black;
+  background-color: $color-secondary;
   padding: 5rem;
 }
 
@@ -32,6 +32,7 @@
 
   &__text {
     font-size: 1.7rem;
+    color: $color-grey-light-2;
     // grid-column: 2 / span 1;
   }
 }
