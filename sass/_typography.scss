@@ -5,9 +5,10 @@
 
 .heading-1 {
   @extend %heading;
-  font-size: 4.5rem;
+  font-size: 6rem;
   color: $color-grey-light-1;
   line-height: 1;
+  margin: 0 0 20px 0;
 }
 
 .heading-2 {
@@ -19,6 +20,7 @@
   &--light {
     color: $color-grey-light-1;
   }
+
   &--dark {
     color: $color-grey-dark-1;
   }
@@ -38,6 +40,7 @@
   &--light {
     color: $color-grey-light-1;
   }
+
   &--dark {
     color: $color-white;
   }
@@ -71,15 +74,19 @@
 .mb-sm {
   margin-bottom: 2rem;
 }
+
 .mb-md {
   margin-bottom: 3rem;
 }
+
 .mb-lg {
   margin-bottom: 4rem;
 }
+
 .mb-hg {
   margin-bottom: 8rem;
 }
+
 .bold {
   font-size: 1.7rem;
   text-transform: uppercase;

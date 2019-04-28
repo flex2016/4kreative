@@ -1,12 +1,13 @@
 .work {
   background-color: $color-secondary;
   grid-column: center-start / center-end;
-  padding: 3rem;
+  padding: 10rem 3rem;
   display: grid;
   align-content: center;
   justify-content: center;
   justify-items: center;
   grid-row-gap: 5rem;
+
   img {
     width: 100%;
   }
@@ -30,4 +31,5 @@
     color: $color-grey-light-2;
     margin-top: -3px;
   }
+
 }

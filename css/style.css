@@ -44,9 +44,10 @@ a {
   font-weight: 400; }
 
 .heading-1 {
-  font-size: 4.5rem;
+  font-size: 6rem;
   color: #f9f7f6;
-  line-height: 1; }
+  line-height: 1;
+  margin: 0 0 20px 0; }
 
 .heading-2 {
   font-size: 4rem;
@@ -261,7 +262,7 @@ a {
 .work {
   background-color: #051627;
   grid-column: center-start / center-end;
-  padding: 3rem;
+  padding: 10rem 3rem;
   display: grid;
   align-content: center;
   justify-content: center;
