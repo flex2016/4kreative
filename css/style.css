@@ -38,6 +38,9 @@ a {
   display: grid;
   grid-template-rows: 100vh min-content 40vw repeat(3, min-content);
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
+  @media only screen and (max-width: 50em) {
+    .container {
+      grid-template-rows: 100vh min-content min-content repeat(3, min-content); } }
 
 .heading-1, .heading-2, .heading-3, .heading-4 {
   font-family: "sk", sans-serif;
@@ -292,12 +295,20 @@ a {
   grid-template-rows: repeat(6, 1fr);
   grid-template-columns: repeat(6, 1fr);
   align-items: center; }
+  @media only screen and (max-width: 50em) {
+    .about__pictures {
+      grid-column: 1 / -1;
+      padding: 6rem; } }
 
 .about__img--1 {
   width: 100%;
   grid-row: 2 / 6;
   grid-column: 2 / 6;
   box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.1); }
+  @media only screen and (max-width: 50em) {
+    .about__img--1 {
+      grid-column: 1 / 5;
+      grid-row: 1 / -1; } }
 
 .about__img--2 {
   width: 115%;
@@ -305,6 +316,10 @@ a {
   grid-column: 4 / 7;
   z-index: 20;
   box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2); }
+  @media only screen and (max-width: 50em) {
+    .about__img--2 {
+      grid-row: 1 / -1;
+      width: 100%; } }
 
 .about__content {
   background-color: #f9f7f6;
@@ -313,6 +328,10 @@ a {
   display: grid;
   align-content: center;
   justify-items: start; }
+  @media only screen and (max-width: 50em) {
+    .about__content {
+      grid-column: 1 / -1;
+      grid-row: 3 / 4; } }
 
 .about__text {
   font-size: 1.5rem;
