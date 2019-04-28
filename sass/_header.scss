@@ -1,6 +1,7 @@
 .header {
   background-color: $color-white;
   grid-column: full-start / full-end;
+  background-image: url("hex.jpg");
   background-size: cover;
   background-position: center;
   display: grid;
@@ -37,11 +38,11 @@
   }
 
   &__big {
-    grid-row: 2 / 4;
+    grid-row: 1 / 4;
     grid-column: 1 / -1;
     align-self: center;
     justify-self: center;
-    color: #d8f9f6;
+    color: #d4f1e6;
 
     text-transform: uppercase;
     letter-spacing: 6rem;
@@ -54,20 +55,20 @@
   }
 
   &__ideas {
-    grid-row: 4 / 5;
+    grid-row: 2 / 8;
     grid-column: 1/ -1;
     justify-self: center;
     align-self: center;
-    font: bold 7rem "sk", sans-serif;
+    font: bold 8.5rem "sk", sans-serif;
     color: $color-black;
   }
 
   &__brought {
-    grid-row: 5 / 6;
+    grid-row: 5 / 8;
     grid-column: 1 / -1;
     justify-self: center;
     align-self: center;
-    font: bold 7rem "sk", sans-serif;
+    font: bold 8.5rem "sk", sans-serif;
     color: $color-black;
   }
 
@@ -76,10 +77,11 @@
     grid-column: 1 / -1;
     justify-self: center;
     font-family: "spartan_regular", sans-serif;
-    font-size: 2rem;
+    font-size: 2.5rem;
     opacity: 0;
     animation: appear 0.8s ease-in forwards;
     animation-delay: 2.9s;
+    margin-top: 5rem;
   }
 
   @keyframes appear {
@@ -140,7 +142,7 @@
     left: 0;
     position: absolute;
     width: 0%;
-    height: 102%;
+    height: 110%;
     background: $color-black;
     animation: revealing 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
     animation-delay: 1s;
