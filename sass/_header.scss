@@ -22,19 +22,21 @@
     height: 4.5rem;
     align-self: center;
     justify-self: center;
+    margin-right: 4rem;
   }
 
   &__sidebar {
-    grid-row: 10/11;
+    grid-row: 6/6;
     grid-column: 1 / 2;
     align-self: start;
     transform: rotate(90deg);
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 4px;
     font-size: 1.3rem;
-
     color: $color-black;
-    opacity: 0.6;
+    opacity: 0.8;
+    margin-right: 6rem;
+    width: 120px;
   }
 
   &__big {
@@ -50,6 +52,7 @@
     font-weight: bold;
     opacity: 0.8;
     text-shadow: 4px 2px 0px #051627;
+
     @media only screen and (max-width: $bp-large) {
       letter-spacing: 4rem;
       margin-right: -4rem;
@@ -61,6 +64,7 @@
       margin-right: -2rem;
       font-size: 7.5rem;
     }
+
     @media only screen and (max-width: $bp-small) {
       letter-spacing: 1rem;
       margin-right: -1rem;
@@ -69,30 +73,34 @@
   }
 
   &__ideas {
-    grid-row: 2 / 6;
+    grid-row: 2 / 7;
     grid-column: 1/ -1;
     justify-self: center;
     align-self: center;
     font: bold 8.5rem "sk", sans-serif;
     color: $color-black;
+
     @media only screen and (max-width: $bp-medium) {
       font-size: 7.5rem;
     }
+
     @media only screen and (max-width: $bp-small) {
       font-size: 5.5rem;
     }
   }
 
   &__brought {
-    grid-row: 4 / 7;
+    grid-row: 5 / 7;
     grid-column: 1 / -1;
     justify-self: center;
     align-self: center;
     font: bold 8.5rem "sk", sans-serif;
     color: $color-black;
+
     @media only screen and (max-width: $bp-medium) {
       font-size: 7.5rem;
     }
+
     @media only screen and (max-width: $bp-small) {
       font-size: 5.5rem;
     }
@@ -121,17 +129,18 @@
   }
 
   &__social {
-    grid-row: 5 / 8;
+    grid-row: 3 / 9;
     grid-column: 10 / 11;
     justify-self: center;
     align-self: center;
-    margin-left: 6rem;
+    margin-left: 4rem;
 
     a {
       &:hover img {
         opacity: 0.6;
         transition: all ease 0.3s;
       }
+
       @media only screen and (max-width: $bp-small) {
         grid-column: 1 / -1;
       }
@@ -139,7 +148,7 @@
   }
 
   &__btn {
-    grid-row: 8 / 10;
+    grid-row: 9 / 10;
     grid-column: 1 / -1;
     align-self: center;
     padding: 2rem 3.5rem;
@@ -150,7 +159,7 @@
 .reveal {
   position: relative;
   // width: 7em;
-  margin: 0 auto;
+  margin: 4rem auto 0;
 
   & span {
     opacity: 0;
@@ -199,8 +208,6 @@
 }
 
 #revTwo {
-  margin-bottom: 5rem;
-
   & span {
     animation-delay: 2s;
   }
