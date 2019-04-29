@@ -36,7 +36,7 @@ a {
 
 .container {
   display: grid;
-  grid-template-rows: 100vh repeat(5, min-content);
+  grid-template-rows: 100vh min-content 60vw repeat(3, min-content);
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
 
 .heading-1, .heading-2, .heading-3, .heading-4 {
@@ -149,7 +149,7 @@ a {
     margin-right: -6rem;
     font-size: 10.5rem;
     font-weight: bold;
-    opacity: .8;
+    opacity: 0.8;
     text-shadow: 4px 2px 0px #051627; }
   .header__ideas {
     grid-row: 2 / 8;
@@ -192,15 +192,10 @@ a {
       transition: all ease 0.3s; }
   .header__btn {
     grid-row: 8 / 10;
-    grid-column: 3 / 6;
+    grid-column: 1 / -1;
     align-self: center;
-    padding: 2.5rem;
-    justify-self: start; }
-  .header__btn2 {
-    grid-row: 8 / 10;
-    grid-column: 8 / 10;
-    align-self: center;
-    justify-self: start; }
+    padding: 2rem 3.5rem;
+    justify-self: center; }
 
 .reveal {
   position: relative;
