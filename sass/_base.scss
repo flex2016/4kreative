@@ -21,6 +21,7 @@ $bp-largest: 75em; // 1200px
 $bp-large: 62.5em; // 1000px
 $bp-medium: 50em; // 800px;
 $bp-small: 37.5em; // 600px;
+$bp-xsSmall: 25em; // 400px;
 
 *,
 *::before,
@@ -68,7 +69,7 @@ a {
 
 .container {
   display: grid;
-  grid-template-rows: 100vh min-content 60vw repeat(3, min-content);
+  grid-template-rows: 100vh;
   grid-template-columns:
     [full-start]minmax(6rem, 1fr) [center-start]repeat(
       8,

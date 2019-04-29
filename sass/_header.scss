@@ -50,24 +50,52 @@
     font-weight: bold;
     opacity: 0.8;
     text-shadow: 4px 2px 0px #051627;
+    @media only screen and (max-width: $bp-large) {
+      letter-spacing: 4rem;
+      margin-right: -4rem;
+      font-size: 9.5rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      letter-spacing: 2rem;
+      margin-right: -2rem;
+      font-size: 7.5rem;
+    }
+    @media only screen and (max-width: $bp-small) {
+      letter-spacing: 1rem;
+      margin-right: -1rem;
+      font-size: 5.5rem;
+    }
   }
 
   &__ideas {
-    grid-row: 2 / 8;
+    grid-row: 2 / 6;
     grid-column: 1/ -1;
     justify-self: center;
     align-self: center;
     font: bold 8.5rem "sk", sans-serif;
     color: $color-black;
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 7.5rem;
+    }
+    @media only screen and (max-width: $bp-small) {
+      font-size: 5.5rem;
+    }
   }
 
   &__brought {
-    grid-row: 5 / 8;
+    grid-row: 4 / 7;
     grid-column: 1 / -1;
     justify-self: center;
     align-self: center;
     font: bold 8.5rem "sk", sans-serif;
     color: $color-black;
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 7.5rem;
+    }
+    @media only screen and (max-width: $bp-small) {
+      font-size: 5.5rem;
+    }
   }
 
   &__typing {
@@ -103,6 +131,9 @@
       &:hover img {
         opacity: 0.6;
         transition: all ease 0.3s;
+      }
+      @media only screen and (max-width: $bp-small) {
+        grid-column: 1 / -1;
       }
     }
   }
