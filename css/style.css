@@ -76,7 +76,7 @@ a {
   border: none;
   border-radius: 0;
   font-family: "sk", sans-serif;
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-transform: uppercase;
   padding: 1.8rem 3rem;
   cursor: pointer;
@@ -227,7 +227,7 @@ a {
     grid-row: 9 / 10;
     grid-column: 1 / -1;
     align-self: center;
-    padding: 2rem 3.5rem;
+    padding: 2rem 3rem;
     justify-self: center; }
 
 .reveal {
