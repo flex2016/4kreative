@@ -37,10 +37,8 @@
     font-size: 1.3rem;
     color: $color-black;
     opacity: 0.8;
-    margin-right: 6rem;
     width: 120px;
-    justify-self: center;
-    margin-left: -2rem;
+    justify-self: start;
 
     @media only screen and (max-width: $bp-small) {
       grid-row: 9 / 11;
@@ -143,9 +141,9 @@
   &__social {
     grid-row: 3 / 9;
     grid-column: 10 / 11;
-    justify-self: center;
+
     align-self: center;
-    margin-left: 2rem;
+
     @media only screen and (max-width: $bp-small) {
       grid-row: 9 / 11;
     }
