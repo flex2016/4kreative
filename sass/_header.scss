@@ -39,9 +39,12 @@
     opacity: 0.8;
     width: 120px;
     justify-self: start;
-
+    margin-left: -14px;
+    @media only screen and (max-width: $bp-medium) {
+      margin-left: -40px;
+    }
     @media only screen and (max-width: $bp-small) {
-      grid-row: 9 / 11;
+      grid-row: 9 / 10;
     }
   }
 
@@ -145,7 +148,7 @@
     align-self: center;
 
     @media only screen and (max-width: $bp-small) {
-      grid-row: 9 / 11;
+      grid-row: 9 / 10;
     }
 
     a {

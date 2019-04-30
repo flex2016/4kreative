@@ -143,10 +143,14 @@ a {
     color: #000;
     opacity: 0.8;
     width: 120px;
-    justify-self: start; }
+    justify-self: start;
+    margin-left: -14px; }
+    @media only screen and (max-width: 50em) {
+      .header__sidebar {
+        margin-left: -40px; } }
     @media only screen and (max-width: 37.5em) {
       .header__sidebar {
-        grid-row: 9 / 11; } }
+        grid-row: 9 / 10; } }
   .header__big {
     grid-row: 1 / 4;
     grid-column: 1 / -1;
@@ -225,7 +229,7 @@ a {
     align-self: center; }
     @media only screen and (max-width: 37.5em) {
       .header__social {
-        grid-row: 9 / 11; } }
+        grid-row: 9 / 10; } }
     .header__social a:hover img {
       opacity: 0.6;
       transition: all ease 0.3s; }
