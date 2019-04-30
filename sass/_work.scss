@@ -7,7 +7,6 @@
   justify-content: center;
   justify-items: center;
   grid-row-gap: 5rem;
-  margin-top: -3rem;
 
   @media only screen and (max-width: $bp-small) {
     grid-column: full-start / full-end;
@@ -30,8 +29,8 @@
 
   &__list {
     display: grid;
-    grid-template-columns: 3fr 2fr;
-    grid-column-gap: 4rem;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2rem;
     grid-row-gap: 5vh;
     align-items: center;
 
@@ -52,7 +51,10 @@
     color: $color-grey-light-2;
     margin-top: 2rem;
     font-size: 1.8rem;
-
+    margin-right: 1vw;
+    @media only screen and (max-width: $bp-medium) {
+      margin-right: 0;
+    }
     @media only screen and (max-width: $bp-small) {
       margin-bottom: 4rem;
     }
@@ -64,7 +66,7 @@
   }
 
   &__bl_system {
-    color: #E64047;
+    color: #e64047;
     font-size: 3.5rem;
   }
 
@@ -72,5 +74,4 @@
     color: #ffffff;
     font-size: 3.5rem;
   }
-
 }
