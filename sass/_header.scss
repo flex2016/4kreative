@@ -11,9 +11,6 @@
 
   @media only screen and (max-width: $bp-medium) {
     grid-column: 1 / -1;
-  }
-
-  @media only screen and (max-width: $bp-small) {
     padding: 2rem;
   }
 
@@ -24,7 +21,7 @@
     align-self: center;
     justify-self: center;
     margin-right: 4rem;
-    @media only screen and (max-width: $bp-small) {
+    @media only screen and (max-width: $bp-medium) {
       justify-self: start;
       align-self: start;
     }
@@ -42,7 +39,12 @@
     opacity: 0.8;
     margin-right: 6rem;
     width: 120px;
-    justify-self: start;
+    justify-self: center;
+    margin-left: -2rem;
+
+    @media only screen and (max-width: $bp-small) {
+      grid-row: 9 / 11;
+    }
   }
 
   &__big {
@@ -78,12 +80,12 @@
     }
 
     @media only screen and (max-width: $bp-xsSmall) {
-      font-size: 5.5rem;
+      font-size: 6rem;
     }
   }
 
   &__ideas {
-    grid-row: 2 / 7;
+    grid-row: 4 / 5;
     grid-column: 1/ -1;
     justify-self: center;
     align-self: center;
@@ -112,7 +114,7 @@
     }
 
     @media only screen and (max-width: $bp-small) {
-      font-size: 5.5rem;
+      font-size: 5rem;
     }
   }
 
@@ -143,7 +145,10 @@
     grid-column: 10 / 11;
     justify-self: center;
     align-self: center;
-    margin-left: 4rem;
+    margin-left: 2rem;
+    @media only screen and (max-width: $bp-small) {
+      grid-row: 9 / 11;
+    }
 
     a {
       &:hover img {
