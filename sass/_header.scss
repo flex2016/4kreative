@@ -7,13 +7,14 @@
   display: grid;
   grid-template-rows: repeat(10, 1fr);
   grid-template-columns: repeat(10, 1fr);
+  justify-items: center;
 
   @media only screen and (max-width: $bp-medium) {
     grid-column: 1 / -1;
   }
 
   @media only screen and (max-width: $bp-small) {
-    padding: 5rem;
+    padding: 2rem;
   }
 
   &__logo {
@@ -23,12 +24,16 @@
     align-self: center;
     justify-self: center;
     margin-right: 4rem;
+    @media only screen and (max-width: $bp-small) {
+      justify-self: start;
+      align-self: start;
+    }
   }
 
   &__sidebar {
-    grid-row: 6/6;
+    grid-row: 2/ 10;
     grid-column: 1 / 2;
-    align-self: start;
+    align-self: center;
     transform: rotate(90deg);
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -37,6 +42,7 @@
     opacity: 0.8;
     margin-right: 6rem;
     width: 120px;
+    justify-self: start;
   }
 
   &__big {
@@ -60,14 +66,18 @@
     }
 
     @media only screen and (max-width: $bp-medium) {
-      letter-spacing: 2rem;
-      margin-right: -2rem;
-      font-size: 7.5rem;
+      letter-spacing: 2.5rem;
+      margin-right: -2.5rem;
+      // font-size: .5rem;
     }
 
     @media only screen and (max-width: $bp-small) {
       letter-spacing: 1rem;
       margin-right: -1rem;
+      font-size: 7.2rem;
+    }
+
+    @media only screen and (max-width: $bp-xsSmall) {
       font-size: 5.5rem;
     }
   }

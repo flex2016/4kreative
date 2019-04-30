@@ -115,13 +115,14 @@ a {
   background-position: center;
   display: grid;
   grid-template-rows: repeat(10, 1fr);
-  grid-template-columns: repeat(10, 1fr); }
+  grid-template-columns: repeat(10, 1fr);
+  justify-items: center; }
   @media only screen and (max-width: 50em) {
     .header {
       grid-column: 1 / -1; } }
   @media only screen and (max-width: 37.5em) {
     .header {
-      padding: 5rem; } }
+      padding: 2rem; } }
   .header__logo {
     grid-row: 1 / 2;
     grid-column: 1 / 2;
@@ -129,10 +130,14 @@ a {
     align-self: center;
     justify-self: center;
     margin-right: 4rem; }
+    @media only screen and (max-width: 37.5em) {
+      .header__logo {
+        justify-self: start;
+        align-self: start; } }
   .header__sidebar {
-    grid-row: 6/6;
+    grid-row: 2/ 10;
     grid-column: 1 / 2;
-    align-self: start;
+    align-self: center;
     transform: rotate(90deg);
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -140,7 +145,8 @@ a {
     color: #000;
     opacity: 0.8;
     margin-right: 6rem;
-    width: 120px; }
+    width: 120px;
+    justify-self: start; }
   .header__big {
     grid-row: 1 / 4;
     grid-column: 1 / -1;
@@ -161,13 +167,15 @@ a {
         font-size: 9.5rem; } }
     @media only screen and (max-width: 50em) {
       .header__big {
-        letter-spacing: 2rem;
-        margin-right: -2rem;
-        font-size: 7.5rem; } }
+        letter-spacing: 2.5rem;
+        margin-right: -2.5rem; } }
     @media only screen and (max-width: 37.5em) {
       .header__big {
         letter-spacing: 1rem;
         margin-right: -1rem;
+        font-size: 7.2rem; } }
+    @media only screen and (max-width: 25em) {
+      .header__big {
         font-size: 5.5rem; } }
   .header__ideas {
     grid-row: 2 / 7;
