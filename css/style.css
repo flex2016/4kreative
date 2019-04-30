@@ -152,7 +152,7 @@ a {
       .header__sidebar {
         grid-row: 9 / 10; } }
   .header__big {
-    grid-row: 1 / 4;
+    grid-row: 2 / 4;
     grid-column: 1 / -1;
     align-self: center;
     justify-self: center;
