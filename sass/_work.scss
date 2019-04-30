@@ -7,17 +7,22 @@
   justify-content: center;
   justify-items: center;
   grid-row-gap: 5rem;
+  margin-top: -3rem;
+
   @media only screen and (max-width: $bp-small) {
     grid-column: full-start / full-end;
     padding: 10rem 5rem;
   }
+
   img {
     width: 100%;
   }
+
   h3 {
     @media only screen and (max-width: $bp-small) {
       font-size: 4.6rem;
     }
+
     @media only screen and (max-width: $bp-xsSmall) {
       font-size: 4rem;
     }
@@ -25,10 +30,11 @@
 
   &__list {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 2rem;
+    grid-template-columns: 3fr 2fr;
+    grid-column-gap: 4rem;
     grid-row-gap: 5vh;
     align-items: center;
+
     @media only screen and (max-width: $bp-small) {
       grid-template-columns: 1fr;
       grid-row-gap: 0vh;
@@ -44,9 +50,27 @@
   &__details {
     text-transform: uppercase;
     color: $color-grey-light-2;
-    margin-top: -3px;
+    margin-top: 2rem;
+    font-size: 1.8rem;
+
     @media only screen and (max-width: $bp-small) {
       margin-bottom: 4rem;
     }
   }
+
+  &__light_walk {
+    color: #e7a369;
+    font-size: 3.5rem;
+  }
+
+  &__bl_system {
+    color: #E64047;
+    font-size: 3.5rem;
+  }
+
+  &__designer_shop {
+    color: #ffffff;
+    font-size: 3.5rem;
+  }
+
 }
