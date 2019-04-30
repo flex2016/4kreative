@@ -410,9 +410,15 @@ a {
   grid-column: center-start / center-end;
   padding: 6rem 8vw;
   display: grid; }
+  @media only screen and (max-width: 37.5em) {
+    .contact {
+      padding: 4rem 0; } }
 
 .form__group:not(:last-child) {
   margin-bottom: 2rem; }
+  @media only screen and (max-width: 50em) {
+    .form__group:not(:last-child) {
+      margin-bottom: 0; } }
 
 .form__input, .form__request {
   font-size: 1.5rem;

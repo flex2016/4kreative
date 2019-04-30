@@ -2,10 +2,16 @@
   grid-column: center-start / center-end;
   padding: 6rem 8vw;
   display: grid;
+  @media only screen and (max-width: $bp-small) {
+    padding: 4rem 0;
+  }
 }
 .form {
   &__group:not(:last-child) {
     margin-bottom: 2rem;
+    @media only screen and (max-width: $bp-medium) {
+      margin-bottom: 0;
+    }
   }
 
   &__input,
