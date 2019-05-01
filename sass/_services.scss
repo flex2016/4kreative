@@ -6,12 +6,12 @@
   grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
   grid-gap: 6rem;
   align-items: start;
-  background-color: $color-secondary;
   padding: 5rem;
 
   @media only screen and (max-width: $bp-small) {
     grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
   }
+
   @media only screen and (max-width: $bp-xsSmall) {
     grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
     padding: 3rem;
@@ -46,6 +46,7 @@
   &__text {
     font-size: 1.7rem;
     color: $color-grey-light-2;
+
     @media only screen and (max-width: $bp-xsSmall) {
       grid-column: 1 / span 2;
     }

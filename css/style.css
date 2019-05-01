@@ -36,6 +36,7 @@ a {
 
 .container {
   display: grid;
+  background: #051627;
   grid-template-rows: 100vh min-content 40vw;
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
   @media only screen and (max-width: 50em) {
@@ -298,7 +299,7 @@ a {
   height: 100%;
   width: 100%;
   z-index: -1;
-  opacity: 1;
+  opacity: .1;
   overflow: hidden;
   object-fit: cover; }
   .bg-video__content {
@@ -307,7 +308,6 @@ a {
     object-fit: cover; }
 
 .work {
-  background-color: #051627;
   background-size: cover;
   grid-column: full-start / full-end;
   padding: 10rem 10rem;
@@ -411,7 +411,6 @@ a {
   grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
   grid-gap: 6rem;
   align-items: start;
-  background-color: #051627;
   padding: 5rem; }
   @media only screen and (max-width: 37.5em) {
     .services {
