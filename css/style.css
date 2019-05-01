@@ -36,8 +36,11 @@ a {
 
 .container {
   display: grid;
-  grid-template-rows: 100vh;
+  grid-template-rows: 100vh min-content 40vw;
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
+  @media only screen and (max-width: 50em) {
+    .container {
+      grid-template-rows: 100vh; } }
 
 .heading-1, .heading-2, .heading-3, .heading-4 {
   font-family: "sk", sans-serif;
@@ -48,6 +51,8 @@ a {
   color: #f9f7f6;
   line-height: 1;
   margin: 0 0 20px 0; }
+  .heading-1--dark {
+    color: #757575; }
 
 .heading-2 {
   font-size: 4rem;
@@ -303,13 +308,16 @@ a {
 
 .work {
   background-color: #051627;
-  grid-column: center-start / center-end;
-  padding: 10rem 4rem;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.5)), url(layers.jpg);
+  background-size: cover;
+  grid-column: full-start / full-end;
+  padding: 10rem 10rem;
   display: grid;
   align-content: center;
   justify-content: center;
   justify-items: center;
-  grid-row-gap: 5rem; }
+  grid-row-gap: 5rem;
+  opacity: 0.95; }
   @media only screen and (max-width: 37.5em) {
     .work {
       grid-column: full-start / full-end;
@@ -324,10 +332,10 @@ a {
       font-size: 4rem; } }
   .work__list {
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 1fr 3fr;
     grid-column-gap: 2rem;
     grid-row-gap: 5vh;
-    align-items: center; }
+    align-items: start; }
     @media only screen and (max-width: 37.5em) {
       .work__list {
         grid-template-columns: 1fr;

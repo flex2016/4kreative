@@ -9,6 +9,9 @@
   color: $color-grey-light-1;
   line-height: 1;
   margin: 0 0 20px 0;
+  &--dark {
+    color: $color-grey-dark-1;
+  }
 }
 
 .heading-2 {
