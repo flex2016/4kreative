@@ -66,7 +66,8 @@ a {
 .heading-4 {
   font-size: 1.9rem; }
   .heading-4--light {
-    color: #f9f7f6; }
+    color: #37c893;
+    font-size: 3.5rem; }
   .heading-4--dark {
     color: #fff; }
 
@@ -152,7 +153,7 @@ a {
       .header__sidebar {
         grid-row: 9 / 10; } }
   .header__big {
-    grid-row: 2 / 4;
+    grid-row: 1 / 4;
     grid-column: 1 / -1;
     align-self: center;
     justify-self: center;
@@ -187,7 +188,8 @@ a {
     justify-self: center;
     align-self: center;
     font: bold 8.5rem "sk", sans-serif;
-    color: #000; }
+    color: #000;
+    margin: 3rem 0 -1rem 0; }
     @media only screen and (max-width: 50em) {
       .header__ideas {
         font-size: 7.5rem; } }
@@ -244,8 +246,7 @@ a {
     justify-self: center; }
 
 .reveal {
-  position: relative;
-  margin: 4rem auto 0; }
+  position: relative; }
   .reveal span {
     opacity: 0;
     animation: reveal 0.0001s linear forwards;
@@ -303,7 +304,7 @@ a {
 .work {
   background-color: #051627;
   grid-column: center-start / center-end;
-  padding: 10rem 3rem;
+  padding: 10rem 4rem;
   display: grid;
   align-content: center;
   justify-content: center;
@@ -342,15 +343,6 @@ a {
     @media only screen and (max-width: 37.5em) {
       .work__details {
         margin-bottom: 4rem; } }
-  .work__light_walk {
-    color: #e7a369;
-    font-size: 3.5rem; }
-  .work__bl_system {
-    color: #e64047;
-    font-size: 3.5rem; }
-  .work__designer_shop {
-    color: #ffffff;
-    font-size: 3.5rem; }
 
 .about__pictures {
   background-color: #37c893;
