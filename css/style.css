@@ -308,7 +308,6 @@ a {
 
 .work {
   background-color: #051627;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.5)), url(layers.jpg);
   background-size: cover;
   grid-column: full-start / full-end;
   padding: 10rem 10rem;
@@ -323,7 +322,7 @@ a {
       grid-column: full-start / full-end;
       padding: 10rem 5rem; } }
   .work img {
-    width: 100%; }
+    width: 90%; }
   @media only screen and (max-width: 37.5em) {
     .work h3 {
       font-size: 4.6rem; } }
@@ -347,7 +346,8 @@ a {
     text-transform: uppercase;
     color: #9299a0;
     margin-top: 2rem;
-    font-size: 1.8rem; }
+    font-size: 1.8rem;
+    margin-bottom: 3rem; }
     @media only screen and (max-width: 37.5em) {
       .work__details {
         margin-bottom: 4rem; } }

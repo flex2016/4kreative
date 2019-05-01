@@ -1,10 +1,6 @@
 .work {
   background-color: $color-secondary;
-  background-image: linear-gradient(
-      rgba($color-white, 0.9),
-      rgba($color-white, 0.5)
-    ),
-    url(layers.jpg);
+
   background-size: cover;
 
   grid-column: full-start / full-end;
@@ -22,7 +18,7 @@
   }
 
   img {
-    width: 100%;
+    width: 90%;
   }
 
   h3 {
@@ -59,6 +55,7 @@
     color: $color-grey-light-2;
     margin-top: 2rem;
     font-size: 1.8rem;
+    margin-bottom: 3rem;
 
     @media only screen and (max-width: $bp-small) {
       margin-bottom: 4rem;
