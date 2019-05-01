@@ -323,7 +323,7 @@ a {
       font-size: 4rem; } }
   .work__list {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 3fr 1fr;
     grid-column-gap: 2rem;
     grid-row-gap: 5vh;
     align-items: center; }
@@ -338,11 +338,7 @@ a {
     text-transform: uppercase;
     color: #9299a0;
     margin-top: 2rem;
-    font-size: 1.8rem;
-    margin-right: 1vw; }
-    @media only screen and (max-width: 50em) {
-      .work__details {
-        margin-right: 0; } }
+    font-size: 1.8rem; }
     @media only screen and (max-width: 37.5em) {
       .work__details {
         margin-bottom: 4rem; } }

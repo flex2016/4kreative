@@ -1,7 +1,7 @@
 .work {
   background-color: $color-secondary;
   grid-column: center-start / center-end;
-  padding: 10rem 3rem;
+  padding: 10rem 4rem;
   display: grid;
   align-content: center;
   justify-content: center;
@@ -29,7 +29,7 @@
 
   &__list {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 3fr 1fr;
     grid-column-gap: 2rem;
     grid-row-gap: 5vh;
     align-items: center;
@@ -51,10 +51,7 @@
     color: $color-grey-light-2;
     margin-top: 2rem;
     font-size: 1.8rem;
-    margin-right: 1vw;
-    @media only screen and (max-width: $bp-medium) {
-      margin-right: 0;
-    }
+
     @media only screen and (max-width: $bp-small) {
       margin-bottom: 4rem;
     }
