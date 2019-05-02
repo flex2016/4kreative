@@ -6,9 +6,11 @@
 .heading-1 {
   @extend %heading;
   font-size: 6rem;
-  color: $color-grey-light-1;
+  color: $color-white;
   line-height: 1;
-  margin: 0 0 20px 0;
+  margin: 3rem 0 5rem;
+  box-shadow: 0px 6px 0px 0px #f1f2f3;
+
   &--dark {
     color: $color-grey-dark-1;
   }
@@ -63,7 +65,7 @@
   transition: all 0.2s;
 
   &:hover {
-    background-color: $color-primary-dark;
+    background-color: $color-secondary;
   }
 }
 
