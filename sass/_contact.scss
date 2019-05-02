@@ -1,4 +1,9 @@
 .contact {
+  background-color: $color-white;
+  background: $color-white;
+  background-image: url("contact_img.jpg");
+  background-size: cover;
+  background-position: center;
   grid-column: full-start / full-end;
   padding: 10rem 10rem 12rem;
   display: grid;
@@ -6,7 +11,6 @@
   justify-content: center;
   grid-row-gap: 2rem;
   opacity: 1;
-  background: $color-white;
 
   @media only screen and (max-width: $bp-small) {
     padding: 4rem 0;
@@ -14,6 +18,11 @@
 }
 
 .form {
+
+  &__group {
+    width: 50rem;
+  }
+
   &__group:not(:last-child) {
     margin-bottom: 2rem;
 
@@ -29,22 +38,18 @@
     color: inherit;
     padding: 1.5rem 2rem;
     border-radius: 2px;
-    background-color: $color-grey-light-1;
+    background-color: #e4e4e4;
     border: none;
-    border-bottom: 3px solid $color-grey-light-2;
     width: 100%;
     display: block;
     transition: all 0.3s;
+    box-shadow: -3px 0 0 0 $color-primary;
 
     &:focus {
       outline: none;
-      box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
-      border-bottom: 3px solid $color-primary;
     }
 
-    &:focus:invalid {
-      border-bottom: 3px solid $color-primary;
-    }
+    &:focus:invalid {}
 
     &::-webkit-input-placeholder {
       color: $color-grey-dark-1;

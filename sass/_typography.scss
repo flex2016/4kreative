@@ -81,9 +81,13 @@
 
 .mb-sm {
   margin-bottom: 4rem;
-  color: $color-primary;
+  color: $color-secondary;
   text-align: center;
   box-shadow: none;
+}
+
+.cnt {
+  box-shadow: 0px 6px 0px 0px #051627;
 }
 
 .mb-md {
