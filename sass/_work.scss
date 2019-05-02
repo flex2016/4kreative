@@ -15,7 +15,7 @@
   }
 
   img {
-    width: 90%;
+    width: 100%;
   }
 
   h3 {
@@ -34,10 +34,10 @@
     grid-column-gap: 2rem;
     grid-row-gap: 10vh;
     align-items: start;
-    margin: 0 10rem;
 
-    @media only screen and (max-width: $bp-small) {
+    @media only screen and (max-width: $bp-largest) {
       grid-template-columns: 1fr;
+
       grid-row-gap: 0vh;
     }
   }
@@ -46,6 +46,7 @@
     // width: 80rem;
     border-radius: 1%;
     display: block;
+    margin-bottom: 10rem;
   }
 
   &__details {
