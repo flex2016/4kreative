@@ -332,10 +332,11 @@ a {
       font-size: 4rem; } }
   .work__list {
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 2fr 3fr;
     grid-column-gap: 2rem;
     grid-row-gap: 10vh;
-    align-items: start; }
+    align-items: start;
+    margin: 0 10rem; }
     @media only screen and (max-width: 37.5em) {
       .work__list {
         grid-template-columns: 1fr;
