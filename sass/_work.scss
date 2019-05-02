@@ -1,5 +1,4 @@
 .work {
-  background-size: cover;
   grid-column: full-start / full-end;
   padding: 10rem 10rem;
   display: grid;
@@ -7,7 +6,7 @@
   justify-content: center;
   justify-items: center;
   grid-row-gap: 5rem;
-  opacity: 0.95;
+  opacity: 1;
 
   @media only screen and (max-width: $bp-small) {
     grid-column: full-start / full-end;

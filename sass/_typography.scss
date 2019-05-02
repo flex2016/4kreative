@@ -18,22 +18,24 @@
 
 .heading-2 {
   @extend %heading;
-  font-size: 4rem;
-  font-style: italic;
+  font-size: 6rem;
+  color: $color-white;
   line-height: 1;
+  margin: 3rem 0 5rem;
+  box-shadow: 0px 6px 0px 0px $color-secondary;
 
   &--light {
     color: $color-grey-light-1;
   }
 
   &--dark {
-    color: $color-grey-dark-1;
+    color: $color-secondary;
   }
 }
 
 .heading-3 {
   @extend %heading;
-  font-size: 1.6rem;
+  font-size: 2rem;
   color: $color-primary;
   text-transform: uppercase;
 }
@@ -78,7 +80,10 @@
 }
 
 .mb-sm {
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
+  color: $color-primary;
+  text-align: center;
+  box-shadow: none;
 }
 
 .mb-md {
@@ -94,7 +99,7 @@
 }
 
 .bold {
-  font-size: 1.7rem;
+  font-size: 2.2rem;
   text-transform: uppercase;
   font-weight: 700;
 }

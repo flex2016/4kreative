@@ -1,14 +1,22 @@
 .contact {
-  grid-column: center-start / center-end;
-  padding: 6rem 8vw;
+  grid-column: full-start / full-end;
+  padding: 10rem 10rem 12rem;
   display: grid;
+  align-content: center;
+  justify-content: center;
+  grid-row-gap: 2rem;
+  opacity: 1;
+  background: $color-white;
+
   @media only screen and (max-width: $bp-small) {
     padding: 4rem 0;
   }
 }
+
 .form {
   &__group:not(:last-child) {
     margin-bottom: 2rem;
+
     @media only screen and (max-width: $bp-medium) {
       margin-bottom: 0;
     }
@@ -21,9 +29,9 @@
     color: inherit;
     padding: 1.5rem 2rem;
     border-radius: 2px;
-    background-color: rgba($color-white, 0.7);
+    background-color: $color-grey-light-1;
     border: none;
-    border-bottom: 3px solid transparent;
+    border-bottom: 3px solid $color-grey-light-2;
     width: 100%;
     display: block;
     transition: all 0.3s;
@@ -35,11 +43,11 @@
     }
 
     &:focus:invalid {
-      border-bottom: 3px solid $color-secondary;
+      border-bottom: 3px solid $color-primary;
     }
 
     &::-webkit-input-placeholder {
-      color: $color-grey-dark-2;
+      color: $color-grey-dark-1;
     }
   }
 
@@ -52,7 +60,7 @@
     transition: all 0.3s;
   }
 
-  &__input:placeholder-shown + &__label {
+  &__input:placeholder-shown+&__label {
     opacity: 0;
     visibility: hidden;
     transform: translateY(-4rem);
