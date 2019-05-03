@@ -324,7 +324,11 @@ a {
   justify-content: center;
   justify-items: center;
   grid-row-gap: 5rem;
-  opacity: 1; }
+  opacity: 0.85;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.5)), url(../img/abstract_green.png);
+  background-size: center;
+  background-position: right;
+  background-attachment: fixed; }
   @media only screen and (max-width: 37.5em) {
     .work {
       grid-column: full-start / full-end;
@@ -350,7 +354,7 @@ a {
   .work__img {
     border-radius: 1%;
     display: block;
-    margin-bottom: 10rem; }
+    margin-bottom: 3rem; }
   .work__details {
     text-transform: uppercase;
     color: #9299a0;
