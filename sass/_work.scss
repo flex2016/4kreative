@@ -10,12 +10,12 @@
 
   background-image: linear-gradient(
       to right,
-      rgba($color-white, 0.95),
-      rgba($color-white, 0.5)
+      rgba($color-black, 0.5),
+      rgba($color-primary, 0.5)
     ),
-    url(../img/abstract_green.png);
-  background-size: center;
-  background-position: right;
+    url(../img/hustle.jpg);
+  background-size: cover;
+  background-position: left;
   background-attachment: fixed;
 
   @media only screen and (max-width: $bp-small) {

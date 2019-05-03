@@ -172,14 +172,15 @@ a {
     grid-column: 1 / -1;
     align-self: center;
     justify-self: center;
-    color: #fcfcfc;
+    color: transparent;
     text-transform: uppercase;
     letter-spacing: 6rem;
     margin-right: -6rem;
     font-size: 10.5rem;
     font-weight: bold;
-    opacity: 0.8;
-    text-shadow: 4px 2px 0px #051627; }
+    background-image: url(https://media.giphy.com/media/3o7aCXWbxbI2W1GCPe/giphy.gif);
+    background-position: center;
+    -webkit-background-clip: text; }
     @media only screen and (max-width: 62.5em) {
       .header__big {
         letter-spacing: 4rem;
@@ -325,9 +326,9 @@ a {
   justify-items: center;
   grid-row-gap: 5rem;
   opacity: 0.85;
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.5)), url(../img/abstract_green.png);
-  background-size: center;
-  background-position: right;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(55, 200, 147, 0.5)), url(../img/hustle.jpg);
+  background-size: cover;
+  background-position: left;
   background-attachment: fixed; }
   @media only screen and (max-width: 37.5em) {
     .work {

@@ -56,14 +56,17 @@
     grid-column: 1 / -1;
     align-self: center;
     justify-self: center;
-    color: #fcfcfc;
+    color: transparent;
     text-transform: uppercase;
     letter-spacing: 6rem;
     margin-right: -6rem;
     font-size: 10.5rem;
     font-weight: bold;
-    opacity: 0.8;
-    text-shadow: 4px 2px 0px #051627;
+    // opacity: 0.8;
+    // text-shadow: 4px 2px 0px #051627;
+    background-image: url(https://media.giphy.com/media/3o7aCXWbxbI2W1GCPe/giphy.gif);
+    background-position: center;
+    -webkit-background-clip: text;
 
     @media only screen and (max-width: $bp-large) {
       letter-spacing: 4rem;
