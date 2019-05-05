@@ -3,8 +3,9 @@
     background-color: $color-primary;
     grid-column: full-start / col-end 4;
     background-image: linear-gradient(
-        rgba($color-primary, 0.5),
-        rgba($color-grey-light-1, 0.5)
+        to left,
+        rgba($color-secondary, 0.5),
+        rgba($color-primary, 0.5)
       ),
       url("../img/img2.jpg");
     background-size: cover;

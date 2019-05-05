@@ -379,7 +379,7 @@ a {
 .about__pictures {
   background-color: #3acfca;
   grid-column: full-start / col-end 4;
-  background-image: linear-gradient(rgba(58, 207, 202, 0.5), rgba(249, 247, 246, 0.5)), url("../img/img2.jpg");
+  background-image: linear-gradient(to left, rgba(31, 30, 28, 0.5), rgba(58, 207, 202, 0.5)), url("../img/img2.jpg");
   background-size: cover;
   background-position: right;
   display: grid;
