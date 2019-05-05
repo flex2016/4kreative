@@ -62,7 +62,7 @@ a {
   margin: 3rem 0 5rem;
   box-shadow: 0px 6px 0px 0px #f1f2f3; }
   .heading-1--dark {
-    color: #6F7781; }
+    color: #6f7781; }
 
 .heading-2 {
   font-size: 6rem;
@@ -77,19 +77,19 @@ a {
 
 .heading-3 {
   font-size: 2rem;
-  color: #37c893;
+  color: #3acfca;
   text-transform: uppercase; }
 
 .heading-4 {
   font-size: 1.9rem; }
   .heading-4--light {
-    color: #37c893;
+    color: #3acfca;
     font-size: 3.5rem; }
   .heading-4--dark {
     color: #fff; }
 
 .btn {
-  background-color: #37c893;
+  background-color: #3acfca;
   color: #fff;
   border: none;
   border-radius: 0;
@@ -106,7 +106,7 @@ a {
   font-size: 2.2rem; }
 
 .fa:hover {
-  color: #37c893; }
+  color: #3acfca; }
 
 .mb-sm {
   margin-bottom: 4rem;
@@ -336,7 +336,7 @@ a {
   justify-items: center;
   grid-row-gap: 5rem;
   opacity: 0.85;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.5)), url(https://images.unsplash.com/photo-1464600923926-4ff72f9505f3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+  background-image: linear-gradient(to right, rgba(5, 22, 39, 0.85), rgba(5, 22, 39, 0.5)), url(https://images.unsplash.com/photo-1496150458551-140441714f2f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
   background-size: cover;
   background-position: bottom;
   background-attachment: fixed; }
@@ -377,9 +377,9 @@ a {
         margin-bottom: 4rem; } }
 
 .about__pictures {
-  background-color: #37c893;
+  background-color: #3acfca;
   grid-column: full-start / col-end 4;
-  background-image: linear-gradient(rgba(55, 200, 147, 0.5), rgba(249, 247, 246, 0.5)), url("../img/img2.jpg");
+  background-image: linear-gradient(rgba(58, 207, 202, 0.5), rgba(249, 247, 246, 0.5)), url("../img/img2.jpg");
   background-size: cover;
   display: grid;
   grid-template-rows: repeat(6, 1fr);
@@ -427,7 +427,7 @@ a {
   font-size: 2.2rem;
   font-style: italic;
   margin-bottom: 2rem;
-  color: #6F7781; }
+  color: #6f7781; }
 
 .services {
   grid-column: col-start 1 / col-end 8;
@@ -457,7 +457,7 @@ a {
       grid-row-gap: 0.5rem;
       grid-column-gap: 1.5rem; } }
   .service__icon {
-    fill: #37c893;
+    fill: #3acfca;
     width: 4.5rem;
     height: 4.5rem;
     grid-row: 1 / span 2;
@@ -506,11 +506,11 @@ a {
   width: 100%;
   display: block;
   transition: all 0.3s;
-  box-shadow: -3px 0 0 0 #37c893; }
+  box-shadow: -3px 0 0 0 #3acfca; }
   .form__input:focus, .form__request:focus {
     outline: none; }
   .form__input::-webkit-input-placeholder, .form__request::-webkit-input-placeholder {
-    color: #6F7781; }
+    color: #6f7781; }
 
 .form__label {
   font-size: 1.2rem;

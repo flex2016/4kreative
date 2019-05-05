@@ -1,22 +1,20 @@
 // COLOR VARIABLES
-$color-primary: #37c893;
-$color-primary-dark: #1e726a;
+$color-primary: #3acfca;
+$color-primary-dark: #2c2759;
 
 $color-secondary: #051627;
 
 $color-grey-light-1: #f9f7f6;
 $color-grey-light-2: #9299a0;
 
-$color-grey-dark-1: #6F7781;
+$color-grey-dark-1: #6f7781;
 $color-grey-dark-2: #6d5d4b;
 
 $color-white: #fff;
 $color-black: #000;
 // FONT VARIABLES
-$font-primary: "spartan_regular",
-sans-serif;
-$font-display: "sk",
-sans-serif;
+$font-primary: "spartan_regular", sans-serif;
+$font-display: "sk", sans-serif;
 
 // RESPONSIVE BREAKPOINTS
 $bp-largest: 75em; // 1200px
@@ -84,8 +82,11 @@ a {
   background: $color-secondary;
   grid-template-rows: 100vh min-content 40vw;
   grid-template-columns:
-    [full-start]minmax(6rem, 1fr) [center-start]repeat(8,
-    [col-start] minmax(min-content, 14rem) [col-end]) [center-end]minmax(6rem, 1fr) [full-end];
+    [full-start]minmax(6rem, 1fr) [center-start]repeat(
+      8,
+      [col-start] minmax(min-content, 14rem) [col-end]
+    )
+    [center-end]minmax(6rem, 1fr) [full-end];
 
   @media only screen and (max-width: $bp-medium) {
     grid-template-rows: 100vh;
