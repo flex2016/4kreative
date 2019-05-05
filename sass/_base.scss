@@ -1,6 +1,5 @@
 // COLOR VARIABLES
 $color-primary: #F84525;
-$color-primary-dark: #1F1E1C;
 
 $color-secondary: #1F1E1C;
 
@@ -82,7 +81,7 @@ a {
 .container {
   display: grid;
   background: $color-secondary;
-  grid-template-rows: 100vh min-content 40vw;
+  grid-template-rows: 100vh min-content 50vw;
   grid-template-columns:
     [full-start]minmax(6rem, 1fr) [center-start]repeat(8,
     [col-start] minmax(min-content, 14rem) [col-end]) [center-end]minmax(6rem, 1fr) [full-end];

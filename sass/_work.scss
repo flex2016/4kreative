@@ -8,7 +8,7 @@
   grid-row-gap: 5rem;
   opacity: 1;
 
-  background-image: linear-gradient(to bottom right, #0c0c0c, #171717ab), url(work_bg.jpg);
+  background-image: linear-gradient(to bottom right, $color-secondary, #1f1e1bad), url(work_bg.jpg);
   background-size: cover;
   background-position: bottom;
   background-attachment: fixed;
@@ -56,7 +56,6 @@
   &__details {
     text-transform: uppercase;
     color: $color-grey-light-2;
-    margin-top: 2rem;
     font-size: 1.8rem;
     margin-bottom: 3rem;
 
@@ -66,6 +65,7 @@
     }
 
     p {
+      margin-top: 2rem;
       width: 80%;
     }
   }
