@@ -6,6 +6,14 @@
   box-sizing: inherit; }
 
 @font-face {
+  font-family: sui;
+  src: url(sui.ttf); }
+
+@font-face {
+  font-family: montserrat_bold;
+  src: url(Montserrat-Bold.woff); }
+
+@font-face {
   font-family: spartan_regular;
   src: url(spartan_regular.otf); }
 
@@ -174,10 +182,11 @@ a {
     justify-self: center;
     color: transparent;
     text-transform: uppercase;
+    font-family: 'sui', sans-serif;
     letter-spacing: 6rem;
     margin-right: -6rem;
-    font-size: 10.5rem;
-    font-weight: bold;
+    font-size: 9.5rem;
+    font-weight: 100;
     background-image: url(https://media.giphy.com/media/xULW8tsT4LoKPqeyFW/giphy.gif);
     background-position: center;
     background-size: contain;
@@ -204,7 +213,7 @@ a {
     grid-column: 1/ -1;
     justify-self: center;
     align-self: center;
-    font: bold 8.5rem "sk", sans-serif;
+    font: 8rem "montserrat_bold", sans-serif;
     color: #000;
     margin: 3rem 0 -1rem 0; }
     @media only screen and (max-width: 50em) {
@@ -218,7 +227,7 @@ a {
     grid-column: 1 / -1;
     justify-self: center;
     align-self: center;
-    font: bold 8.5rem "sk", sans-serif;
+    font: 8rem "montserrat_bold", sans-serif;
     color: #000; }
     @media only screen and (max-width: 50em) {
       .header__brought {

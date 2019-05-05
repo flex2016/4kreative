@@ -34,6 +34,16 @@ $bp-xsSmall: 25em; // 400px;
 }
 
 @font-face {
+  font-family: sui;
+  src: url(sui.ttf);
+}
+
+@font-face {
+  font-family: montserrat_bold;
+  src: url(Montserrat-Bold.woff);
+}
+
+@font-face {
   font-family: spartan_regular;
   src: url(spartan_regular.otf);
 }
