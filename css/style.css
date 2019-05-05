@@ -60,12 +60,12 @@ a {
   color: #fff;
   line-height: 1;
   margin: 3rem 0 5rem;
-  box-shadow: 0px 6px 0px 0px #f1f2f3; }
+  box-shadow: 0px 6px 0px 0px #fff; }
   .heading-1--dark {
     color: #6F7781; }
 
 .heading-2 {
-  font-size: 6rem;
+  font-size: 8rem;
   color: #fff;
   line-height: 1;
   margin: 3rem 0 5rem;
@@ -422,7 +422,7 @@ a {
 .about__content {
   background-color: #f9f7f6;
   grid-column: col-start 5 / full-end;
-  padding: 6rem 8vw;
+  padding: 6rem 6vw;
   display: grid;
   align-content: center;
   justify-items: start; }
