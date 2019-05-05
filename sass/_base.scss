@@ -2,7 +2,7 @@
 $color-primary: #3acfca;
 $color-primary-dark: #2c2759;
 
-$color-secondary: #051627;
+$color-secondary: #1f1e1c;
 
 $color-grey-light-1: #f9f7f6;
 $color-grey-light-2: #9299a0;
@@ -80,7 +80,7 @@ a {
 .container {
   display: grid;
   background: $color-secondary;
-  grid-template-rows: 100vh min-content 40vw;
+  grid-template-rows: 100vh min-content 50vw;
   grid-template-columns:
     [full-start]minmax(6rem, 1fr) [center-start]repeat(
       8,
