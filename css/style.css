@@ -30,7 +30,7 @@ html {
 
 body {
   font-family: "spartan_regular", sans-serif;
-  color: #1F1E1C;
+  color: #1f1e1c;
   font-weight: 300;
   line-height: 1.6; }
 
@@ -44,7 +44,7 @@ a {
 
 .container {
   display: grid;
-  background: #1F1E1C;
+  background: #1f1e1c;
   grid-template-rows: 100vh min-content 50vw;
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
   @media only screen and (max-width: 50em) {
@@ -62,34 +62,37 @@ a {
   margin: 3rem 0 5rem;
   box-shadow: 0px 6px 0px 0px #fff; }
   .heading-1--dark {
-    color: #6F7781; }
+    color: #6f7781; }
 
 .heading-2 {
-  font-size: 8rem;
+  font-size: 7.8rem;
   color: #fff;
   line-height: 1;
   margin: 3rem 0 5rem;
-  box-shadow: 0px 6px 0px 0px #1F1E1C; }
+  box-shadow: 0px 6px 0px 0px #1f1e1c; }
   .heading-2--light {
     color: #f9f7f6; }
   .heading-2--dark {
-    color: #1F1E1C; }
+    color: #1f1e1c; }
+  @media only screen and (max-width: 37.5em) {
+    .heading-2 {
+      font-size: 6.2rem; } }
 
 .heading-3 {
   font-size: 2rem;
-  color: #F84525;
+  color: #f84525;
   text-transform: uppercase; }
 
 .heading-4 {
   font-size: 1.9rem; }
   .heading-4--light {
-    color: #F84525;
+    color: #f84525;
     font-size: 3.5rem; }
   .heading-4--dark {
     color: #fff; }
 
 .btn {
-  background-color: #F84525;
+  background-color: #f84525;
   color: #fff;
   border: none;
   border-radius: 0;
@@ -100,17 +103,17 @@ a {
   cursor: pointer;
   transition: all 0.2s; }
   .btn:hover {
-    background-color: #1F1E1C; }
+    background-color: #1f1e1c; }
 
 .fa_menu {
   font-size: 2.2rem; }
 
 .fa:hover {
-  color: #F84525; }
+  color: #f84525; }
 
 .mb-sm {
   margin-bottom: 4rem;
-  color: #1F1E1C;
+  color: #1f1e1c;
   text-align: center;
   box-shadow: none; }
 
@@ -206,6 +209,9 @@ a {
     @media only screen and (max-width: 37.5em) {
       .header__ideas {
         font-size: 5.5rem; } }
+    @media only screen and (max-width: 25em) {
+      .header__ideas {
+        font-size: 5rem; } }
   .header__brought {
     grid-row: 5 / 7;
     grid-column: 1 / -1;
@@ -218,7 +224,10 @@ a {
         font-size: 7.5rem; } }
     @media only screen and (max-width: 37.5em) {
       .header__brought {
-        font-size: 5rem; } }
+        font-size: 5.5rem; } }
+    @media only screen and (max-width: 25em) {
+      .header__brought {
+        font-size: 4.4rem; } }
   .header__typing {
     grid-row: 7 / 8;
     grid-column: 1 / -1;
@@ -321,7 +330,7 @@ a {
   justify-items: center;
   grid-row-gap: 5rem;
   opacity: 1;
-  background-image: linear-gradient(to bottom right, #1F1E1C, #1f1e1bad), url(work_bg.jpg);
+  background-image: linear-gradient(to bottom right, #1f1e1c, #1f1e1bad), url(work_bg.jpg);
   background-size: cover;
   background-position: bottom;
   background-attachment: fixed; }
@@ -367,7 +376,7 @@ a {
   margin-top: 3rem; }
 
 .about__pictures {
-  background-color: #F84525;
+  background-color: #f84525;
   grid-column: full-start / col-end 4;
   background-image: linear-gradient(to top, rgba(31, 30, 28, 0.85), rgba(248, 69, 37, 0.5)), url("../img/img2.jpg");
   background-size: cover;
@@ -419,7 +428,7 @@ a {
   font-size: 2.2rem;
   font-style: italic;
   margin-bottom: 2rem;
-  color: #6F7781; }
+  color: #6f7781; }
 
 .services {
   grid-column: col-start 1 / col-end 8;
@@ -450,7 +459,7 @@ a {
       grid-row-gap: 0.5rem;
       grid-column-gap: 1.5rem; } }
   .service__icon {
-    fill: #F84525;
+    fill: #f84525;
     width: 4.5rem;
     height: 4.5rem;
     grid-row: 1 / span 2;
@@ -504,11 +513,11 @@ a {
   width: 100%;
   display: block;
   transition: all 0.3s;
-  box-shadow: -3px 0 0 0 #F84525; }
+  box-shadow: -3px 0 0 0 #f84525; }
   .form__input:focus, .form__request:focus {
     outline: none; }
   .form__input::-webkit-input-placeholder, .form__request::-webkit-input-placeholder {
-    color: #6F7781; }
+    color: #6f7781; }
 
 .form__label {
   font-size: 1.2rem;
@@ -524,7 +533,7 @@ a {
   transform: translateY(-4rem); }
 
 .footer {
-  background-color: #1F1E1C;
+  background-color: #1f1e1c;
   grid-column: full-start / full-end;
   padding: 5rem; }
 

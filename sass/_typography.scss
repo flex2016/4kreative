@@ -18,7 +18,7 @@
 
 .heading-2 {
   @extend %heading;
-  font-size: 8rem;
+  font-size: 7.8rem;
   color: $color-white;
   line-height: 1;
   margin: 3rem 0 5rem;
@@ -30,6 +30,10 @@
 
   &--dark {
     color: $color-secondary;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: 6.2rem;
   }
 }
 
