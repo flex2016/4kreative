@@ -6,6 +6,7 @@
   background-position: center;
   grid-column: full-start / full-end;
   padding: 10rem 10rem 12rem;
+  padding: 10rem 8vw;
   display: grid;
   align-content: center;
   justify-content: center;
@@ -13,14 +14,17 @@
   opacity: 1;
 
   @media only screen and (max-width: $bp-small) {
-    padding: 4rem 0;
+    padding: 4rem 2vw;
   }
 }
 
 .form {
-
   &__group {
     width: 50rem;
+    @media only screen and (max-width: $bp-small) {
+      padding: 2rem;
+      width: 100vw;
+    }
   }
 
   &__group:not(:last-child) {
@@ -49,7 +53,8 @@
       outline: none;
     }
 
-    &:focus:invalid {}
+    &:focus:invalid {
+    }
 
     &::-webkit-input-placeholder {
       color: $color-grey-dark-1;
@@ -65,7 +70,7 @@
     transition: all 0.3s;
   }
 
-  &__input:placeholder-shown+&__label {
+  &__input:placeholder-shown + &__label {
     opacity: 0;
     visibility: hidden;
     transform: translateY(-4rem);

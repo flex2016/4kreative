@@ -156,25 +156,6 @@ a {
       .header__logo {
         justify-self: start;
         align-self: start; } }
-  .header__sidebar {
-    grid-row: 2/ 10;
-    grid-column: 1 / 2;
-    align-self: center;
-    transform: rotate(90deg);
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    font-size: 1.3rem;
-    color: #000;
-    opacity: 0.8;
-    width: 120px;
-    justify-self: start;
-    margin-left: -14px; }
-    @media only screen and (max-width: 50em) {
-      .header__sidebar {
-        margin-left: -40px; } }
-    @media only screen and (max-width: 37.5em) {
-      .header__sidebar {
-        grid-row: 9 / 10; } }
   .header__big {
     grid-row: 1 / 4;
     grid-column: 1 / -1;
@@ -185,17 +166,20 @@ a {
     font-family: "sui", sans-serif;
     letter-spacing: 6rem;
     margin-right: -6rem;
-    font-size: 9.5rem;
+    font-size: 9rem;
     font-weight: 100;
     background-image: url(https://media.giphy.com/media/2UELldv7Yc7lTgjoDg/giphy.gif);
     background-position: center;
     background-size: cover;
     -webkit-background-clip: text; }
-    @media only screen and (max-width: 62.5em) {
+    @media only screen and (max-width: 75em) {
       .header__big {
         letter-spacing: 4rem;
         margin-right: -4rem;
-        font-size: 9.5rem; } }
+        font-size: 12rem; } }
+    @media only screen and (max-width: 62.5em) {
+      .header__big {
+        font-size: 7.2rem; } }
     @media only screen and (max-width: 50em) {
       .header__big {
         letter-spacing: 2.5rem;
@@ -204,10 +188,10 @@ a {
       .header__big {
         letter-spacing: 1rem;
         margin-right: -1rem;
-        font-size: 7.2rem; } }
+        font-size: 6rem; } }
     @media only screen and (max-width: 25em) {
       .header__big {
-        font-size: 6rem; } }
+        font-size: 4.5rem; } }
   .header__ideas {
     grid-row: 4 / 5;
     grid-column: 1/ -1;
@@ -396,7 +380,7 @@ a {
     .about__pictures {
       grid-column: 1 / -1;
       padding: 6rem;
-      height: 40vh; } }
+      height: 35vh; } }
 
 .about__img--1 {
   width: 100%;
@@ -447,11 +431,12 @@ a {
   padding: 5rem; }
   @media only screen and (max-width: 37.5em) {
     .services {
-      grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr)); } }
+      grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+      padding: 3rem; } }
   @media only screen and (max-width: 25em) {
     .services {
       grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
-      padding: 3rem; } }
+      padding: 1rem; } }
 
 .service {
   display: grid;
@@ -473,7 +458,7 @@ a {
   .service__text {
     font-size: 1.7rem;
     color: #9299a0; }
-    @media only screen and (max-width: 25em) {
+    @media only screen and (max-width: 37.5em) {
       .service__text {
         grid-column: 1 / span 2; } }
 
@@ -485,6 +470,7 @@ a {
   background-position: center;
   grid-column: full-start / full-end;
   padding: 10rem 10rem 12rem;
+  padding: 10rem 8vw;
   display: grid;
   align-content: center;
   justify-content: center;
@@ -492,10 +478,14 @@ a {
   opacity: 1; }
   @media only screen and (max-width: 37.5em) {
     .contact {
-      padding: 4rem 0; } }
+      padding: 4rem 2vw; } }
 
 .form__group {
   width: 50rem; }
+  @media only screen and (max-width: 37.5em) {
+    .form__group {
+      padding: 2rem;
+      width: 100vw; } }
 
 .form__group:not(:last-child) {
   margin-bottom: 2rem; }

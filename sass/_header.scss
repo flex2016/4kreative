@@ -28,29 +28,6 @@
     }
   }
 
-  &__sidebar {
-    grid-row: 2/ 10;
-    grid-column: 1 / 2;
-    align-self: center;
-    transform: rotate(90deg);
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    font-size: 1.3rem;
-    color: $color-black;
-    opacity: 0.8;
-    width: 120px;
-    justify-self: start;
-    margin-left: -14px;
-
-    @media only screen and (max-width: $bp-medium) {
-      margin-left: -40px;
-    }
-
-    @media only screen and (max-width: $bp-small) {
-      grid-row: 9 / 10;
-    }
-  }
-
   &__big {
     grid-row: 1 / 4;
     grid-column: 1 / -1;
@@ -61,7 +38,7 @@
     font-family: "sui", sans-serif;
     letter-spacing: 6rem;
     margin-right: -6rem;
-    font-size: 9.5rem;
+    font-size: 9rem;
     font-weight: 100;
     // opacity: 0.8;
     // text-shadow: 4px 2px 0px #051627;
@@ -70,10 +47,13 @@
     background-size: cover;
     -webkit-background-clip: text;
 
-    @media only screen and (max-width: $bp-large) {
+    @media only screen and (max-width: $bp-largest) {
       letter-spacing: 4rem;
       margin-right: -4rem;
-      font-size: 9.5rem;
+      font-size: 12rem;
+    }
+    @media only screen and (max-width: $bp-large) {
+      font-size: 7.2rem;
     }
 
     @media only screen and (max-width: $bp-medium) {
@@ -85,11 +65,11 @@
     @media only screen and (max-width: $bp-small) {
       letter-spacing: 1rem;
       margin-right: -1rem;
-      font-size: 7.2rem;
+      font-size: 6rem;
     }
 
     @media only screen and (max-width: $bp-xsSmall) {
-      font-size: 6rem;
+      font-size: 4.5rem;
     }
   }
 
