@@ -10,11 +10,12 @@
 
   @media only screen and (max-width: $bp-small) {
     grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+    padding: 3rem;
   }
 
   @media only screen and (max-width: $bp-xsSmall) {
     grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
-    padding: 3rem;
+    padding: 1rem;
   }
 }
 
@@ -47,7 +48,7 @@
     font-size: 1.7rem;
     color: $color-grey-light-2;
 
-    @media only screen and (max-width: $bp-xsSmall) {
+    @media only screen and (max-width: $bp-small) {
       grid-column: 1 / span 2;
     }
   }
