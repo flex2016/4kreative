@@ -65,7 +65,7 @@ a {
     color: #6f7781; }
 
 .heading-2 {
-  font-size: 7.8rem;
+  font-size: 8rem;
   color: #fff;
   line-height: 1;
   margin: 3rem 0 5rem;
@@ -182,11 +182,12 @@ a {
         font-size: 12rem; } }
     @media only screen and (max-width: 62.5em) {
       .header__big {
-        font-size: 7.2rem; } }
+        font-size: 9.2rem; } }
     @media only screen and (max-width: 50em) {
       .header__big {
         letter-spacing: 2.5rem;
-        margin-right: -2.5rem; } }
+        margin-right: -2.5rem;
+        font-size: 7.5rem; } }
     @media only screen and (max-width: 37.5em) {
       .header__big {
         letter-spacing: 1rem;
