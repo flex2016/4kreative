@@ -182,14 +182,14 @@ a {
     justify-self: center;
     color: transparent;
     text-transform: uppercase;
-    font-family: 'sui', sans-serif;
+    font-family: "sui", sans-serif;
     letter-spacing: 6rem;
     margin-right: -6rem;
     font-size: 9.5rem;
     font-weight: 100;
-    background-image: url(https://media.giphy.com/media/xULW8tsT4LoKPqeyFW/giphy.gif);
+    background-image: url(https://media.giphy.com/media/2UELldv7Yc7lTgjoDg/giphy.gif);
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     -webkit-background-clip: text; }
     @media only screen and (max-width: 62.5em) {
       .header__big {
