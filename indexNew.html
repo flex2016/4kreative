@@ -179,23 +179,27 @@
   </section>
   <section class="contact" id="contact">
     <h3 class="heading-2 mb-sm"><span class="cnt">Contact</span></h3>
-    <div class="form__group">
-      <input type="text" class="form__input" placeholder="Full name" id="name" required />
-      <label for="name" class="form__label">Full name</label>
-    </div>
+    <form action="https://formspree.io/mail.4kreative@gmail.com" method="POST">
+      <div class="form__group">
+        <input name="name" type="text" class="form__input" placeholder="Full name" id="name" required="required" />
+        <label for="name" class="form__label">Full name</label>
+      </div>
 
-    <div class="form__group">
-      <input type="email" class="form__input" placeholder="Email address" id="email" required />
-      <label for="email" class="form__label">Email address</label>
-    </div>
+      <div class="form__group">
+        <input name="email" name="_replyto" type="email" class="form__input" placeholder="Email address" id="email" required="required" />
+        <label for="email" class="form__label">Email address</label>
+      </div>
 
-    <div class="form__group">
-      <textarea rows="6" class="form__input" id="message" name="message"
-        placeholder="Tell us about your project (Scope, timeline, budget, etc." name="message" required></textarea>
-      <label for="message" class="form__label"> Message</label>
-    </div>
+      <div class="form__group">
+        <textarea name="message" rows="6" class="form__input" id="message" name="message"
+          placeholder="Tell us about your project (Scope, timeline, budget, etc." name="message" required="required"></textarea>
+        <label for="message" class="form__label"> Message</label>
+      </div>
 
-    <button class="form__btn btn">Send Request!</button>
+      <button class="form__btn btn">Send Request!</button>
+
+    </form>
+
   </section>
   <footer class="footer">
     <ul class="nav">
