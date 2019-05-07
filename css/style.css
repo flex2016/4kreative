@@ -244,31 +244,18 @@ a {
     animation: appear 0.8s ease-in forwards;
     animation-delay: 2.9s;
     margin-top: 5rem; }
+  .header a {
+    grid-row: 9 / 10;
+    grid-column: 1 / -1;
+    align-self: center;
+    padding: 2rem 3rem;
+    justify-self: center; }
 
 @keyframes appear {
   0% {
     opacity: 0; }
   100% {
     opacity: 0.9; } }
-  .header__social {
-    grid-row: 3 / 9;
-    grid-column: 10 / 11;
-    align-self: center; }
-    @media only screen and (max-width: 37.5em) {
-      .header__social {
-        grid-row: 9 / 10; } }
-    .header__social a:hover img {
-      opacity: 0.6;
-      transition: all ease 0.3s; }
-    @media only screen and (max-width: 37.5em) {
-      .header__social a {
-        grid-column: 1 / -1; } }
-  .header__btn {
-    grid-row: 9 / 10;
-    grid-column: 1 / -1;
-    align-self: center;
-    padding: 2rem 3rem;
-    justify-self: center; }
 
 .reveal {
   position: relative; }
