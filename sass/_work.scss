@@ -1,6 +1,6 @@
 .work {
   grid-column: full-start / full-end;
-  padding: 10rem 14rem;
+  padding: 10rem 8vw;
   display: grid;
   align-content: center;
   justify-content: center;
@@ -8,7 +8,12 @@
   grid-row-gap: 5rem;
   opacity: 1;
 
-  background-image: linear-gradient(to bottom right, $color-secondary, #1f1e1bad), url(work_bg.jpg);
+  background-image: linear-gradient(
+      to bottom right,
+      $color-secondary,
+      #1f1e1bad
+    ),
+    url(work_bg.jpg);
   background-size: cover;
   background-position: bottom;
   background-attachment: fixed;
@@ -58,7 +63,6 @@
     font-size: 2rem;
     margin-bottom: 3rem;
 
-
     @media only screen and (max-width: $bp-small) {
       margin-bottom: 4rem;
     }
@@ -67,6 +71,16 @@
       margin-top: 2rem;
       margin-bottom: 4rem;
       width: 80%;
+      @media only screen and (max-width: $bp-medium) {
+        width: 90%;
+      }
+    }
+  }
+  &__button {
+    margin-top: 3rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      display: none;
     }
   }
 }
@@ -74,8 +88,4 @@
 .heading-5 {
   color: $color-white;
   margin-bottom: 2rem;
-}
-
-.work_button {
-  margin-top: 3rem;
 }

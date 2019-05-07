@@ -329,7 +329,7 @@ a {
 
 .work {
   grid-column: full-start / full-end;
-  padding: 10rem 14rem;
+  padding: 10rem 8vw;
   display: grid;
   align-content: center;
   justify-content: center;
@@ -377,13 +377,18 @@ a {
       margin-top: 2rem;
       margin-bottom: 4rem;
       width: 80%; }
+      @media only screen and (max-width: 50em) {
+        .work__details p {
+          width: 90%; } }
+  .work__button {
+    margin-top: 3rem; }
+    @media only screen and (max-width: 50em) {
+      .work__button {
+        display: none; } }
 
 .heading-5 {
   color: #fff;
   margin-bottom: 2rem; }
-
-.work_button {
-  margin-top: 3rem; }
 
 .about__pictures {
   background-color: #f84525;
@@ -470,10 +475,19 @@ a {
       grid-column-gap: 1.5rem; } }
   .service__icon {
     fill: #f84525;
-    width: 4.5rem;
-    height: 4.5rem;
+    width: 6.5rem;
+    height: 6.5rem;
     grid-row: 1 / span 2;
     transform: translateY(-1rem); }
+    @media only screen and (max-width: 50em) {
+      .service__icon {
+        width: 4.5rem;
+        height: 4.5rem; } }
+  .service h4 {
+    font-size: 3rem; }
+    @media only screen and (max-width: 50em) {
+      .service h4 {
+        font-size: 2.5rem; } }
   .service__text {
     font-size: 1.7rem;
     color: #9299a0; }
