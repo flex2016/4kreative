@@ -54,9 +54,8 @@
   }
 
   &__details {
-    text-transform: uppercase;
     color: $color-grey-light-2;
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin-bottom: 3rem;
 
 
@@ -66,9 +65,15 @@
 
     p {
       margin-top: 2rem;
+      margin-bottom: 4rem;
       width: 80%;
     }
   }
+}
+
+.heading-5 {
+  color: $color-white;
+  margin-bottom: 2rem;
 }
 
 .work_button {

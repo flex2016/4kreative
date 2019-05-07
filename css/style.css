@@ -134,6 +134,10 @@ a {
   text-transform: uppercase;
   font-weight: 700; }
 
+.heading-5 {
+  margin-top: 2rem;
+  font-size: 2rem; }
+
 .header {
   background-color: #fff;
   grid-column: full-start / full-end;
@@ -154,10 +158,7 @@ a {
     height: 4.5rem;
     align-self: center;
     justify-self: center;
-    margin-right: 4rem;
-    background: #f84525;
-    box-shadow: 0px 0px 0 4px #f84525;
-    padding: 3px 2px 1px 4px; }
+    margin-right: 4rem; }
     @media only screen and (max-width: 50em) {
       .header__logo {
         justify-self: start;
@@ -366,16 +367,20 @@ a {
     display: block;
     margin-bottom: 3rem; }
   .work__details {
-    text-transform: uppercase;
     color: #9299a0;
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin-bottom: 3rem; }
     @media only screen and (max-width: 37.5em) {
       .work__details {
         margin-bottom: 4rem; } }
     .work__details p {
       margin-top: 2rem;
+      margin-bottom: 4rem;
       width: 80%; }
+
+.heading-5 {
+  color: #fff;
+  margin-bottom: 2rem; }
 
 .work_button {
   margin-top: 3rem; }
