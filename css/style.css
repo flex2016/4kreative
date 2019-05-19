@@ -441,10 +441,16 @@ a {
   grid-gap: 6rem;
   align-items: start;
   padding: 5rem; }
+  @media only screen and (max-width: 62.5em) {
+    .services {
+      grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr)); } }
+  @media only screen and (max-width: 50em) {
+    .services {
+      margin: 10rem 0;
+      padding: 3rem; } }
   @media only screen and (max-width: 37.5em) {
     .services {
-      grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
-      padding: 3rem; } }
+      grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr)); } }
   @media only screen and (max-width: 25em) {
     .services {
       grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
@@ -464,20 +470,23 @@ a {
   .service__icon {
     fill: #f84525;
     width: 6.5rem;
-    height: 6.5rem;
+    height: 7.5rem;
     grid-row: 1 / span 2;
     transform: translateY(-1rem); }
     @media only screen and (max-width: 50em) {
       .service__icon {
         width: 4.5rem;
         height: 4.5rem; } }
+    @media only screen and (max-width: 25em) {
+      .service__icon {
+        margin-top: 2rem; } }
   .service h4 {
     font-size: 3rem; }
     @media only screen and (max-width: 50em) {
       .service h4 {
         font-size: 2.5rem; } }
   .service__text {
-    font-size: 1.7rem;
+    font-size: 2rem;
     color: #9299a0; }
     @media only screen and (max-width: 37.5em) {
       .service__text {

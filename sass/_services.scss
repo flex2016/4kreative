@@ -8,9 +8,17 @@
   align-items: start;
   padding: 5rem;
 
+  @media only screen and (max-width: $bp-large) {
+    grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    margin: 10rem 0;
+    padding: 3rem;
+  }
+
   @media only screen and (max-width: $bp-small) {
     grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
-    padding: 3rem;
   }
 
   @media only screen and (max-width: $bp-xsSmall) {
@@ -39,12 +47,15 @@
   &__icon {
     fill: $color-primary;
     width: 6.5rem;
-    height: 6.5rem;
+    height: 7.5rem;
     grid-row: 1 / span 2;
     transform: translateY(-1rem);
     @media only screen and (max-width: $bp-medium) {
       width: 4.5rem;
       height: 4.5rem;
+    }
+    @media only screen and (max-width: $bp-xsSmall) {
+      margin-top: 2rem;
     }
   }
 
@@ -56,7 +67,7 @@
   }
 
   &__text {
-    font-size: 1.7rem;
+    font-size: 2rem;
     color: $color-grey-light-2;
 
     @media only screen and (max-width: $bp-small) {
