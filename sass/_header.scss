@@ -211,3 +211,28 @@
   background: $color-primary;
   animation-delay: 1.4s;
 }
+
+.main_btn {
+  opacity: 0;
+  animation: slideUp 1s forwards;
+  animation-delay: 4s
+}
+
+.slideInUp {
+  -webkit-animation-name: slideUp;
+  animation-name: slideUp
+}
+
+@keyframes slideUp {
+  0% {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
