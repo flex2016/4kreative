@@ -4,6 +4,7 @@
 <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i" rel="stylesheet" />
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="css/style.css" />
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="shortcut icon" href="img\logo4k_si0_icon.ico" type="image/x-icon">
 <title>Web Design and Development Services | 4Kreative</title>
@@ -34,10 +35,11 @@
     </video>
   </div>
   <section class="work">
-    <h3 class="heading-1">Recent Work</h3>
+    <h3 class="heading-1" data-aos="fade-right">Recent Work</h3>
     <div class="work__list">
-
-      <div class="work__details">
+      <div class="work__details" data-aos="flip-left"
+                                  data-aos-easing="ease-out-cubic"
+                                  data-aos-duration="2000">
         <h4 class="heading-4 heading-4--light">The Light Walk</h4>
         <h5 class="heading-5">Website Design & Development</h5>
         <p class="work__details">
@@ -50,7 +52,10 @@
 
       </div>
       <a href="https://thelightwalk.com/" target= "_blank">
-        <img src="img/lightmockup-min.png" alt="Work 1" class="work__img">
+        <img src="img/lightmockup-min.png" alt="Work 1" class="work__img"
+        data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine">
       </a>
 
 
@@ -218,6 +223,12 @@
     </p>
   </footer>
   <script src="assets/js/typer.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration : 1200,
+    });
+  </script>
 </body>
 
 </html>
