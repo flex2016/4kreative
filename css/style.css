@@ -164,6 +164,9 @@ a {
       .header__logo {
         justify-self: start;
         align-self: start; } }
+    @media only screen and (max-height: 25em) {
+      .header__logo {
+        display: none; } }
   .header__big {
     grid-row: 1 / 4;
     grid-column: 1 / -1;
@@ -202,6 +205,9 @@ a {
     @media only screen and (max-width: 25em) {
       .header__big {
         font-size: 4.5rem; } }
+    @media only screen and (max-height: 25em) {
+      .header__big {
+        transform: translateY(1.5rem); } }
   .header__ideas {
     grid-row: 4 / 5;
     grid-column: 1/ -1;
@@ -235,6 +241,9 @@ a {
     @media only screen and (max-width: 25em) {
       .header__brought {
         font-size: 4.4rem; } }
+    @media only screen and (max-height: 25em) {
+      .header__brought {
+        transform: translateY(1.5rem); } }
   .header__typing {
     grid-row: 7 / 8;
     grid-column: 1 / -1;
