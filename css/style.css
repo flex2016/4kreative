@@ -505,14 +505,12 @@ a {
         grid-column: 1 / span 2; } }
 
 .contact {
-  background-color: #fff;
   background: #fff;
   background-image: url("contact_img.jpg");
   background-size: cover;
   background-position: center;
   grid-column: full-start / full-end;
-  padding: 10rem 10rem 12rem;
-  padding: 10rem 8vw;
+  padding: 10rem 8vw 12rem;
   display: grid;
   align-content: center;
   justify-content: center;
@@ -565,10 +563,13 @@ a {
   visibility: hidden;
   transform: translateY(-4rem); }
 
+.contact_form {
+  text-align: center; }
+
 .footer {
   background-color: #1f1e1c;
   grid-column: full-start / full-end;
-  padding: 5rem; }
+  padding: 6rem 6rem 2rem; }
 
 .nav {
   list-style: none;

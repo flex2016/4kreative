@@ -1,12 +1,10 @@
 .contact {
-  background-color: $color-white;
   background: $color-white;
   background-image: url("contact_img.jpg");
   background-size: cover;
   background-position: center;
   grid-column: full-start / full-end;
-  padding: 10rem 10rem 12rem;
-  padding: 10rem 8vw;
+  padding: 10rem 8vw 12rem;
   display: grid;
   align-content: center;
   justify-content: center;
@@ -21,6 +19,7 @@
 .form {
   &__group {
     width: 50rem;
+
     @media only screen and (max-width: $bp-small) {
       padding: 2rem;
       width: 100vw;
@@ -53,9 +52,6 @@
       outline: none;
     }
 
-    &:focus:invalid {
-    }
-
     &::-webkit-input-placeholder {
       color: $color-grey-dark-1;
     }
@@ -70,9 +66,13 @@
     transition: all 0.3s;
   }
 
-  &__input:placeholder-shown + &__label {
+  &__input:placeholder-shown+&__label {
     opacity: 0;
     visibility: hidden;
     transform: translateY(-4rem);
   }
+}
+
+.contact_form {
+  text-align: center;
 }
