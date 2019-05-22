@@ -1,6 +1,6 @@
 .contact {
   background: $color-white;
-  background-image: url("../img/contact_img.jpg");
+  background-image: url("../img/contact_img-small.jpg");
   background-size: cover;
   background-position: center;
   grid-column: full-start / full-end;
@@ -10,6 +10,12 @@
   justify-content: center;
   grid-row-gap: 2rem;
   opacity: 1;
+
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+    only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+    only screen and (min-width: 125em) {
+    background-image: url("../img/contact_img.jpg");
+  }
 
   @media only screen and (max-width: $bp-small) {
     padding: 4rem 2vw;

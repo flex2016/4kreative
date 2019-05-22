@@ -13,10 +13,21 @@
       $color-secondary,
       #1f1e1bad
     ),
-    url(../img/work_bg.jpg);
+    url(../img/work_bg-small.jpg);
   background-size: cover;
   background-position: bottom;
   background-attachment: fixed;
+
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+    only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+    only screen and (min-width: 125em) {
+    background-image: linear-gradient(
+        to bottom right,
+        $color-secondary,
+        #1f1e1bad
+      ),
+      url(../img/work_bg.jpg);
+  }
 
   @media only screen and (max-width: $bp-small) {
     grid-row-gap: 2rem;

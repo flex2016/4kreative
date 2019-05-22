@@ -141,7 +141,7 @@ a {
 .header {
   background-color: #fff;
   grid-column: full-start / full-end;
-  background-image: url("../img/hex.jpg");
+  background-image: url("../img/hex-small.jpg");
   background-size: cover;
   background-position: center;
   display: grid;
@@ -361,10 +361,13 @@ a {
   justify-items: center;
   grid-row-gap: 5rem;
   opacity: 1;
-  background-image: linear-gradient(to bottom right, #1f1e1c, #1f1e1bad), url(../img/work_bg.jpg);
+  background-image: linear-gradient(to bottom right, #1f1e1c, #1f1e1bad), url(../img/work_bg-small.jpg);
   background-size: cover;
   background-position: bottom;
   background-attachment: fixed; }
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
+    .work {
+      background-image: linear-gradient(to bottom right, #1f1e1c, #1f1e1bad), url(../img/work_bg.jpg); } }
   @media only screen and (max-width: 37.5em) {
     .work {
       grid-row-gap: 2rem;
@@ -424,9 +427,12 @@ a {
 .about__pictures {
   background-color: #f84525;
   grid-column: full-start / col-end 4;
-  background-image: url("../img/img2.jpg");
+  background-image: url("../img/img2-small.jpg");
   background-size: cover;
   background-position: right; }
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
+    .about__pictures {
+      background-image: url("../img/img2.jpg"); } }
   @media only screen and (max-width: 62.5em) {
     .about__pictures {
       grid-column: 1 / -1;
@@ -515,7 +521,7 @@ a {
 
 .contact {
   background: #fff;
-  background-image: url("../img/contact_img.jpg");
+  background-image: url("../img/contact_img-small.jpg");
   background-size: cover;
   background-position: center;
   grid-column: full-start / full-end;
@@ -525,6 +531,9 @@ a {
   justify-content: center;
   grid-row-gap: 2rem;
   opacity: 1; }
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
+    .contact {
+      background-image: url("../img/contact_img.jpg"); } }
   @media only screen and (max-width: 37.5em) {
     .contact {
       padding: 4rem 2vw; } }
