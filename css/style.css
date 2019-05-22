@@ -157,7 +157,7 @@ a {
       padding: 2rem; } }
   @media only screen and (max-width: 37.5em) {
     .header {
-      background-size: contain; } }
+      background-position: right; } }
   @media only screen and (max-height: 26.25em) {
     .header {
       padding: 0; } }
@@ -378,7 +378,7 @@ a {
     .work {
       grid-row-gap: 2rem;
       padding: 7rem 5rem;
-      background-size: contain; } }
+      background-position: inherit; } }
   .work img {
     width: 100%; }
   @media only screen and (max-width: 37.5em) {
