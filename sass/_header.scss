@@ -19,6 +19,11 @@
     grid-column: 1 / -1;
     padding: 2rem;
   }
+
+  @media only screen and (max-width: $bp-small) {
+    background-size: contain;
+  }
+
   @media only screen and (max-height: $bp-xsSmall) {
     padding: 0;
   }
@@ -37,6 +42,9 @@
       align-self: start;
     }
     @media only screen and (max-height: $bp-xsSmall) {
+      display: none;
+    }
+    @media only screen and (max-width: $bp-xsSmall) {
       display: none;
     }
   }

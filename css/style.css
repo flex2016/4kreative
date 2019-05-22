@@ -155,6 +155,9 @@ a {
     .header {
       grid-column: 1 / -1;
       padding: 2rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .header {
+      background-size: contain; } }
   @media only screen and (max-height: 26.25em) {
     .header {
       padding: 0; } }
@@ -171,6 +174,9 @@ a {
         justify-self: start;
         align-self: start; } }
     @media only screen and (max-height: 26.25em) {
+      .header__logo {
+        display: none; } }
+    @media only screen and (max-width: 26.25em) {
       .header__logo {
         display: none; } }
   .header__big {
@@ -371,7 +377,8 @@ a {
   @media only screen and (max-width: 37.5em) {
     .work {
       grid-row-gap: 2rem;
-      padding: 7rem 5rem; } }
+      padding: 7rem 5rem;
+      background-size: contain; } }
   .work img {
     width: 100%; }
   @media only screen and (max-width: 37.5em) {

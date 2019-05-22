@@ -32,6 +32,7 @@
   @media only screen and (max-width: $bp-small) {
     grid-row-gap: 2rem;
     padding: 7rem 5rem;
+    background-size: contain;
   }
 
   img {
