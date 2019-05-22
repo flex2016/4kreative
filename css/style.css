@@ -148,6 +148,9 @@ a {
   grid-template-rows: repeat(10, 1fr);
   grid-template-columns: repeat(10, 1fr);
   justify-items: center; }
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
+    .header {
+      background-image: url("../img/hex.jpg"); } }
   @media only screen and (max-width: 50em) {
     .header {
       grid-column: 1 / -1;
