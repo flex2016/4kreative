@@ -141,7 +141,7 @@ a {
 .header {
   background-color: #fff;
   grid-column: full-start / full-end;
-  background-image: url("hex.jpg");
+  background-image: url("../img/hex.jpg");
   background-size: cover;
   background-position: center;
   display: grid;
@@ -358,7 +358,7 @@ a {
   justify-items: center;
   grid-row-gap: 5rem;
   opacity: 1;
-  background-image: linear-gradient(to bottom right, #1f1e1c, #1f1e1bad), url(work_bg.jpg);
+  background-image: linear-gradient(to bottom right, #1f1e1c, #1f1e1bad), url(../img/work_bg.jpg);
   background-size: cover;
   background-position: bottom;
   background-attachment: fixed; }
@@ -512,7 +512,7 @@ a {
 
 .contact {
   background: #fff;
-  background-image: url("contact_img.jpg");
+  background-image: url("../img/contact_img.jpg");
   background-size: cover;
   background-position: center;
   grid-column: full-start / full-end;

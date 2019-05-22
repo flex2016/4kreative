@@ -1,6 +1,6 @@
 .contact {
   background: $color-white;
-  background-image: url("contact_img.jpg");
+  background-image: url("../img/contact_img.jpg");
   background-size: cover;
   background-position: center;
   grid-column: full-start / full-end;
@@ -66,7 +66,7 @@
     transition: all 0.3s;
   }
 
-  &__input:placeholder-shown+&__label {
+  &__input:placeholder-shown + &__label {
     opacity: 0;
     visibility: hidden;
     transform: translateY(-4rem);
