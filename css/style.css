@@ -161,6 +161,9 @@ a {
   @media only screen and (max-height: 26.25em) {
     .header {
       padding: 0; } }
+  @media only screen and (max-width: 26.25em) {
+    .header {
+      padding: 0; } }
   .header__logo {
     grid-row: 1 / 2;
     grid-column: 1 / 2;
@@ -253,7 +256,7 @@ a {
         font-size: 5.5rem; } }
     @media only screen and (max-width: 26.25em) {
       .header__brought {
-        font-size: 4.4rem; } }
+        font-size: 4.8rem; } }
     @media only screen and (max-height: 26.25em) {
       .header__brought {
         transform: translateY(1.5rem); } }
