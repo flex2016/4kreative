@@ -23,7 +23,7 @@
 
   @media only screen and (max-width: $bp-xsSmall) {
     grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
-    padding: 1rem;
+    padding: 0;
   }
 }
 

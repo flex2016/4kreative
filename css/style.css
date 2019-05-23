@@ -454,7 +454,7 @@ a {
       height: 40vh; } }
   @media only screen and (max-height: 37.5em) {
     .about__pictures {
-      height: 80vw; } }
+      height: 60vw; } }
 
 .about__content {
   background-color: #f9f7f6;
@@ -495,7 +495,7 @@ a {
   @media only screen and (max-width: 26.25em) {
     .services {
       grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
-      padding: 1rem; } }
+      padding: 0; } }
 
 .service {
   display: grid;
