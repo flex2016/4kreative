@@ -454,7 +454,7 @@ a {
       height: 40vh; } }
   @media only screen and (max-height: 37.5em) {
     .about__pictures {
-      height: 60vw; } }
+      height: 90vh; } }
 
 .about__content {
   background-color: #f9f7f6;
