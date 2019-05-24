@@ -10,8 +10,8 @@
   justify-items: center;
 
   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
-    only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
-    only screen and (min-width: 125em) {
+  only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+  only screen and (min-width: 125em) {
     background-image: url("../img/hex.jpg");
   }
 
@@ -68,9 +68,8 @@
     margin-right: -6rem;
     font-size: 9rem;
     font-weight: 100;
-    // opacity: 0.8;
-    // text-shadow: 4px 2px 0px #051627;
-    // background-image: url(../img/giphy.webp);
+    opacity: 0.8;
+    background-image: url(../img/giphy.webp);
 
     background-position: center;
     background-size: contain;
