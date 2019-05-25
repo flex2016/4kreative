@@ -166,7 +166,8 @@ a {
       padding: 0; } }
   @media only screen and (max-width: 26.25em) {
     .header {
-      padding: 0; } }
+      padding: 0;
+      padding-bottom: 3rem; } }
   .header__logo {
     grid-row: 1 / 2;
     grid-column: 1 / 2;
@@ -555,7 +556,7 @@ a {
       background-image: url("../img/contact_img.jpg"); } }
   @media only screen and (max-width: 37.5em) {
     .contact {
-      padding: 4rem 2vw; } }
+      padding: 4rem 2vw 8rem; } }
 
 .form__group {
   width: 50rem; }
@@ -575,13 +576,12 @@ a {
   font-family: inherit;
   color: inherit;
   padding: 1.5rem 2rem;
-  border-radius: 2px;
   background-color: #e4e4e4;
   border: none;
   width: 100%;
   display: block;
   transition: all 0.3s;
-  box-shadow: -3px 0 0 0 #f84525; }
+  box-shadow: inset 4px 0 0 0 #f84525; }
   .form__input:focus, .form__request:focus {
     outline: none; }
   .form__input::-webkit-input-placeholder, .form__request::-webkit-input-placeholder {
