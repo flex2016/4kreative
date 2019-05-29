@@ -1,6 +1,3 @@
-html {
-  scroll-behavior: smooth; }
-
 *,
 *::before,
 *::after {
@@ -26,7 +23,8 @@ html {
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
   @media only screen and (max-width: 75em) {
     html {
       font-size: 50%; } }

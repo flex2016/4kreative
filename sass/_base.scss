@@ -1,7 +1,3 @@
-html {
-  scroll-behavior: smooth;
-}
-
 // COLOR VARIABLES
 $color-primary: #f84525;
 
@@ -16,10 +12,8 @@ $color-grey-dark-2: #6d5d4b;
 $color-white: #fff;
 $color-black: #000;
 // FONT VARIABLES
-$font-primary: "spartan_regular",
-sans-serif;
-$font-display: "sk",
-sans-serif;
+$font-primary: "spartan_regular", sans-serif;
+$font-display: "sk", sans-serif;
 
 // RESPONSIVE BREAKPOINTS
 $bp-largest: 75em; // 1200px
@@ -59,7 +53,7 @@ $bp-xsSmall: 26.25em; // 420px;
 html {
   box-sizing: border-box;
   font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
-
+  scroll-behavior: smooth;
   @media only screen and (max-width: $bp-largest) {
     font-size: 50%;
   }
@@ -87,8 +81,11 @@ a {
   background: $color-secondary;
   grid-template-rows: 100vh min-content 60vw;
   grid-template-columns:
-    [full-start]minmax(6rem, 1fr) [center-start]repeat(8,
-      [col-start] minmax(min-content, 14rem) [col-end]) [center-end]minmax(6rem, 1fr) [full-end];
+    [full-start]minmax(6rem, 1fr) [center-start]repeat(
+      8,
+      [col-start] minmax(min-content, 14rem) [col-end]
+    )
+    [center-end]minmax(6rem, 1fr) [full-end];
 
   @media only screen and (max-width: $bp-medium) {
     grid-template-rows: 100vh;
