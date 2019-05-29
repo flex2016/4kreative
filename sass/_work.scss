@@ -34,6 +34,9 @@
     padding: 7rem 5rem;
     background-position: inherit;
   }
+  @media only screen and (max-width: $bp-xsSmall) {
+    background-image: none;
+  }
 
   img {
     width: 100%;
