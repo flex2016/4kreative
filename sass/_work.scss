@@ -35,8 +35,7 @@
     background-position: inherit;
   }
   @media only screen and (max-width: $bp-xsSmall) {
-    // background-image: none;
-    object-fit: cover;
+    background-image: none;
   }
 
   img {
