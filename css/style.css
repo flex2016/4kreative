@@ -200,7 +200,7 @@ a {
       .header__logo {
         display: none; } }
   .header__big {
-    margin-top: 8rem;
+    transform: translateY(8rem);
     color: #201f1c36;
     text-shadow: 0px 0px 2px #201f1c6e;
     text-transform: uppercase;
@@ -221,7 +221,7 @@ a {
         justify-self: center;
         letter-spacing: 6rem;
         margin-right: -6rem;
-        margin-top: 0; } }
+        transform: translateY(0); } }
     @media only screen and (max-width: 75em) {
       .header__big {
         letter-spacing: 4rem;
@@ -247,7 +247,7 @@ a {
       .header__big {
         transform: translateY(1.5rem); } }
   .header__ideas {
-    transform: translateY(5rem);
+    transform: translateY(15rem);
     font: 8rem "montserrat_bold", sans-serif;
     color: #1f1e1c;
     margin: 3rem 0 -1rem 0; }
@@ -270,7 +270,7 @@ a {
       .header__ideas {
         font-size: 5rem; } }
   .header__brought {
-    transform: translateY(10rem);
+    transform: translateY(20rem);
     font: 8rem "montserrat_bold", sans-serif;
     color: #1f1e1c; }
     @supports (display: grid) {
@@ -303,7 +303,7 @@ a {
     animation-delay: 2.9s;
     margin-top: 5rem; }
   .header a {
-    transform: translateY(20rem); }
+    transform: translateY(35rem); }
     @supports (display: grid) {
       .header a {
         transform: translateY(0);
