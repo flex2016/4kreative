@@ -149,8 +149,8 @@ a {
   background-size: cover;
   background-position: center;
   text-align: center;
-  padding: 6rem;
-  height: 100vh; }
+  height: 100vh;
+  padding: 5rem; }
   @supports (display: grid) {
     .header {
       display: grid;
@@ -163,8 +163,11 @@ a {
       background-image: url("../img/hex.jpg"); } }
   @media only screen and (max-width: 50em) {
     .header {
-      grid-column: 1 / -1;
-      padding: 2rem; } }
+      padding: 0; }
+      @supports (display: grid) {
+        .header {
+          grid-column: 1 / -1;
+          padding: 2rem; } } }
   @media only screen and (max-width: 37.5em) {
     .header {
       background-position: right; } }
@@ -200,7 +203,9 @@ a {
       .header__logo {
         display: none; } }
   .header__big {
-    transform: translateY(8rem);
+    position: relative;
+    top: 10%;
+    left: 0%;
     color: #201f1c36;
     text-shadow: 0px 0px 2px #201f1c6e;
     text-transform: uppercase;
@@ -221,12 +226,14 @@ a {
         justify-self: center;
         letter-spacing: 6rem;
         margin-right: -6rem;
-        transform: translateY(0); } }
+        position: initial;
+        top: 0%;
+        left: 0%; } }
     @media only screen and (max-width: 75em) {
       .header__big {
+        font-size: 12rem;
         letter-spacing: 4rem;
-        margin-right: -4rem;
-        font-size: 12rem; } }
+        margin-right: -4rem; } }
     @media only screen and (max-width: 62.5em) {
       .header__big {
         font-size: 9.2rem; } }
@@ -247,7 +254,9 @@ a {
       .header__big {
         transform: translateY(1.5rem); } }
   .header__ideas {
-    transform: translateY(15rem);
+    position: relative;
+    top: 20%;
+    left: 0%;
     font: 8rem "montserrat_bold", sans-serif;
     color: #1f1e1c;
     margin: 3rem 0 -1rem 0; }
@@ -257,7 +266,9 @@ a {
         grid-column: 1/ -1;
         justify-self: center;
         align-self: center;
-        transform: translateY(0); } }
+        position: initial;
+        top: 0%;
+        left: 0%; } }
     @media only screen and (max-width: 50em) {
       .header__ideas {
         font-size: 7.5rem; } }
@@ -270,7 +281,9 @@ a {
       .header__ideas {
         font-size: 5rem; } }
   .header__brought {
-    transform: translateY(20rem);
+    position: relative;
+    top: 25%;
+    left: 0%;
     font: 8rem "montserrat_bold", sans-serif;
     color: #1f1e1c; }
     @supports (display: grid) {
@@ -279,7 +292,9 @@ a {
         grid-column: 1 / -1;
         justify-self: center;
         align-self: center;
-        transform: translateY(0); } }
+        position: initial;
+        top: 0%;
+        left: 0%; } }
     @media only screen and (max-width: 50em) {
       .header__brought {
         font-size: 7.5rem; } }
@@ -303,10 +318,14 @@ a {
     animation-delay: 2.9s;
     margin-top: 5rem; }
   .header a {
-    transform: translateY(35rem); }
+    position: relative;
+    top: 35%;
+    left: 0%; }
     @supports (display: grid) {
       .header a {
-        transform: translateY(0);
+        position: initial;
+        top: 0%;
+        left: 0%;
         grid-row: 9 / 10;
         grid-column: 1 / -1;
         align-self: center;
@@ -514,6 +533,7 @@ a {
   color: #6f7781; }
 
 .services {
+  overflow: auto;
   grid-column: col-start 1 / col-end 8;
   margin: 15rem 0;
   display: grid;
@@ -537,12 +557,19 @@ a {
       padding: 0; } }
 
 .service {
+  float: left;
+  width: 50%;
+  margin-bottom: 6rem;
+  padding: 5rem 15rem;
   display: grid;
-  width: auto;
-  margin-bottom: 0;
   grid-template-columns: min-content 1fr;
   grid-row-gap: 1.5rem;
   grid-column-gap: 2.5rem; }
+  @supports (display: grid) {
+    .service {
+      width: auto;
+      margin-bottom: 0;
+      padding: 0; } }
   @media only screen and (max-width: 37.5em) {
     .service {
       grid-row-gap: 0.5rem;
