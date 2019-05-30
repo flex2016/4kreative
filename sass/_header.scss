@@ -1,4 +1,5 @@
 .header {
+  overflow: auto;
   background-color: $color-white;
   grid-column: full-start / full-end;
   background-image: url("../img/hex-small.jpg");

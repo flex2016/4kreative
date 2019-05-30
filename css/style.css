@@ -143,6 +143,7 @@ a {
   font-size: 2rem; }
 
 .header {
+  overflow: auto;
   background-color: #fff;
   grid-column: full-start / full-end;
   background-image: url("../img/hex-small.jpg");
@@ -560,16 +561,20 @@ a {
   float: left;
   width: 50%;
   margin-bottom: 6rem;
-  padding: 5rem 15rem;
-  display: grid;
-  grid-template-columns: min-content 1fr;
-  grid-row-gap: 1.5rem;
-  grid-column-gap: 2.5rem; }
+  padding: 2rem 5rem; }
   @supports (display: grid) {
     .service {
       width: auto;
       margin-bottom: 0;
+      display: grid;
+      grid-template-columns: min-content 1fr;
+      grid-row-gap: 1.5rem;
+      grid-column-gap: 2.5rem;
       padding: 0; } }
+  @media only screen and (max-width: 50em) {
+    .service {
+      padding: 0;
+      width: auto; } }
   @media only screen and (max-width: 37.5em) {
     .service {
       grid-row-gap: 0.5rem;
@@ -604,6 +609,7 @@ a {
   color: #cccccc; }
 
 .contact {
+  overflow: auto;
   background: #fff;
   background-image: url("../img/contact_img-small.jpg");
   background-size: cover;
