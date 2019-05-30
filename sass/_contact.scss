@@ -12,8 +12,8 @@
   opacity: 1;
 
   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
-  only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
-  only screen and (min-width: 125em) {
+    only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+    only screen and (min-width: 125em) {
     background-image: url("../img/contact_img.jpg");
   }
 
@@ -24,6 +24,9 @@
 
 .form {
   &__group {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     width: 50rem;
 
     @media only screen and (max-width: $bp-small) {
@@ -71,7 +74,7 @@
     transition: all 0.3s;
   }
 
-  &__input:placeholder-shown+&__label {
+  &__input:placeholder-shown + &__label {
     opacity: 0;
     visibility: hidden;
     transform: translateY(-4rem);
