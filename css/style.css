@@ -149,7 +149,7 @@ a {
   background-size: cover;
   background-position: center;
   text-align: center;
-  padding: 5rem;
+  padding: 6rem;
   height: 100vh; }
   @supports (display: grid) {
     .header {
