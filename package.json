@@ -4,9 +4,9 @@
   "description": "4Kreative webpage",
   "main": "index.js",
   "scripts": {
-    "watch:sass": "node-sass sass/main.scss css/style.css -w",
-    "devserver": "live-server --browser=firefox",
     "start": "npm-run-all --parallel devserver watch:sass",
+    "devserver": "live-server --open=/mnt/c/Windows/System32/wslview",
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
     "compile:sass": "node-sass sass/main.scss css/style.comp.css",
     "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.comp.css -o css/style.prefix.css",
     "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
@@ -15,13 +15,14 @@
   "author": "Taras Kurilo, Ivan Perun",
   "license": "ISC",
   "devDependencies": {
-    "autoprefixer": "^9.5.1",
+    "autoprefixer": "^10.4.19",
     "concat": "^1.0.3",
-    "node-sass": "^4.12.0",
+    "live-server": "^1.2.0",
+    "node-sass": "^9.0.0",
     "npm-run-all": "^4.1.5",
-    "postcss-cli": "^6.1.2"
+    "postcss-cli": "^11.0.0"
   },
   "dependencies": {
-    "npm-check-updates": "^3.1.9"
+    "npm-check-updates": "^17.0.0"
   }
 }
